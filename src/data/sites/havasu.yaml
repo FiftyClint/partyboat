@@ -383,3 +383,352 @@ watch:
   - label: Code of Federal Regulations, 33 CFR 165.1171
     url: https://www.law.cornell.edu/cfr/text/33/165.1171
     kind: regulator
+
+factsChecked: "2026-10-19"
+
+glance:
+  - label: Season
+    value: >-
+      Boats run all year. One captained charter company lists March to September as peak season
+      and October to February as offseason, with lower rates in the offseason.
+    source:
+      label: Lake Havasu Charters, peak and offseason
+      url: https://lakehavasucharters.com/
+      accessed: "2026-10-19"
+  - label: Typical price, self-drive
+    value: >-
+      $375 for four hours (Sunday to Friday) or $475 for eight hours at one state park rental
+      office, published October 19, 2026. Tax and fuel are extra, with an $800 deposit.
+    source:
+      label: Wet Monkey Powersport Rentals, pontoon rates
+      url: https://www.wetmonkeyrentals.com/water-rentals/pontoon/
+      accessed: "2026-10-19"
+  - label: Typical price, captained
+    value: >-
+      $750 for four hours in peak season, plus $175 per added hour, for up to six guests with fuel
+      included, as of October 2026. Offseason, $300 for two hours.
+    source:
+      label: Lake Havasu Charters, charter rates
+      url: https://lakehavasucharters.com/
+      accessed: "2026-10-19"
+  - label: Group size
+    value: >-
+      Self-drive pontoons at one daily-rate company seat 12 to 14 people, and its double-decker
+      seats 16.
+    source:
+      label: Lake Havasu RV and Boat Rentals, boats and capacity
+      url: https://lakehavasurvrentals.com/
+      accessed: "2026-10-19"
+  - label: Where boats leave from
+    value: >-
+      Public ramps at Lake Havasu State Park, Site Six, the marina on the Island and Havasu Riviera
+      Marina. The state park ramp charges $15 Monday to Thursday and $20 Friday to Sunday.
+    source:
+      label: Go Lake Havasu, launch ramps and marinas
+      url: https://www.golakehavasu.com/launch-ramps-marinas
+      accessed: "2026-10-19"
+  - label: License to drive a rental
+    value: >-
+      A rental company states no boating license is needed to rent or drive in Arizona, as of
+      October 2026. This could change, so check Arizona Game and Fish before you go.
+    source:
+      label: At The Bridge Rentals, FAQ on licenses
+      url: https://atthebridgerentals.com/
+      accessed: "2026-10-19"
+  - label: Channel rules
+    value: >-
+      Bridgewater Channel is no wake, 5 mph. No stopping or anchoring that blocks traffic, no boats
+      36 feet or longer, no houseboats, no swimming, no water cannons.
+    source:
+      label: Go Lake Havasu, Bridgewater Channel laws
+      url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/bridgewater-channel-laws/
+      accessed: "2026-10-19"
+
+questions:
+  - slug: how-much-does-a-pontoon-rental-cost-lake-havasu
+    question: How much does it cost to rent a pontoon boat on Lake Havasu?
+    answer: >-
+      Self-drive pontoon rentals on Lake Havasu ran from about $125 an hour to $1,350 a day in
+      prices published on October 19, 2026. One company charged $375 for four hours and $475 for
+      eight. Tax, fuel and a refundable deposit usually come on top of the rental rate.
+    detail: >-
+      These figures come from the rental companies' own websites, read on October 19, 2026. Treat
+      them as ranges to plan around, not quotes, and ask the operator for a written total before
+      you pay anything.
+
+      Hourly rentals start at $125 an hour at a company that works from under the London Bridge.
+      That suits a short cruise through the Channel. A rental office at Lake Havasu State Park
+      listed four hours for $375, a rate that applies Sunday through Friday, and eight hours for
+      $475. It also listed multi-day rentals from $950 to $2,375.
+
+      A company with offices on Industrial Boulevard prices by the day, from $600 to $1,350
+      depending on the boat. Its standard pontoons seat 12 to 14 people, and its 16-passenger
+      double-decker sits at the top of that range.
+
+      The total moves mostly with boat size and hours. Deposits, fuel and sales tax are separate
+      lines, and a reservation fee applies at one company. The question on deposits and fuel walks
+      through what those added on top of the rate.
+    sources:
+      - label: At The Bridge Rentals, hourly rate
+        url: https://atthebridgerentals.com/
+        accessed: "2026-10-19"
+      - label: Wet Monkey Powersport Rentals, pontoon rates
+        url: https://www.wetmonkeyrentals.com/water-rentals/pontoon/
+        accessed: "2026-10-19"
+      - label: Lake Havasu RV and Boat Rentals, daily rates
+        url: https://lakehavasurvrentals.com/
+        accessed: "2026-10-19"
+  - slug: how-much-does-a-captained-boat-charter-cost-lake-havasu
+    question: How much does a boat with a captain cost on Lake Havasu?
+    answer: >-
+      A captained charter for up to six people on Lake Havasu ran $750 for four hours in peak
+      season as of October 2026, with fuel included and $175 for each added hour. The same company
+      listed $300 for two hours in the offseason. Some captained companies on the lake quote by
+      phone only.
+    detail: >-
+      The charter company that posts its rates takes six guests or fewer. Its peak season runs
+      March through September. From October through February it listed two hours for $300 and
+      $140 for each hour after that. It also listed a sunset trip at $350. Fuel was included in
+      every rate it published.
+
+      A captained tiki boat that leaves from Havasu Riviera Marina gives prices by phone. It holds
+      a $1,000 damage deposit, includes fuel, and suggests a 20 percent tip for the captain. Put
+      that tip into any captained budget from the start.
+
+      Above six paying guests the legal picture changes. A boat carrying more than six paying
+      passengers needs a Coast Guard Certificate of Inspection, and the captain needs a Coast Guard
+      license. Ask to see both before you pay. In April 2024 the Coast Guard ended a voyage near
+      Thompson Bay where a 25-foot pontoon had nine paying passengers aboard, which shows the rule
+      is enforced here.
+
+      A captain costs more than a self-drive pontoon, but nobody in your group has to stay sober or
+      learn the lake.
+    sources:
+      - label: Lake Havasu Charters, charter rates
+        url: https://lakehavasucharters.com/
+        accessed: "2026-10-19"
+      - label: Tikitoons Boat Rental, deposit, fuel and tip
+        url: https://tikitoonsboatrental.com/
+        accessed: "2026-10-19"
+      - label: U.S. Coast Guard, illegal charter terminated at Lake Havasu, April 2024
+        url: https://www.news.uscg.mil/Press-Releases/Article/3765460/coast-guard-terminates-voyage-of-an-illegal-charter-vessel-in-lake-havasu-arizo/
+        accessed: "2026-10-19"
+  - slug: what-deposit-and-fuel-costs-lake-havasu-boat-rental
+    question: What deposit and fuel charges should I expect when renting a boat on Lake Havasu?
+    answer: >-
+      Expect a refundable deposit of $300 to $800 on a self-drive rental at Lake Havasu, based on
+      rates published on October 19, 2026, plus fuel and sales tax. Fuel policies vary by company.
+      The captained companies that state a policy include fuel, and one rental company adds a $300
+      reservation fee.
+    detail: >-
+      Deposits first. A rental company that picks up at Site Six holds a $500 refundable deposit.
+      The rental office at Lake Havasu State Park holds $800. A company on Industrial Boulevard
+      takes a $300 damage deposit and charges a separate $300 reservation fee. A captained tiki boat
+      at Havasu Riviera Marina holds $1,000.
+
+      Fuel policies differ more than the rates do. One company includes the first tank. The Site
+      Six company charges $25 plus $5.85 a gallon if it has to refuel the boat after you bring it
+      back. The Industrial Boulevard company bills you for the fuel you use, and the state park
+      office lists tax and fuel as extra. Ask how the boat is fueled and how you will be charged
+      before you sign.
+
+      Cancellation is the other cost worth reading. The Industrial Boulevard company returns half
+      the reservation fee if you cancel more than a week out and nothing inside a week. The tiki
+      boat gives a full refund 30 or more days ahead, a credit if rain is falling at the start
+      time, and no refund if rain starts after departure.
+
+      Add the deposit, fuel, tax and any fees to the rate to see what the day really costs.
+    sources:
+      - label: Hook's Boat Rentals, deposit and refuel charge
+        url: https://hooksboats.com/
+        accessed: "2026-10-19"
+      - label: Wet Monkey Powersport Rentals, deposit, tax and fuel
+        url: https://www.wetmonkeyrentals.com/water-rentals/pontoon/
+        accessed: "2026-10-19"
+      - label: Lake Havasu RV and Boat Rentals, fees, fuel and cancellation
+        url: https://lakehavasurvrentals.com/
+        accessed: "2026-10-19"
+      - label: Havasu Adventure Company, first tank included
+        url: https://havasuadventurecompany.com/
+        accessed: "2026-10-19"
+      - label: Tikitoons Boat Rental, deposit and weather policy
+        url: https://tikitoonsboatrental.com/
+        accessed: "2026-10-19"
+  - slug: how-old-to-rent-and-drive-a-boat-lake-havasu
+    question: How old do you have to be to rent and drive a boat on Lake Havasu?
+    answer: >-
+      Lake Havasu rental companies set the renter's minimum age at 18 or 21 with a driver's
+      license, as of October 2026. State law sets a lower floor, 12 to operate a boat on the Arizona
+      side and 16 to drive a motorboat on the California side. The rental company's own age rule is
+      the one that decides.
+    detail: >-
+      Two age rules apply on this lake. The first is state law. Arizona sets 12 as its minimum
+      operator age, and California sets 16 for motorized vessels, according to the city tourism
+      bureau's boating law page. Arizona holds the east shore and California the west, so the rule
+      depends on where the boat is.
+
+      The second is the rental contract, and it is stricter. On October 19, 2026, the rental office
+      at Lake Havasu State Park required renters to be 21 with a driver's license. A company that
+      picks up at Site Six required renters to be 18 with a U.S. driver's license. Ask the company
+      who in your group may take the wheel, not only who signs.
+
+      Licensing is a separate question. That same Site Six company states that Arizona does not
+      require a boating license to rent or drive. Arizona does not currently require a boater card
+      for adults, based on what we found as of October 2026, but a 2024 bill in the Arizona House
+      would have required boater education. Check Arizona Game and Fish before your trip. It also
+      offers free boating courses.
+
+      Whoever drives has to be old enough, sober, and comfortable steering a large pontoon all day.
+    sources:
+      - label: Go Lake Havasu, Arizona boating laws
+        url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/arizona-boating-laws/
+        accessed: "2026-10-19"
+      - label: Wet Monkey Powersport Rentals, renter age
+        url: https://www.wetmonkeyrentals.com/water-rentals/pontoon/
+        accessed: "2026-10-19"
+      - label: Hook's Boat Rentals, license and age
+        url: https://hooksboats.com/
+        accessed: "2026-10-19"
+      - label: Arizona Legislature, HB 2149 (2024), boater education
+        url: https://www.azleg.gov/legtext/56leg/2R/bills/HB2149H.htm
+        accessed: "2026-10-19"
+      - label: Arizona Game and Fish, boating education
+        url: https://www.azgfd.com/education/boating-education/
+        accessed: "2026-10-19"
+  - slug: what-are-the-bridgewater-channel-rules-lake-havasu
+    question: What are the boating rules in the Bridgewater Channel on Lake Havasu?
+    answer: >-
+      The Bridgewater Channel under the London Bridge on Lake Havasu is a no-wake zone with a 5 mph
+      limit. Keep right of center, keep moving, and never stop or anchor where you block other
+      boats. Swimming, water cannons, houseboats and boats 36 feet or longer are banned in the
+      channel.
+    detail: >-
+      These rules come from the Lake Havasu City Code, as summarized on the city tourism bureau's
+      channel law page, read on October 19, 2026. They cover speed, lane position, stopping, boat
+      size and swimming.
+
+      Speed and lanes. The limit is 5 mph with no wake. Stay to the right of center, much as you
+      would driving a car, and expect boats coming the other way.
+
+      Stopping and size. You may not stop, park or anchor a boat in a way that gets in the way of
+      traffic. Watercraft 36 feet or longer are banned from the channel, and so are houseboats.
+      Water cannons are illegal there. Nobody may swim in the channel or across it.
+
+      What that means for a party boat. Treat the channel as a slow pass under the bridge, not a
+      place to settle in for the afternoon. Pick a beach or a cove for swimming and floating. Out on
+      the Arizona side of the lake, normal traffic runs counterclockwise, and nobody may ride on the
+      bow deck, the gunwales or the transom while the boat is moving. A self-drive renter is
+      responsible for all of this, so read the channel rules aloud before you leave the dock.
+    sources:
+      - label: Go Lake Havasu, Bridgewater Channel laws
+        url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/bridgewater-channel-laws/
+        accessed: "2026-10-19"
+      - label: Go Lake Havasu, Arizona boating laws
+        url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/arizona-boating-laws/
+        accessed: "2026-10-19"
+  - slug: what-is-copper-canyon-lake-havasu
+    question: What is Copper Canyon on Lake Havasu, and what are the rules there?
+    answer: >-
+      Copper Canyon is a boat-only cove on Lake Havasu, 2.62 nautical miles from Thompson Bay
+      according to the city tourism bureau. A federal rule keeps a 60-foot lane open down the
+      canyon. Boats may not anchor, moor or loiter in that lane, and the Coast Guard can close it
+      when the canyon gets congested.
+    detail: >-
+      You can only reach Copper Canyon by water. The city tourism bureau says no-wake buoys now
+      mark the entrance, an access lane stays open for safety, and the cove is calmer than it was
+      in earlier years.
+
+      The lane is a Regulated Navigation Area under 33 CFR 165.1171. It is 60 feet wide and runs
+      the length of the canyon. Any boat other than a patrol vessel has to pass straight through it,
+      without anchoring, mooring or lingering. Patrol vessels include the Coast Guard, the Coast
+      Guard Auxiliary and the San Bernardino County Sheriff.
+
+      When the canyon is congested, the Coast Guard's Captain of the Port can close the lane, and
+      the closure is announced on VHF channel 16. If your boat has a marine radio, keep it on 16
+      as you head that way.
+
+      For a self-drive group the plan is simple. Idle in at no-wake speed, stay clear of the marked
+      lane, and find a spot outside it. If there is no room, come back later or pick another cove.
+      A captain who works the lake will know how the canyon is being run that day, which is one
+      reason some groups choose a captained trip for a Copper Canyon visit.
+    sources:
+      - label: Go Lake Havasu, Copper Canyon
+        url: https://www.golakehavasu.com/directory/copper-canyon/
+        accessed: "2026-10-19"
+      - label: Code of Federal Regulations, 33 CFR 165.1171, Copper Canyon
+        url: https://www.law.cornell.edu/cfr/text/33/165.1171
+        accessed: "2026-10-19"
+  - slug: when-is-party-boat-season-on-lake-havasu
+    question: When is party boat season on Lake Havasu, and can you go in winter?
+    answer: >-
+      You can rent a party boat on Lake Havasu in any month. Peak season at one captained charter
+      company runs March to September, and its rates drop from October to February, as of October
+      2026. Summer monsoon storms can end a trip early, so keep a backup date in mind.
+    detail: >-
+      Seasonal pricing shows up at the ramps too. Havasu Riviera Marina charges launch fees of $15
+      Monday to Thursday, $30 Friday to Sunday and $40 on holidays from April through September.
+      From October through March its fees run $10 to $25.
+
+      On the captained side, the charter company that posts rates charged $750 for four hours at
+      peak and $300 for two hours in the offseason. A docked party barge in the Channel opens
+      seven days a week during its season, from sunrise to sunset, and recommends reservations.
+      Its online calendar listed open dates in October 2026.
+
+      Summer is the hot part of the year, and one captained company reserves the right to end a
+      trip early when monsoon weather moves in. Start in the morning, bring plenty of water and
+      shade, and keep an eye on the sky.
+
+      No company on the lake publishes how far ahead to book. For a holiday or a spring weekend,
+      send a request as soon as your dates are fixed, and ask what happens to your money if the
+      weather turns. A fall or winter date can also mean the lower offseason rate on a captained
+      trip.
+    sources:
+      - label: Lake Havasu Charters, peak and offseason, monsoon policy
+        url: https://lakehavasucharters.com/
+        accessed: "2026-10-19"
+      - label: Go Lake Havasu, launch fees by season
+        url: https://www.golakehavasu.com/launch-ramps-marinas
+        accessed: "2026-10-19"
+      - label: Lake Havasu Party Boat, season hours
+        url: https://lakehavasupartyboat.com/
+        accessed: "2026-10-19"
+  - slug: how-far-is-lake-havasu-from-las-vegas-and-phoenix
+    question: How far is Lake Havasu from Las Vegas and Phoenix, and where should I fly in?
+    answer: >-
+      Lake Havasu City is roughly a three-hour drive from both Las Vegas and Phoenix, and those are
+      the airports to fly into. The city's own airport has no scheduled airline service. The city
+      names Harry Reid International in Las Vegas and Phoenix Sky Harbor as the nearest
+      full-service airports.
+    detail: >-
+      Lake Havasu City Municipal Airport, code HII, has no airline flights. The city points
+      visitors to Harry Reid International in Las Vegas and Phoenix Sky Harbor International.
+      Driving estimates put each trip at about three hours, so treat them as approximate and allow
+      for stops.
+
+      Several rental companies work from the Island near the London Bridge. A few others work
+      from offices on Industrial Boulevard and bring the boat to a ramp. If you are towing your own
+      boat or meeting a rental at a ramp, know which ramp before you arrive.
+
+      Public ramps charge a fee. Lake Havasu State Park lists $15 Monday through Thursday and $20
+      Friday through Sunday and holidays, and it has no gas dock. The marina on the Island has seven
+      lanes and a gas dock. Some lakefront resorts let their guests launch free from their own
+      ramps, which makes staying on the water a practical choice.
+
+      Build the drive into your plans. If your boat is booked for a morning start, arrive the night
+      before, since a long drive and a wait at the ramp both cut into rental time.
+    sources:
+      - label: Lake Havasu City, airport
+        url: https://www.lhcaz.gov/airport
+        accessed: "2026-10-19"
+      - label: Travel and Time, driving times from Lake Havasu City
+        url: https://travelandtime.com/driving-time-from-lake-havasu-city-to-las-vegas
+        accessed: "2026-10-19"
+      - label: Go Lake Havasu, launch ramps and marinas
+        url: https://www.golakehavasu.com/launch-ramps-marinas
+        accessed: "2026-10-19"
+      - label: Lake Havasu RV and Boat Rentals, Industrial Boulevard
+        url: https://lakehavasurvrentals.com/
+        accessed: "2026-10-19"
+      - label: At The Bridge Rentals, under the London Bridge
+        url: https://atthebridgerentals.com/
+        accessed: "2026-10-19"
