@@ -5,5 +5,362 @@ aliases: []
 marketName: "Nashville"
 regionName: "Tennessee"
 timezone: America/Chicago
-accent: lake
-status: pending
+accent: dusk
+status: live
+
+meta:
+  title: "Nashville Party Boats: Percy Priest Lake and the River"
+  description: >-
+    Bachelorette and birthday party boats in Nashville: lake pontoons on Percy Priest, river
+    cruises downtown, shuttles, prices, and the drink rules.
+
+hero:
+  headline: "A party boat in Nashville, sorted"
+  subhead: >-
+    Lake day on Percy Priest or a cruise on the river downtown. Send the date and the group, and we
+    pass it to one local captain who will call you with a boat and a price.
+
+directAnswer: >-
+  A Nashville party boat means one of two quite different things. The lake trip is a captained
+  pontoon, often a double-decker with a slide, on J. Percy Priest Lake east of the city, for a
+  group of up to about twenty, usually for three hours plus the ride out and back. The river trip
+  is a shorter cruise on the Cumberland right by downtown, on a barge with a bar or a pedal boat,
+  with no shuttle needed. For a summer weekend, operators recommend asking well ahead.
+
+steps:
+  - >-
+    Tell us the weekend, the size of the group, and whether you want the lake or the river. If
+    anyone in the group is under 21, say so, because it changes the drink rules on some boats.
+  - >-
+    We pass it to one Nashville operator who runs groups, rather than spreading your number around
+    every company with a pontoon.
+  - >-
+    They confirm the boat, the pickup or dock, any shuttle from downtown, and the full price. You
+    book and pay them.
+
+boatTypes:
+  intro: >-
+    Nashville's party boats split by water. Lake boats are captained pontoons and tritoons. River
+    boats are shorter cruises that leave near downtown.
+  types:
+    - title: Captained lake pontoon or slide boat
+      body: >-
+        The classic Nashville bachelorette boat. A captain drives, you bring the drinks, and the
+        bigger boats have an upper deck and a slide. Groups of about eight to twenty-two depending
+        on the boat.
+    - title: Tiki boat
+      body: >-
+        A small round tiki bar boat with a captain, limited to a handful of passengers each, run as
+        tandem boats for a bigger group. Available on the lake and on the river.
+    - title: Downtown river barge
+      body: >-
+        A party barge with its own bar, cruising past the skyline for a couple of hours, sold as public tickets or as a private charter. Usually no outside drinks.
+    - title: Pedal pontoon
+      body: >-
+        Everyone pedals, the captain steers, and the boat cruises the river downtown. A bring your
+        own drinks option on the river.
+    - title: Self-drive pontoon
+      body: >-
+        Marinas on Percy Priest and Old Hickory rent pontoons you drive yourself. Tennessee boater
+        education rules and the marinas' own age rules apply, and some do not allow rentals to go to
+        the party cove.
+
+departures:
+  intro: >-
+    Most lake party boats run on J. Percy Priest Lake, an Army Corps of Engineers reservoir east of
+    downtown, with Old Hickory Lake to the northeast as a second option. River cruises leave from
+    the downtown riverfront. Where you start matters more here than in most places, because the lake is a drive from downtown.
+  places:
+    - title: Percy Priest, Mt. Juliet side
+      body: >-
+        At least one captained slide boat company uses the Vivrett Creek public boat ramp for all
+        pickups, with first come, first served public parking, about 20 minutes from downtown.
+    - title: Percy Priest, other docks
+      body: >-
+        Elm Hill Marina, Four Corners Marina near Antioch, and the marina at Nashville Shores in
+        Hermitage rent boats, and the Cook public use area and Fate Sanders Marina are used as docks
+        by captained charters.
+    - title: Shuttle from downtown
+      body: >-
+        Some lake operators check you in downtown and drive the group to the boat and back, either
+        included in the price or for a set fee. It adds time to the day but takes driving off the
+        table.
+    - title: Old Hickory Lake
+      body: >-
+        To the northeast, around Hendersonville and Gallatin, with a pontoon rental company at
+        Creekwood Marina and a tiki boat company in Gallatin.
+    - title: Downtown riverfront
+      body: >-
+        River cruises leave from the Riverfront Dock on Victory Avenue, from Wasioto Park beside
+        Nissan Stadium, and from other docks along the Cumberland. Confirm your dock on the booking.
+  sources:
+    - label: Rowdy Boats, Vivrett Creek pickup and fleet
+      url: https://rowdyboats.net/party-boat-fleet-3/
+      accessed: "2026-10-19"
+    - label: Rowdy Boats, distance from downtown
+      url: https://rowdyboats.net/
+      accessed: "2026-10-19"
+    - label: Sun Life Elm Hill Marina, boat rentals
+      url: https://sunlifeelmhill.com/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Four Corners Resort and Marina, rentals
+      url: https://fourcornersresortandmarina.com/watersports-rentals/
+      accessed: "2026-10-19"
+    - label: Nashville Boat Rentals at Nashville Shores
+      url: https://nashvilleshores.com/?p=783
+      accessed: "2026-10-19"
+    - label: Wild Rides NASH, docks and shuttle
+      url: https://wildridesnash.com/
+      accessed: "2026-10-19"
+    - label: Nashville Toons, downtown check-in and shuttle
+      url: https://nashvilletoons.com/bach-parties
+      accessed: "2026-10-19"
+    - label: Sweetwater Pontoon Rentals, Old Hickory
+      url: https://sweetwaterpontoonrentals.com/
+      accessed: "2026-10-19"
+    - label: Cruisin' Tikis Nashville
+      url: https://cruisintikis.com/nashville/
+      accessed: "2026-10-19"
+    - label: Pontoon Saloon, downtown docks
+      url: https://pontoonsaloontn.com/
+      accessed: "2026-10-19"
+    - label: River Queen Voyages, Wasioto Park
+      url: https://riverqueenvoyages.com/
+      accessed: "2026-10-19"
+
+season:
+  summary: >-
+    The boating season in Nashville runs roughly spring to fall, with peak from May or Memorial Day
+    through September or Labor Day. One downtown pedal boat runs from about March to about November.
+
+    Lead time is the thing to plan around. One lake operator says peak season needs four to eight
+    weeks of notice, and shoulder season and weekdays one to two weeks. A marina renting self-drive
+    boats says to book one to two weeks ahead, especially for weekends, and a bachelorette-focused
+    operator says groups fill its season and to book early. One rental company discounts after
+    Labor Day.
+  sources:
+    - label: Rowdy Boats, Nashville party boat roundup, June 2026
+      url: https://rowdyboats.net/best-party-boats-pontoon-rentals-in-nashville-june-2026/
+      accessed: "2026-10-19"
+    - label: Sun Life Elm Hill Marina, season and booking
+      url: https://sunlifeelmhill.com/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Nashville Toons, book early
+      url: https://nashvilletoons.com/bach-parties
+      accessed: "2026-10-19"
+    - label: River Queen Voyages, season
+      url: https://riverqueenvoyages.com/
+      accessed: "2026-10-19"
+    - label: Nashville Boat Rentals, fall discount
+      url: https://nashvilleshores.com/?p=783
+      accessed: "2026-10-19"
+
+pricing:
+  summary: >-
+    Published Nashville prices on October 19, 2026, as ranges. Your quote may differ.
+
+    A captained lake party boat ran $250 to $500 an hour for the whole boat, with three hours the
+    standard cruise. Another lake company started private trips at $495 on weekdays and $695 on
+    weekends for up to 16, and sold shared seats from $49. Tiki boats started at $75 a person for a
+    public cruise and $525 for a private three-hour trip. Self-drive pontoons ran about $350 to $725
+    for a full day, some including tax and a fuel allowance.
+  components:
+    - title: The shuttle
+      body: >-
+        Lake trips are a drive from downtown. One company includes the shuttle both ways, another
+        charges $295 within 20 miles and says the whole outing takes five to six hours door to door.
+        Count the shuttle in when you compare prices.
+    - title: Tip for the captain
+      body: >-
+        Lake operators ask guests to bring tip money. No standard percentage is published, so ask.
+    - title: Deposits on self-drive boats
+      body: >-
+        Marinas hold a damage deposit, from about $300 to $1,500, and charge for fuel. One charges a
+        steep hourly fee for late returns.
+    - title: Cancellation and weather
+      body: >-
+        Terms are strict. At least two companies refund in full only three weeks or more ahead, and
+        treat the last week as non-refundable. Weather cancellations by the captain usually get a
+        gift card or a new date rather than cash. One rental company gives no refunds for weather at
+        all.
+  sources:
+    - label: Rowdy Boats, hourly rates and tipping
+      url: https://rowdyboats.net/
+      accessed: "2026-10-19"
+    - label: Wild Rides NASH, rates, shuttle and cancellation
+      url: https://wildridesnash.com/
+      accessed: "2026-10-19"
+    - label: Cruisin' Tikis Nashville, rates and cancellation
+      url: https://cruisintikis.com/nashville/
+      accessed: "2026-10-19"
+    - label: Sun Life Elm Hill Marina, rates, deposit and late fee
+      url: https://sunlifeelmhill.com/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Nashville Boat Rentals, rates, deposit and weather policy
+      url: https://nashvilleshores.com/?p=783
+      accessed: "2026-10-19"
+    - label: Sweetwater Pontoon Rentals, rates
+      url: https://sweetwaterpontoonrentals.com/
+      accessed: "2026-10-19"
+    - label: Nashville Toons, free shuttle
+      url: https://nashvilletoons.com/
+      accessed: "2026-10-19"
+
+rules:
+  summary: >-
+    Drinking and age. Tennessee makes it illegal to drive a boat at .08 percent blood alcohol or
+    higher, and the state wildlife agency steps up enforcement around the Fourth of July. On a
+    captained boat that is the captain's problem, not yours, but operators set their own rules for
+    guests: most are bring your own with no glass, some ban liquor and strong drinks,
+    and at least one makes the whole cruise dry if anyone aboard is under 21. Bring photo ID.
+
+    Driving a rental yourself. Tennessee requires a boating education certificate for anyone born
+    after January 1, 1989 who drives a boat over 8.5 horsepower, unless an adult born before that
+    date is aboard and ready to take over. Marinas here generally require the renter to be 21 or older.
+
+    Life jackets. Children 12 and younger must wear one on the open deck while the boat is moving.
+
+    The lake itself. Percy Priest and Old Hickory are Army Corps of Engineers lakes. The Corps
+    restricts swimming to designated areas and bans it at ramps, marinas and public docks, and
+    federal rules let the Corps ban alcohol in posted areas.
+
+    Paying passengers. A captain carrying more than six paying guests generally needs a Coast Guard
+    inspected boat. Ask any captained operator for the captain's license before you pay.
+  sources:
+    - label: Tennessee Wildlife Resources Agency, boating regulations
+      url: https://www.tn.gov/twra/boating/regulations-and-safety-concerns.html
+      accessed: "2026-10-19"
+    - label: Tennessee Wildlife Resources Agency, Operation Dry Water 2026
+      url: https://www.tn.gov/twra/news/2026/6/25/2026-operation-dry-water-set-for-july-4th-holiday-period.html
+      accessed: "2026-10-19"
+    - label: Tennessee Wildlife Resources Agency, boating education
+      url: https://www.tn.gov/twra/boating/boating-education.html
+      accessed: "2026-10-19"
+    - label: Wild Rides NASH, drink and age rules
+      url: https://wildridesnash.com/
+      accessed: "2026-10-19"
+    - label: Rowdy Boats, drink rules
+      url: https://rowdyboats.net/
+      accessed: "2026-10-19"
+    - label: Nashville Boat Rentals, renter age
+      url: https://nashvilleshores.com/?p=783
+      accessed: "2026-10-19"
+    - label: U.S. Army Corps of Engineers, Percy Priest Lake rules and regulations
+      url: https://www.lrn.usace.army.mil/Locations/Lakes/J-Percy-Priest-Lake/Rules-and-Regulations/
+      accessed: "2026-10-19"
+    - label: Code of Federal Regulations, 36 CFR 327.12
+      url: https://www.law.cornell.edu/cfr/text/36/327.12
+      accessed: "2026-10-19"
+    - label: U.S. Coast Guard, illegal charter warning to the public
+      url: https://www.news.uscg.mil/Press-Releases/Article/4286502/coast-guard-warns-public-of-risks-consequences-associated-with-illegal-charter/
+      accessed: "2026-10-19"
+
+guide:
+  title: "Planning a Nashville party boat"
+  description: >-
+    Lake or river, how to get from Broadway to the boat, Party Cove, what to bring, and how a
+    Nashville bachelorette fits a boat into the weekend.
+  intro: >-
+    Nashville is not on a beach and its party lake is not downtown, which surprises a lot of
+    visitors. The good news is that the city's operators have built their trips around exactly
+    that: shuttles, downtown check-ins, and short cruises on the river for groups that do not want
+    the drive.
+  sections:
+    - title: Lake or river
+      body: >-
+        Choose the lake for a half day of swimming, sun and a slide with your own drinks. Choose the
+        river for a shorter cruise past the skyline that fits between brunch and Broadway, usually
+        with a bar on board. The lake is the bigger commitment of time and the bigger day.
+    - title: Getting to Percy Priest
+      body: >-
+        One operator says its downtown check-in is about 15 minutes from the lake, and its whole
+        outing runs four to five hours including transport, with check-in an hour early. Another
+        puts its ramp about 20 minutes from downtown. Nashville International is the airport.
+    - title: Party Cove
+      body: >-
+        Percy Priest has a party cove where boats gather in summer. Captains can take you there or
+        to a calmer stretch if your group prefers. At least one self-drive rental company does not
+        allow its boats to go there.
+    - title: What to bring
+      body: >-
+        Cans and plastic only, photo ID for anyone drinking, sunscreen, and cash for the captain's
+        tip. Check the drink list with the operator: some ban liquor, and some will not allow any
+        alcohol if a guest is under 21.
+    - title: Where you can swim
+      body: >-
+        The Corps of Engineers allows swimming at Percy Priest only in designated areas, and never
+        at ramps, marinas or public docks. A captain will know where the boat can anchor.
+    - title: If you came to fish
+      body: >-
+        Percy Priest and Old Hickory are both well known fishing lakes, and striper guides work them.
+        That is a different trip from a party boat. Tell us on the request and we will point you to
+        the right kind of operator.
+  sources:
+    - label: Nashville Toons, downtown check-in and timing
+      url: https://nashvilletoons.com/bach-parties
+      accessed: "2026-10-19"
+    - label: Rowdy Boats, Party Cove and distance from downtown
+      url: https://rowdyboats.net/
+      accessed: "2026-10-19"
+    - label: Nashville Boat Rentals, Party Cove restriction
+      url: https://nashvilleshores.com/?p=783
+      accessed: "2026-10-19"
+    - label: Wild Rides NASH, drink rules
+      url: https://wildridesnash.com/
+      accessed: "2026-10-19"
+    - label: U.S. Army Corps of Engineers, Percy Priest Lake water safety
+      url: https://www.lrn.usace.army.mil/Locations/Lakes/J-Percy-Priest-Lake/Water-Safety/
+      accessed: "2026-10-19"
+    - label: Pontoon Saloon, downtown river cruises
+      url: https://pontoonsaloontn.com/
+      accessed: "2026-10-19"
+    - label: KOA, fishing guide to Nashville's waterways
+      url: https://koa.com/campgrounds/nashville/blog/fishing-guide-to-nashvilles-waterways_9bfc77c7-8efc-4aa4-a115-861d9ae48eee/
+      accessed: "2026-10-19"
+
+faq:
+  - question: How far is the party lake from downtown?
+    answer: >-
+      Percy Priest Lake is east of the city, and operators put their docks about fifteen to twenty
+      minutes from downtown. Plan on the lake taking a good half of your day once you count the ride
+      both ways. The local guide has the details.
+  - question: Do we need a car?
+    answer: >-
+      Not always. Some lake operators run a shuttle from a downtown check-in, sometimes included in
+      the price. River cruises leave from the downtown riverfront, so you can walk or take a short
+      ride.
+  - question: Can we bring our own drinks?
+    answer: >-
+      On most lake boats, yes, in cans or plastic, with ID. Downtown barges with a bar usually do not
+      allow outside drinks. If anyone in the group is under 21, ask first, because some operators
+      then run the whole trip dry.
+  - question: How many of us fit on one boat?
+    answer: >-
+      Lake slide boats take roughly eight to twenty-two people depending on the boat. Tiki boats are
+      small and run in tandem for bigger groups. Larger groups can split across boats.
+  - question: What if it rains?
+    answer: >-
+      Captains cancel for severe weather. Most Nashville operators then give a new date or a gift
+      card rather than a refund, and some run in light rain. Read the weather terms before you pay
+      the deposit.
+  - question: Is this the Nashville Party Barge?
+    answer: >-
+      No. That name also belongs to an open-air party vehicle that drives around downtown on land.
+      This site is about boats on the water.
+  - question: Who runs the boat?
+    answer: >-
+      A local operator, not us. We are an independent guide. We pass your request to one Nashville
+      operator, who quotes and books directly with you.
+
+forOperators: >-
+  This site is written for out-of-town groups, bachelorette and birthday parties above all, who need to know that the lake is a drive away and the river is the other option. It explains the choice and sends each request to one operator. We are looking for
+  a captained operator on Percy Priest or the river who runs group trips, can handle shuttle
+  questions, and can show current captain credentials and insurance.
+
+watch:
+  - label: Tennessee Wildlife Resources Agency, boating regulations
+    url: https://www.tn.gov/twra/boating/regulations-and-safety-concerns.html
+    kind: regulator
+  - label: U.S. Army Corps of Engineers, Percy Priest Lake
+    url: https://www.lrn.usace.army.mil/Locations/Lakes/J-Percy-Priest-Lake/Rules-and-Regulations/
+    kind: regulator

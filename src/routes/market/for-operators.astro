@@ -22,8 +22,14 @@ const site = currentSite();
       <h1>For boat operators on {site.marketName}</h1>
       <p class="lede">{site.forOperators}</p>
 
+      <!--
+        The same terms on every site, by design: one arrangement, offered the
+        same way in every market. data-boilerplate is for this fixed notice
+        only; the market-specific intro above it is written per site.
+      -->
+      <div data-boilerplate>
       <h2>The arrangement, in short</h2>
-      <ul data-boilerplate>
+      <ul>
         <li>We publish and maintain this site and its phone number.</li>
         <li>Trip requests for this market go to one operator, not a list of competitors.</li>
         <li>You quote, book, take payment, run the trip, and own the customer relationship.</li>
@@ -38,6 +44,7 @@ const site = currentSite();
         and ask for the person who handles operator partners.
       </p>
       <PhoneCta />
+      </div>
     </Prose>
   </div>
 </Base>
