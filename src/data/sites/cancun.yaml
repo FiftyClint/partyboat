@@ -1,0 +1,10 @@
+key: cancun
+siteName: "Party Boat Cancun"
+domain: partyboatcancun.com
+aliases:
+  - cancunpartyboat.com
+marketName: "Cancun"
+regionName: "Quintana Roo, Mexico"
+timezone: America/Cancun
+accent: lake
+status: pending

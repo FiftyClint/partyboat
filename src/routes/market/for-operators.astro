@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import Prose from '../../components/Prose.astro';
+import PhoneCta from '../../components/PhoneCta.astro';
+import { currentSite } from '../../data/sites.mjs';
+
+/**
+ * For charter and rental operators. Says what the arrangement is and what it
+ * is not. Makes no claim about traffic or lead volume: until there are real
+ * numbers, there are no numbers.
+ */
+const site = currentSite();
+---
+
+<Base
+  title={`For boat operators on ${site.marketName}`}
+  description={`How ${site.siteName} works with one local operator on ${site.marketName}.`}
+  path="/for-operators"
+>
+  <div class="page section">
+    <Prose>
+      <h1>For boat operators on {site.marketName}</h1>
+      <p class="lede">{site.forOperators}</p>
+
+      <h2>The arrangement, in short</h2>
+      <ul data-boilerplate>
+        <li>We publish and maintain this site and its phone number.</li>
+        <li>Trip requests for this market go to one operator, not a list of competitors.</li>
+        <li>You quote, book, take payment, run the trip, and own the customer relationship.</li>
+        <li>We do not take a cut of your bookings. The arrangement is a flat fee for the requests.</li>
+        <li>We will show you every request we receive, so you can judge the value for yourself.</li>
+        <li>We need to see your current captain credentials and insurance before routing anything to you.</li>
+      </ul>
+
+      <h2>Talk to us</h2>
+      <p>
+        Use the request form on the home page and say you are an operator, or call the number below
+        and ask for the person who handles operator partners.
+      </p>
+      <PhoneCta />
+    </Prose>
+  </div>
+</Base>

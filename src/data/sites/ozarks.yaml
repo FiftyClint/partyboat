@@ -1,0 +1,10 @@
+key: ozarks
+siteName: "Party Boat Ozarks"
+domain: partyboatozarks.com
+aliases:
+  - ozarkspartyboat.com
+marketName: "Lake of the Ozarks"
+regionName: "Missouri"
+timezone: America/Chicago
+accent: lake
+status: pending

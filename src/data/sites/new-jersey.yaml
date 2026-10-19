@@ -1,0 +1,10 @@
+key: new-jersey
+siteName: "Jersey Party Boat"
+domain: jerseypartyboat.com
+aliases:
+  - partyboatjersey.com
+marketName: "the Jersey Shore"
+regionName: "New Jersey"
+timezone: America/New_York
+accent: lake
+status: pending

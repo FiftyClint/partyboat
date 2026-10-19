@@ -1,0 +1,10 @@
+key: san-francisco
+siteName: "San Francisco Party Boat"
+domain: sanfranciscopartyboat.com
+aliases:
+  - partyboatsanfrancisco.com
+marketName: "San Francisco Bay"
+regionName: "California"
+timezone: America/Los_Angeles
+accent: lake
+status: pending

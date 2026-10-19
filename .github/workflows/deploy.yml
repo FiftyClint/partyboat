@@ -1,0 +1,75 @@
+name: Deploy
+
+# Manual only. Nothing goes to a live domain until Clint has authorized a
+# launch, and check:launch below refuses to ship while the publisher entity is
+# unconfirmed or a placeholder phone number is in place. When launches become
+# routine, add `push: branches: [main]` here.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Optional single market key, for example ozarks. Blank deploys every live site.'
+        type: string
+        default: ''
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Launch preconditions
+        run: npm run check:launch
+
+      - name: Request receiver against a stubbed GHL
+        run: npm run test:receiver
+
+      - name: Lead destination configured
+        run: npm run check:leads
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+
+      # GHL_TOKEN is read at build time only to decide whether to render the
+      # form. Its value never enters a built file; the Worker reads it at
+      # runtime from a Cloudflare secret.
+      - name: Build every live site
+        run: npm run build:all
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+
+      - name: Copy, claims, duplicate, canonical and link checks
+        run: npm run check
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Accessibility audit
+        run: npm run audit:a11y
+
+      - name: No secret reached the built files
+        run: npm run check:secrets
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Deploy to Cloudflare
+        run: npm run deploy -- ${{ inputs.only != '' && format('--only {0}', inputs.only) || '' }}
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Every page answers at one address
+        run: sleep 30 && npm run check:live

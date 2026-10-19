@@ -1,0 +1,10 @@
+key: new-york
+siteName: "New York City Party Boat"
+domain: newyorkcitypartyboat.com
+aliases:
+  - nypartyboat.com
+marketName: "New York City"
+regionName: "New York"
+timezone: America/New_York
+accent: lake
+status: pending

@@ -1,0 +1,10 @@
+key: vegas
+siteName: "Vegas Party Boat"
+domain: vegaspartyboat.com
+aliases:
+  - partyboatvegas.com
+marketName: "Lake Mead and Las Vegas"
+regionName: "Nevada"
+timezone: America/Los_Angeles
+accent: lake
+status: pending

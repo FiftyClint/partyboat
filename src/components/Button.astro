@@ -1,0 +1,36 @@
+---
+/**
+ * The one button in the system. Large tap target, high contrast, no icon, no
+ * animation. The primary label across the whole network is
+ * "See if your land qualifies".
+ */
+const {
+  href,
+  variant = 'primary',
+  type = 'button',
+  wide = false,
+  ...rest
+} = Astro.props;
+
+const Tag = href ? 'a' : 'button';
+const classes = ['btn', `btn--${variant}`, wide && 'btn--wide'];
+---
+
+<Tag class:list={classes} href={href} type={href ? undefined : type} {...rest}>
+  <slot />
+</Tag>
+
+<!--
+  The styles for this live in src/styles/global.css rather than here.
+
+  Astro scopes a component's <style> to that component's own markup, so .btn
+  compiled to .btn[data-astro-cid-...] and matched nothing anywhere else. Every
+  place in the codebase that writes class="btn" on a plain element, which is
+  the qualification form's submit button on all nineteen sites, StateCard and
+  Wordmark, got an unstyled browser button and had done since launch. It was
+  reported as the button not looking like something you should press, which is
+  exactly right.
+
+  .btn is a design system class, not this component's private business, so it
+  belongs with the rest of the system.
+-->

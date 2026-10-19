@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import Faq from '../../components/Faq.astro';
+import Button from '../../components/Button.astro';
+import { currentSite } from '../../data/sites.mjs';
+
+/**
+ * The questions on their own page. The home page carries the same entries
+ * and is the one that should rank, so this page is noindex (see
+ * src/lib/noindex.mjs) and emits no FAQ structured data.
+ */
+const site = currentSite();
+---
+
+<Base
+  title={`Party boat questions, ${site.marketName}`}
+  description={`Answers to the questions people ask before booking a party boat on ${site.marketName}.`}
+  path="/faq"
+>
+  <div class="page section">
+    <h1>Questions about party boats on {site.marketName}</h1>
+    <Faq entries={site.faq} level={2} />
+    <p style="margin-top: var(--s7)">
+      <Button href="/#request">Request a party boat</Button>
+    </p>
+  </div>
+</Base>

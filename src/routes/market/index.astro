@@ -1,0 +1,193 @@
+---
+import Base from '../../layouts/Base.astro';
+import Faq from '../../components/Faq.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import PhoneCta from '../../components/PhoneCta.astro';
+import Disclosure from '../../components/Disclosure.astro';
+import Sources from '../../components/Sources.astro';
+import Button from '../../components/Button.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { STEP_LABELS } from '../../data/brand.mjs';
+import { faqPageSchema } from '../../lib/schema.mjs';
+import { internalPath } from '../../lib/nav.mjs';
+
+/**
+ * The home page, and the page each site exists to rank.
+ *
+ * Order follows the questions a group organiser has: can I get a boat, how
+ * does this work, what kind, where from, when, what it costs, then the
+ * remaining questions. The request form sits right under the hero on a phone.
+ */
+const site = currentSite();
+---
+
+<Base
+  title={site.meta.title}
+  description={site.meta.description}
+  path="/"
+  schemas={[faqPageSchema(site.faq)]}
+>
+  <section class="hero">
+    <div class="page hero__inner">
+      <div class="hero__body">
+        <h1>{site.hero.headline}</h1>
+        <p class="hero__subhead">{site.hero.subhead}</p>
+        <Button href="#request">Tell us your date and group</Button>
+      </div>
+      <div class="hero__aside" id="request">
+        <h2 class="hero__form-title">Request a party boat</h2>
+        <Disclosure />
+        <PhoneCta />
+        <LeadForm />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="page measure-wide">
+      <p class="lede">{site.directAnswer}</p>
+    </div>
+  </section>
+
+  <section class="section section--sunken">
+    <div class="page">
+      <h2>How this works</h2>
+      <ol class="steps">
+        {
+          STEP_LABELS.map((label, i) => (
+            <li>
+              <h3>{label}</h3>
+              <p>{site.steps[i]}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="page">
+      <h2>What kind of boat</h2>
+      <p class="measure-wide">{site.boatTypes.intro}</p>
+      <div class="grid grid--2">
+        {
+          site.boatTypes.types.map((t) => (
+            <article class="card">
+              <h3>{t.title}</h3>
+              <p>{t.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sunken">
+    <div class="page">
+      <h2>Where the boats leave from</h2>
+      <p class="measure-wide">{site.departures.intro}</p>
+      <div class="grid grid--2">
+        {
+          site.departures.places.map((p) => (
+            <article class="card">
+              <h3>{p.title}</h3>
+              <p>{p.body}</p>
+            </article>
+          ))
+        }
+      </div>
+      <Sources sources={site.departures.sources} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="page measure-wide">
+      <h2>When to go and when to ask</h2>
+      {site.season.summary.split('\n\n').map((para) => <p>{para}</p>)}
+      <Sources sources={site.season.sources} />
+    </div>
+  </section>
+
+  <section class="section section--sunken">
+    <div class="page">
+      <h2>What it costs and what the price covers</h2>
+      <div class="measure-wide">
+        {site.pricing.summary.split('\n\n').map((para) => <p>{para}</p>)}
+      </div>
+      <div class="grid grid--2">
+        {
+          site.pricing.components.map((c) => (
+            <article class="card">
+              <h3>{c.title}</h3>
+              <p>{c.body}</p>
+            </article>
+          ))
+        }
+      </div>
+      <Sources sources={site.pricing.sources} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="page">
+      <h2>Questions people ask</h2>
+      <Faq entries={site.faq} level={3} />
+      <p class="more">
+        <a href={internalPath('local-guide')}>{site.guide.title}</a>
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    background: var(--surface);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .hero__inner {
+    display: grid;
+    gap: var(--s5);
+    padding-block: var(--s5);
+    align-items: start;
+  }
+
+  @media (min-width: 60rem) {
+    .hero__inner {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--s8);
+      padding-block: var(--s8);
+    }
+  }
+
+  .hero__subhead {
+    font-size: var(--text-lg);
+    color: var(--ink-muted);
+    margin-bottom: var(--s5);
+  }
+
+  .hero__form-title {
+    font-size: var(--text-xl);
+  }
+
+  .measure-wide {
+    max-width: 44rem;
+  }
+
+  .steps {
+    display: grid;
+    gap: var(--s5);
+    padding-left: var(--s5);
+    max-width: 44rem;
+  }
+
+  .steps h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--s2);
+  }
+
+  .more {
+    margin-top: var(--s6);
+    font-weight: 600;
+  }
+</style>

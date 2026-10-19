@@ -1,0 +1,48 @@
+---
+/**
+ * A list of sources under a section that states facts.
+ *
+ * Marked data-citations so the duplicate-copy checker skips it: two markets
+ * in one state should cite the same state boating law, and a check that
+ * punished that would push us toward worse citations.
+ */
+const { sources = [], label = 'Sources' } = Astro.props;
+---
+
+{
+  sources.length > 0 && (
+    <details class="sources small" data-citations>
+      <summary>{label}</summary>
+      <ul>
+        {sources.map((s) => (
+          <li>
+            <a href={s.url} rel="nofollow noopener">
+              {s.label}
+            </a>
+            , checked {s.accessed}
+          </li>
+        ))}
+      </ul>
+    </details>
+  )
+}
+
+<style>
+  .sources {
+    margin-top: var(--s4);
+    color: var(--ink-muted);
+  }
+
+  .sources summary {
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .sources ul {
+    margin: var(--s2) 0 0;
+    padding-left: var(--s5);
+  }
+</style>

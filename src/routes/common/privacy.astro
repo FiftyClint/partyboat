@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import Prose from '../../components/Prose.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { PUBLISHER, CONTACT_CONSENT, SMS_CONSENT_LABEL } from '../../data/brand.mjs';
+
+/*
+ * NOT REVIEWED BY AN ATTORNEY. Written conservatively for that reason: it
+ * describes only what the site actually does, and where a broad permission
+ * and a narrow one were both possible it takes the narrow one.
+ *
+ * CALL_RECORDING must match the phone system. Calls are not recorded today.
+ * If that ever changes, this page changes first, together with the spoken
+ * notice on the line itself.
+ */
+const CALL_RECORDING = false;
+
+const site = currentSite();
+const us = PUBLISHER.legalName ?? site.siteName;
+const updated = 'October 2026';
+---
+
+<Base title="Privacy Policy" description={`How ${site.siteName} handles the information you send.`} path="/privacy">
+  <div class="page section">
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated {updated}</p>
+    <Prose>
+      <h2>What we collect</h2>
+      <p>
+        When you send a trip request we collect what you type: your name, phone number, email address
+        if you give one, your date, your group size, the occasion, and any notes. If you call the
+        number on this site, our phone system records the number you called from and the time and
+        length of the call.
+        {CALL_RECORDING ? ' Calls may be recorded, and you will hear a notice at the start of the call.' : ' Calls are not recorded.'}
+      </p>
+      <p>
+        Our hosting provider records basic technical information, such as the type of browser used to
+        load a page. We do not use it to identify you. We do not ask for payment details, and you
+        should never send them to us.
+      </p>
+
+      <h2>What we do with it</h2>
+      <p>
+        We use your request to arrange your trip. That means a person on our side reads it, may call
+        or email you about it, and passes it to one local boat operator on {site.marketName} so they
+        can contact you about the trip. We do not sell your information, and we do not pass a request
+        to more than one operator.
+      </p>
+      <p>This is the consent shown above the button on the form:</p>
+      <blockquote>{CONTACT_CONSENT}</blockquote>
+      <p>
+        Texting is separate. We only text you if you tick the box that says: "{SMS_CONSENT_LABEL}"
+        Reply STOP to any text and we stop.
+      </p>
+
+      <h2>Who else handles it</h2>
+      <p>
+        Requests are stored in our customer management system, which a software company runs for us,
+        and the site is hosted by a web hosting company. Both handle your information only to provide
+        that service to us. The operator who receives your request handles it under their own
+        privacy terms once they have it.
+      </p>
+
+      <h2>How long we keep it</h2>
+      <p>
+        We keep requests while they are useful for arranging trips and for our records with the
+        operator, and delete them when they are not. You can ask us to delete yours at any time.
+      </p>
+
+      <h2>Your choices</h2>
+      <p>
+        You can ask what we hold about you, ask us to correct it, ask us to delete it, or tell us to
+        stop contacting you. Use the request form and say so in the notes, or call the number on this
+        site. We will also tell the operator who received your request to stop.
+      </p>
+
+      <h2>Who we are</h2>
+      <p>This site is published by {us}.</p>
+    </Prose>
+  </div>
+</Base>

@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import Button from '../../components/Button.astro';
+import PhoneCta from '../../components/PhoneCta.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { SUCCESS_MESSAGE } from '../../data/lead-capture.mjs';
+
+/**
+ * Where the form lands when JavaScript is off and the receiver redirects
+ * here after saving. With JavaScript on the confirmation appears inline and
+ * nobody sees this page. noindex, and excluded from the sitemap.
+ */
+const site = currentSite();
+---
+
+<Base title="Thank you" description="We received your trip request." path="/thank-you" noindex>
+  <div class="page section">
+    <div class="measure">
+      <h1>Thank you</h1>
+      <p class="lede">{SUCCESS_MESSAGE}</p>
+      <p>
+        If you remember something after sending it, a group size that changed or a second date
+        that works, send the form again with the change in the notes. It reaches the same person.
+      </p>
+      <PhoneCta />
+      <p style="margin-top: var(--s6)">
+        <Button href="/" variant="secondary">Back to {site.siteName}</Button>
+      </p>
+    </div>
+  </div>
+</Base>

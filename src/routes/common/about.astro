@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import Prose from '../../components/Prose.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { PUBLISHER, INDEPENDENCE_STATEMENT } from '../../data/brand.mjs';
+
+/**
+ * Who publishes the site. Identical on every domain and therefore noindex
+ * everywhere (src/lib/noindex.mjs). There is one publisher, and inventing a
+ * different account of it per market to please a crawler would be dishonest.
+ */
+const site = currentSite();
+const publisher = PUBLISHER.legalName ?? 'an independent publisher based in Overland Park, Kansas';
+---
+
+<Base title="About this site" description={`Who publishes ${site.siteName} and how it works.`} path="/about">
+  <div class="page section">
+    <Prose>
+      <h1>About this site</h1>
+      <p class="lede">{INDEPENDENCE_STATEMENT}</p>
+      <p>
+        {site.siteName} is published by {publisher}. We write plain local guides to party boats on
+        lakes and coastlines people travel to for a day on the water, and we pass trip requests to a
+        local operator who can actually take the group out.
+      </p>
+      <h2>How we make money</h2>
+      <p>
+        The operator who receives requests from a site pays us a flat fee for them. We do not take a
+        share of what you pay for your trip, and the operator sets the price, not us. When a site
+        names its operator, it says so next to every request button.
+      </p>
+      <h2>What we check, and what we do not</h2>
+      <p>
+        Before we pass requests to an operator we ask to see their captain credentials and their
+        insurance. We do not inspect boats, and we are not a safety authority. The operator, and the
+        captain on the day, decide whether a trip goes out and how many people can be aboard.
+      </p>
+      <h2>Prices and facts on these pages</h2>
+      <p>
+        Every price range and rule on these sites comes from a public source, listed under the
+        section it supports with the date it was checked. Prices change with the season. The quote
+        the operator gives you is the one that counts.
+      </p>
+    </Prose>
+  </div>
+</Base>

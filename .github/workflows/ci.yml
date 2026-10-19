@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # GHL_TOKEN here is a dummy. It only tells the build a receiver exists so
+      # the form renders and gets audited. It is never a real credential.
+      - name: Build every live site
+        run: npm run build:all
+        env:
+          GHL_TOKEN: ci-dummy-not-a-credential
+
+      - name: Copy, claims, duplicate, canonical and link checks
+        run: npm run check
+
+      - name: Request receiver against a stubbed GHL
+        run: npm run test:receiver
+
+      - name: Install Chromium for the accessibility audit
+        run: npx playwright install --with-deps chromium
+
+      - name: Accessibility audit
+        run: npm run audit:a11y

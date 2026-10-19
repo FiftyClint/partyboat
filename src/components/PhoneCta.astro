@@ -1,0 +1,31 @@
+---
+import { currentSite } from '../data/sites.mjs';
+
+/**
+ * The market's tracking number, with who answers it said right next to it.
+ *
+ * Renders nothing when the site has no number. A number that rings nowhere,
+ * or one presented as a marina's own line, would be worse than none.
+ */
+const site = currentSite();
+const phone = site.phone;
+---
+
+{
+  phone && (
+    <div class="phone-cta" data-boilerplate>
+      <a class="btn btn--secondary btn--wide" href={`tel:${phone.e164}`}>
+        Call {phone.display}
+      </a>
+      <p class="small muted">
+        {phone.answeredBy} {phone.hours}
+      </p>
+    </div>
+  )
+}
+
+<style>
+  .phone-cta p {
+    margin: var(--s2) 0 0;
+  }
+</style>

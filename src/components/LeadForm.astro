@@ -1,0 +1,202 @@
+---
+import { currentSite } from '../data/sites.mjs';
+import { CONTACT_CONSENT, SMS_CONSENT_LABEL } from '../data/brand.mjs';
+import {
+  leadWebhook,
+  hasLeadDestination,
+  RESPONSE_EXPECTATION,
+  SUCCESS_MESSAGE,
+  FAILURE_MESSAGE,
+  GROUP_SIZE_OPTIONS,
+  OCCASION_OPTIONS,
+  BOAT_STYLE_OPTIONS,
+} from '../data/lead-capture.mjs';
+import PhoneCta from './PhoneCta.astro';
+
+/**
+ * The trip request form. One screen, three required fields.
+ *
+ * Marked data-boilerplate: it is the same interface on every site, so the
+ * duplicate-copy checker skips it. That attribute is for this form and
+ * nothing else. Never put it on prose.
+ *
+ * Works without JavaScript: the browser posts natively and the receiver
+ * answers with a redirect to /thank-you/. With JavaScript the page stays put
+ * and reports the real result. The success message only appears after the
+ * receiver has said the request was saved.
+ */
+const site = currentSite();
+const action = leadWebhook();
+const id = 'request';
+const failure = site.phone ? `${FAILURE_MESSAGE} Or call ${site.phone.display}.` : FAILURE_MESSAGE;
+---
+
+<div class="lead-form-wrap" data-boilerplate>
+  {
+    hasLeadDestination() ? (
+      <form
+        class="lead-form"
+        id={`${id}-form`}
+        method="post"
+        action={action}
+        data-success={SUCCESS_MESSAGE}
+        data-failure={failure}
+      >
+        <input type="hidden" name="market" value={site.key} />
+        <input type="hidden" name="source_site" value={site.domain} />
+        <input type="hidden" name="form_loaded_at" value="" />
+        <input type="hidden" name="redirect_to" value="/thank-you/" />
+
+        <div class="lead-form__grid">
+          <p class="field">
+            <label for={`${id}-name`}>
+              Your name <span class="req">(required)</span>
+            </label>
+            <input id={`${id}-name`} name="name" type="text" autocomplete="name" required />
+          </p>
+          <p class="field">
+            <label for={`${id}-phone`}>
+              Phone <span class="req">(required)</span>
+            </label>
+            <input id={`${id}-phone`} name="phone" type="tel" autocomplete="tel" required />
+          </p>
+          <p class="field">
+            <label for={`${id}-email`}>Email</label>
+            <input id={`${id}-email`} name="email" type="email" autocomplete="email" />
+          </p>
+          <p class="field">
+            <label for={`${id}-date`}>
+              When <span class="req">(required)</span>
+            </label>
+            <input
+              id={`${id}-date`}
+              name="trip_date"
+              type="text"
+              required
+              aria-describedby={`${id}-date-hint`}
+            />
+            <span class="hint" id={`${id}-date-hint`}>
+              A date, a weekend, or "not sure yet" all work.
+            </span>
+          </p>
+          <p class="field">
+            <label for={`${id}-group`}>How many people</label>
+            <select id={`${id}-group`} name="group_size">
+              {GROUP_SIZE_OPTIONS.map((o) => (
+                <option value={o.value}>{o.label}</option>
+              ))}
+            </select>
+          </p>
+          <p class="field">
+            <label for={`${id}-occasion`}>What is the occasion</label>
+            <select id={`${id}-occasion`} name="occasion">
+              {OCCASION_OPTIONS.map((o) => (
+                <option value={o.value}>{o.label}</option>
+              ))}
+            </select>
+          </p>
+        </div>
+
+        <fieldset class="field-group">
+          <legend>Captain or drive it yourselves</legend>
+          <div class="choices">
+            {BOAT_STYLE_OPTIONS.map((o) => (
+              <label class="choice">
+                <input type="radio" name="boat_style" value={o.value} />
+                {o.label}
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        <p class="field">
+          <label for={`${id}-notes`}>Anything else we should know</label>
+          <textarea id={`${id}-notes`} name="notes" rows="3" />
+        </p>
+
+        <p class="visually-hidden" aria-hidden="true">
+          <label for={`${id}-website`}>Leave this field empty</label>
+          <input id={`${id}-website`} name="website" type="text" tabindex="-1" autocomplete="off" />
+        </p>
+
+        <label class="choice lead-form__sms">
+          <input type="checkbox" name="sms_consent" value="yes" />
+          {SMS_CONSENT_LABEL}
+        </label>
+
+        <p class="lead-form__consent small">{CONTACT_CONSENT}</p>
+
+        <button class="btn btn--primary btn--wide" type="submit">
+          Send my request
+        </button>
+        <p class="small muted">{RESPONSE_EXPECTATION}</p>
+        <p class="lead-form__status" role="status" aria-live="polite" hidden />
+      </form>
+    ) : (
+      <div class="lead-form__closed">
+        <p>
+          Online requests for {site.marketName} are not open yet.
+          {site.phone ? ' In the meantime you can call.' : ' Check back soon.'}
+        </p>
+        {site.phone && <PhoneCta />}
+      </div>
+    )
+  }
+</div>
+
+<script>
+  /*
+   * Progressive enhancement only. Stamps the load time (a spam signal: no
+   * person fills this in under three seconds) and submits in place so the
+   * visitor sees the real outcome. Without this script the native post still
+   * works and lands on /thank-you/.
+   */
+  for (const form of document.querySelectorAll<HTMLFormElement>('form.lead-form')) {
+    const stamp = form.querySelector<HTMLInputElement>('input[name="form_loaded_at"]');
+    if (stamp) stamp.value = String(Date.now());
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const status = form.querySelector<HTMLElement>('.lead-form__status');
+      const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      const show = (message: string, bad: boolean) => {
+        if (!status) return;
+        status.textContent = message;
+        status.classList.toggle('is-bad', bad);
+        status.hidden = false;
+      };
+
+      const data = new FormData(form);
+      data.set('client', 'script');
+      data.set('page', window.location.pathname);
+      if (button) button.disabled = true;
+
+      try {
+        const response = await fetch(form.action, { method: 'POST', body: data });
+        const body = await response.json().catch(() => ({}));
+        if (response.ok && body.ok) {
+          form.reset();
+          show(form.dataset.success ?? '', false);
+          return;
+        }
+        show(form.dataset.failure ?? '', true);
+      } catch {
+        show(form.dataset.failure ?? '', true);
+      } finally {
+        if (button) button.disabled = false;
+      }
+    });
+  }
+</script>
+
+<style>
+  .lead-form__sms {
+    margin-top: var(--s5);
+  }
+
+  .lead-form__closed {
+    padding: var(--s5);
+    background: var(--surface-sunken);
+    border-radius: var(--radius);
+  }
+</style>

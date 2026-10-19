@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import Prose from '../../components/Prose.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { PUBLISHER, LEGAL_JURISDICTION, INDEPENDENCE_STATEMENT } from '../../data/brand.mjs';
+
+/*
+ * NOT REVIEWED BY AN ATTORNEY. The load-bearing part is the first section:
+ * we are a guide and a referral, not the provider of any trip, and the terms
+ * say so in plain words rather than relying on status.
+ */
+const site = currentSite();
+const us = PUBLISHER.legalName ?? site.siteName;
+---
+
+<Base title="Terms of Use" description={`The terms for using ${site.siteName}.`} path="/terms">
+  <div class="page section">
+    <h1>Terms of Use</h1>
+    <Prose>
+      <h2>What this site is</h2>
+      <p>{INDEPENDENCE_STATEMENT}</p>
+      <p>
+        Sending a request is not a booking. Nothing is reserved until an operator confirms it with
+        you directly. Your agreement for the trip, including price, deposit, cancellation, weather
+        and safety rules, is between you and that operator, and {us} is not a party to it.
+      </p>
+
+      <h2>Information on the site</h2>
+      <p>
+        We write these pages carefully and cite our sources, but prices, rules and conditions on the
+        water change. The information is general and may be out of date by the time you read it.
+        Confirm anything that matters with the operator, and follow the captain and the law on the
+        day.
+      </p>
+
+      <h2>Limits</h2>
+      <p>
+        To the extent the law allows, {us} is not responsible for any trip, boat, captain, or
+        operator, or for anything that happens on the water. If you have a problem with a trip, take
+        it up with the operator who provided it. Tell us too, because it affects whether we keep
+        sending them requests.
+      </p>
+
+      <h2>Changes</h2>
+      <p>We may update these terms. The version on this page is the one that applies.</p>
+
+      {LEGAL_JURISDICTION && (
+        <Fragment>
+          <h2>Governing law</h2>
+          <p>These terms are governed by the laws of {LEGAL_JURISDICTION}.</p>
+        </Fragment>
+      )}
+    </Prose>
+  </div>
+</Base>

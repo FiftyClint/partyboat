@@ -1,0 +1,41 @@
+---
+import { currentSite } from '../data/sites.mjs';
+
+/**
+ * Who actually provides the trip, said beside every call to action rather
+ * than buried in the terms.
+ *
+ * Before an operator has signed, it names nobody and says so. After, it shows
+ * the wording agreed with that operator. Marked data-boilerplate because it is
+ * a notice, the same on every site by design, not editorial prose.
+ */
+const site = currentSite();
+---
+
+<aside class="disclosure small" data-boilerplate>
+  {
+    site.operator ? (
+      <p>{site.operator.disclosure}</p>
+    ) : (
+      <p>
+        We are an independent guide, not a boat company. When you send a request we pass it to one
+        local operator on {site.marketName}, who confirms the boat, the price and the booking with
+        you directly.
+      </p>
+    )
+  }
+</aside>
+
+<style>
+  .disclosure {
+    margin: 0 0 var(--s5);
+    padding: var(--s3) var(--s4);
+    border-left: 4px solid var(--accent);
+    background: var(--accent-tint);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  .disclosure p {
+    margin: 0;
+  }
+</style>

@@ -1,0 +1,10 @@
+key: boston
+siteName: "Party Boat Boston"
+domain: partyboatboston.com
+aliases:
+  - boatpartyboston.com
+marketName: "Boston Harbor"
+regionName: "Massachusetts"
+timezone: America/New_York
+accent: lake
+status: pending

@@ -1,0 +1,10 @@
+key: mexico
+siteName: "Mexico Party Boat"
+domain: mexicopartyboat.com
+aliases:
+  - partyboatmexico.com
+marketName: "Mexico"
+regionName: "Mexico"
+timezone: America/Mexico_City
+accent: lake
+status: pending

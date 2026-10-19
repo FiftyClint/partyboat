@@ -1,0 +1,244 @@
+---
+import '../styles/global.css';
+import { currentSite, siteUrl } from '../data/sites.mjs';
+import { PUBLISHER, INDEPENDENCE_STATEMENT } from '../data/brand.mjs';
+import { primaryNav, footerNav } from '../lib/nav.mjs';
+import { websiteSchema, webPageSchema } from '../lib/schema.mjs';
+import { isNoindexed } from '../lib/noindex.mjs';
+
+/**
+ * The single layout for every page on every domain.
+ *
+ * Sites differ only in the three accent custom properties set on <html>.
+ * Layout, spacing and components are identical everywhere, which is what
+ * keeps a portfolio of sites maintainable by one person.
+ */
+const { title, description, path, schemas = [], noindex: forceNoindex = false } = Astro.props;
+
+const site = currentSite();
+const base = siteUrl(site);
+/* The URL this page is actually served at, which ends in a slash. */
+const withSlash = path.endsWith('/') ? path : `${path}/`;
+const canonical = `${base}${withSlash}`;
+const noindex = forceNoindex || isNoindexed(path);
+const year = new Date().getFullYear();
+
+const jsonLd = [websiteSchema(site), webPageSchema({ site, title, description, path }), ...schemas];
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html
+  lang="en"
+  style={`--accent:${site.palette.base};--accent-dark:${site.palette.dark};--accent-tint:${site.palette.tint}`}
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <link rel="preload" href="/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={site.siteName} />
+    <meta property="og:locale" content="en_US" />
+    {
+      site.images?.og && (
+        <Fragment>
+          <meta property="og:image" content={`${base}${site.images.og.src}`} />
+          <meta property="og:image:alt" content={site.images.og.alt} />
+        </Fragment>
+      )
+    }
+    <meta name="twitter:card" content={site.images?.og ? 'summary_large_image' : 'summary'} />
+    <meta name="theme-color" content={site.palette.base} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    {jsonLd.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="page site-header__inner">
+        <a class="site-header__brand" href="/">
+          <span class="wordmark">{site.siteName}</span>
+          <span class="wordmark__sub">An independent guide to {site.marketName}</span>
+        </a>
+
+        <nav aria-label="Main">
+          <ul class="site-nav">
+            {
+              primaryNav().map((item) => (
+                <li>
+                  <a href={item.href} aria-current={currentPath === item.href ? 'page' : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="page">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <span class="wordmark">{site.siteName}</span>
+            {
+              site.phone && (
+                <p class="small">
+                  <a href={`tel:${site.phone.e164}`}>{site.phone.display}</a>
+                </p>
+              )
+            }
+            {
+              PUBLISHER.email && (
+                <p class="small muted">
+                  <a href={`mailto:${PUBLISHER.email}`}>{PUBLISHER.email}</a>
+                </p>
+              )
+            }
+          </div>
+
+          <nav aria-label="Footer">
+            <ul class="site-footer__nav">
+              {
+                footerNav().map((item) => (
+                  <li>
+                    <a href={item.href}>{item.label}</a>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Required verbatim on every page. Asserted by scripts/lint-copy.mjs. Do not reword. -->
+        <p class="site-footer__legal">{INDEPENDENCE_STATEMENT}</p>
+
+        <p class="small muted">
+          Copyright {year} {PUBLISHER.legalName ?? site.siteName}. Information on this site is general
+          and changes with the season. Confirm anything that matters with the operator before you go.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .site-header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s3) var(--s5);
+    padding-block: var(--s4);
+  }
+
+  @media (max-width: 46rem) {
+    .site-header__inner {
+      gap: var(--s2) var(--s4);
+      padding-block: var(--s3);
+    }
+  }
+
+  .site-header__brand {
+    display: grid;
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .wordmark {
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--accent-dark);
+  }
+
+  .wordmark__sub {
+    font-size: 0.9375rem;
+    color: var(--ink-muted);
+  }
+
+  .site-nav,
+  .site-footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s3) var(--s5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    padding-block: var(--s2);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .site-nav a:hover,
+  .site-nav a[aria-current='page'] {
+    color: var(--accent-dark);
+    border-bottom-color: var(--accent);
+  }
+
+  .site-footer {
+    margin-top: var(--s9);
+    padding-block: var(--s7) var(--s6);
+    background: var(--surface);
+    border-top: 1px solid var(--rule);
+  }
+
+  .site-footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--s6);
+    margin-bottom: var(--s6);
+  }
+
+  .site-footer__brand p {
+    margin: var(--s3) 0 0;
+  }
+
+  .site-footer__nav {
+    gap: var(--s2) var(--s5);
+    max-width: 28rem;
+  }
+
+  .site-footer__nav a {
+    font-size: 1.0625rem;
+    color: var(--ink);
+  }
+
+  .site-footer__legal {
+    max-width: var(--measure);
+    padding-top: var(--s5);
+    border-top: 1px solid var(--rule);
+    font-size: 1rem;
+    color: var(--ink-muted);
+  }
+</style>
