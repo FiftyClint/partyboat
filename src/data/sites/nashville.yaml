@@ -364,3 +364,374 @@ watch:
   - label: U.S. Army Corps of Engineers, Percy Priest Lake
     url: https://www.lrn.usace.army.mil/Locations/Lakes/J-Percy-Priest-Lake/Rules-and-Regulations/
     kind: regulator
+
+factsChecked: "2026-10-19"
+
+glance:
+  - label: "Which lake"
+    value: "Captained lake party trips run mainly on J. Percy Priest Lake, east of the city. Old Hickory Lake, to the northeast, is the second lake option."
+    source:
+      label: Wild Rides NASH, lakes served
+      url: https://wildridesnash.com/
+      accessed: "2026-10-19"
+  - label: "Season"
+    value: "Peak runs Memorial Day to Labor Day. Shoulder season is April to May and late September to October."
+    source:
+      label: Rowdy Boats, Nashville party boat roundup, June 2026
+      url: https://rowdyboats.net/best-party-boats-pontoon-rentals-in-nashville-june-2026/
+      accessed: "2026-10-19"
+  - label: "Book ahead"
+    value: "4 to 8 weeks for a peak summer date. 1 to 2 weeks for weekdays and shoulder season."
+    source:
+      label: Rowdy Boats, Nashville party boat roundup, June 2026
+      url: https://rowdyboats.net/best-party-boats-pontoon-rentals-in-nashville-june-2026/
+      accessed: "2026-10-19"
+  - label: "Typical price, captained lake boat"
+    value: "$250 to $500 an hour for the whole boat, with 3 hours as the standard cruise, as published on October 19, 2026."
+    source:
+      label: Rowdy Boats, hourly rates
+      url: https://rowdyboats.net/
+      accessed: "2026-10-19"
+  - label: "Group size"
+    value: "12 to 22 guests per captained lake slide boat, depending on which boat, in one operator's published list."
+    source:
+      label: Rowdy Boats, fleet and capacities
+      url: https://rowdyboats.net/party-boat-fleet-3/
+      accessed: "2026-10-19"
+  - label: "Getting there from downtown"
+    value: "About 15 minutes by shuttle from one operator's downtown check-in. Plan 4 to 5 hours in all, transport included, and check in 60 minutes early."
+    source:
+      label: Nashville Toons, downtown check-in and timing
+      url: https://nashvilletoons.com/bach-parties
+      accessed: "2026-10-19"
+  - label: "Drink rules, one lake operator"
+    value: "Bring your own, with no liquor, no glass and nothing over 8% ABV. If anyone aboard is under 21, the cruise must be dry."
+    source:
+      label: Wild Rides NASH, drink and age rules
+      url: https://wildridesnash.com/
+      accessed: "2026-10-19"
+
+questions:
+  - slug: nashville-bachelorette-party-boat
+    question: "Which kind of party boat should a Nashville bachelorette group choose?"
+    answer: >-
+      The classic Nashville bachelorette boat is a captained double-decker pontoon with a slide on
+      Percy Priest Lake. A captain drives, the bride's crew brings drinks in cans or plastic, and
+      some operators shuttle everyone out from a downtown check-in. Groups short on time can pick
+      a two-hour cruise on the Cumberland River downtown instead.
+    detail: >-
+      The lake boats are the classic pick. As of October 2026, one Percy Priest company listed a
+      30-foot triple slide boat for up to 22 guests, a 25-foot boat for up to 12, and two slide
+      tritoons for up to 16 each. A bachelorette-focused company listed double-deckers for up to 14
+      and single-level boats for up to 8. A standard lake cruise runs three hours on the water.
+
+      Plan the day around the drive. One company checks groups in downtown, then rides about 15
+      minutes out to the lake and about 45 minutes back after the cruise. Its whole outing takes four
+      to five hours with transport, and it asks guests to arrive 60 minutes early. Plan for the
+      boat to take most of an afternoon, with dinner and Broadway after.
+
+      If the group would rather stay in town, the river has two formats. A 50-foot party barge runs
+      two-hour cruises with its own bar and no outside drinks, as public tickets or as private trips
+      for up to 45. A pedal pontoon lets up to 16 guests bring their own drinks. Tiki boats carry six
+      passengers each and run in tandem for groups of up to 18.
+
+      Before anyone pays a deposit, tell the operator if any guest is under 21, since that can change
+      the drink policy, and ask to see the captain's license.
+    sources:
+      - label: Rowdy Boats, fleet and capacities
+        url: https://rowdyboats.net/party-boat-fleet-3/
+        accessed: "2026-10-19"
+      - label: Nashville Toons, bachelorette trips and timing
+        url: https://nashvilletoons.com/bach-parties
+        accessed: "2026-10-19"
+      - label: Pontoon Saloon, downtown barge
+        url: https://pontoonsaloontn.com/
+        accessed: "2026-10-19"
+      - label: River Queen Voyages, pedal pontoon
+        url: https://riverqueenvoyages.com/
+        accessed: "2026-10-19"
+      - label: Cruisin' Tikis Nashville, tiki boats
+        url: https://cruisintikis.com/nashville/
+        accessed: "2026-10-19"
+
+  - slug: nashville-party-boat-cost
+    question: "How much does a party boat cost in Nashville?"
+    answer: >-
+      As published on October 19, 2026, a captained party boat on Percy Priest Lake near Nashville
+      costs about $250 to $500 an hour for the whole boat, usually for three hours. Private lake trips
+      for up to 16 started at $495 on weekdays and $695 on weekends. Tiki boats started at $75 a
+      person.
+    detail: >-
+      These are published starting prices and ranges, not quotes. The figure you pay depends on the
+      boat, the day of the week, the number of hours, and the extras below.
+      Captained lake boats. One Percy Priest company priced its slide boats at $250 to $500 an hour
+      for the whole boat, with a three-hour cruise as standard. A second lake company listed weekday
+      private charters for up to 16 guests from $495, weekend charters from $695, and single seats on
+      shared trips from $49 each.
+
+      Tiki boats. A public tiki cruise of 90 minutes started at $75 a person. A private three-hour
+      trip to the party cove started at $525.
+      Self-drive pontoons. On Old Hickory Lake, one rental company charged $350 to $725 a day,
+      depending on the boat and the day. You drive, so the boater education rules apply.
+
+      Extras to count. Shuttles vary the most. One lake company includes transport from downtown both
+      ways at no charge, while another charges $295 within 20 miles. Lake captains also ask guests to
+      bring tip money, without naming a percentage. Add those to the boat price before comparing two
+      quotes side by side.
+    sources:
+      - label: Rowdy Boats, hourly rates and tipping
+        url: https://rowdyboats.net/
+        accessed: "2026-10-19"
+      - label: Wild Rides NASH, private and shared rates, shuttle fee
+        url: https://wildridesnash.com/
+        accessed: "2026-10-19"
+      - label: Cruisin' Tikis Nashville, public and private rates
+        url: https://cruisintikis.com/nashville/
+        accessed: "2026-10-19"
+      - label: Nashville Toons, free shuttle
+        url: https://nashvilletoons.com/
+        accessed: "2026-10-19"
+      - label: Sweetwater Pontoon Rentals, daily rates
+        url: https://sweetwaterpontoonrentals.com/
+        accessed: "2026-10-19"
+
+  - slug: percy-priest-lake-vs-cumberland-river-cruise
+    question: "Should we do Percy Priest Lake or a Cumberland River cruise in downtown Nashville?"
+    answer: >-
+      Pick Percy Priest Lake if your Nashville group wants a long afternoon of sun, swimming and a
+      slide on a captained pontoon, with a drive or shuttle out of town. Pick a Cumberland River
+      cruise if you want 90 minutes to two hours past the downtown skyline, often with a bar aboard,
+      and no trip out of the city.
+    detail: >-
+      The lake trip is a bigger commitment. Captained boats on Percy Priest usually run three hours
+      on the water, and the ride out and back adds more. Guests bring their own drinks in cans or
+      plastic, and a captain can head for the party cove or a quieter part of the lake. One lake
+      company meets groups at the Vivrett Creek public ramp in Mt. Juliet, about 20 minutes from
+      downtown.
+
+      The river trip is shorter and closer. One downtown barge sails from Riverfront Dock East at 2
+      Victory Avenue and from Lock One Marina. It sells drinks on board for $5 to $10 and allows no
+      outside beverages. Public tickets cover groups of 1 to 16, and private charters take up to 45.
+      A pedal pontoon meets at Wasioto Park beside Nissan Stadium, lets guests bring their own drinks,
+      and runs from about March to about November.
+
+      A simple rule of thumb: if the boat is the main event of the weekend, go to the lake. If it is
+      one stop between brunch and a night on Broadway, stay on the river. Either way, confirm the
+      exact dock in writing, because river cruises use more than one landing.
+    sources:
+      - label: Rowdy Boats, lake trips and distance from downtown
+        url: https://rowdyboats.net/
+        accessed: "2026-10-19"
+      - label: Rowdy Boats, Vivrett Creek ramp
+        url: https://rowdyboats.net/party-boat-fleet-3/
+        accessed: "2026-10-19"
+      - label: Pontoon Saloon, docks, drinks and group sizes
+        url: https://pontoonsaloontn.com/
+        accessed: "2026-10-19"
+      - label: River Queen Voyages, Wasioto Park and season
+        url: https://riverqueenvoyages.com/
+        accessed: "2026-10-19"
+
+  - slug: downtown-nashville-to-percy-priest-lake
+    question: "How do we get from downtown Nashville to a party boat on Percy Priest Lake?"
+    answer: >-
+      From downtown Nashville, groups reach Percy Priest Lake by an operator shuttle or by driving to
+      the dock. One lake operator checks guests in downtown and drives them about 15 minutes to the
+      lake. Another meets groups at the Vivrett Creek public ramp in Mt. Juliet, roughly 20 minutes
+      from downtown.
+    detail: >-
+      No lake party boat leaves from downtown itself, so transport is part of the plan. There are
+      three common setups.
+      Included shuttle. One bachelorette-focused company checks groups in downtown, then drives them
+      to the lake at no extra charge. The ride out is about 15 minutes, the return about 45 minutes
+      after the cruise, and the full outing four to five hours. It asks guests to arrive an hour
+      before departure.
+
+      Paid shuttle. Another lake company charges $295 for pickup within 20 miles and says the outing
+      then takes five to six hours door to door. A third offers an optional shuttle but does not list
+      the price, so ask for it in the quote.
+
+      Driving yourselves. One company runs every pickup and drop-off from the Vivrett Creek Public
+      Boat Ramp at 5598 Alvin Sperry Road in Mt. Juliet. Parking there is public and first come,
+      first served, so arrive early on a summer weekend. If anyone plans to drink, settle on a driver
+      or a ride home before the day starts.
+      Whichever you choose, ask the operator for the exact meeting point and the total hours from
+      pickup to return, then build dinner plans around that number.
+    sources:
+      - label: Nashville Toons, downtown check-in and timing
+        url: https://nashvilletoons.com/bach-parties
+        accessed: "2026-10-19"
+      - label: Nashville Toons, free shuttle
+        url: https://nashvilletoons.com/
+        accessed: "2026-10-19"
+      - label: Wild Rides NASH, shuttle fee and timing
+        url: https://wildridesnash.com/
+        accessed: "2026-10-19"
+      - label: Rowdy Boats, Vivrett Creek pickup and parking
+        url: https://rowdyboats.net/party-boat-fleet-3/
+        accessed: "2026-10-19"
+      - label: Rowdy Boats, distance from downtown and shuttle
+        url: https://rowdyboats.net/
+        accessed: "2026-10-19"
+
+  - slug: percy-priest-lake-party-cove
+    question: "Is there a party cove on Percy Priest Lake near Nashville?"
+    answer: >-
+      Yes. Percy Priest Lake near Nashville has an area known as Party Cove, where boats gather
+      in summer and form a floating party. Captained party boats can take a group there or
+      to a calmer side of the lake instead. No official page publishes its exact location, and at
+      least one self-drive rental company keeps its boats away.
+    detail: >-
+      Party Cove is a summer gathering spot, not a marina or a park, so the easiest way to see it is
+      on a captained boat. One Percy Priest slide boat company describes it as the place boats collect
+      in summer and lets each group decide whether to go or to stay on the quieter side. A tiki boat
+      company sells a private Party Cove trip of three hours, starting at $525 as of October 2026.
+
+      If you plan to rent a pontoon and drive it yourself, check the rental terms first. One rental
+      company at the Nashville Shores marina does not permit its boats at Party Cove at all.
+
+      Two safety points are worth knowing. The Army Corps of Engineers, which manages the lake, limits
+      swimming to designated areas, so ask the captain where the group can get in the water. And
+      Tennessee wildlife officers step up boating under the influence patrols around the Fourth of
+      July, which is one more reason to leave the driving to a sober captain.
+
+      Ask the operator how long the boat usually stays at the cove and what the plan is if the group
+      wants to leave early.
+    sources:
+      - label: Rowdy Boats, Party Cove
+        url: https://rowdyboats.net/
+        accessed: "2026-10-19"
+      - label: Cruisin' Tikis Nashville, Party Cove excursion
+        url: https://cruisintikis.com/nashville/
+        accessed: "2026-10-19"
+      - label: Nashville Boat Rentals, Party Cove restriction
+        url: https://nashvilleshores.com/?p=783
+        accessed: "2026-10-19"
+      - label: U.S. Army Corps of Engineers, Percy Priest Lake water safety
+        url: https://www.lrn.usace.army.mil/Locations/Lakes/J-Percy-Priest-Lake/Water-Safety/
+        accessed: "2026-10-19"
+      - label: Tennessee Wildlife Resources Agency, Operation Dry Water 2026
+        url: https://www.tn.gov/twra/news/2026/6/25/2026-operation-dry-water-set-for-july-4th-holiday-period.html
+        accessed: "2026-10-19"
+
+  - slug: nashville-party-boat-under-21
+    question: "Can guests under 21 come on a Nashville party boat?"
+    answer: >-
+      Yes, guests under 21 can join many Nashville party boats, but the drink policy changes. Some
+      operators let guests 21 and over drink with ID and mark the younger guests. Others run the whole
+      cruise dry when anyone aboard is under 21, or ask for a parent on the trip. Tell the operator
+      before you book.
+    detail: >-
+      Each operator sets its own policy, and the three lake companies checked for this site handle it
+      three ways. One Percy Priest slide boat company lets the group bring its own drinks, in plastic with no
+      glass. Guests must be 21 or older with ID to drink, and guests under 21 are marked with an X so
+      the crew can tell them apart.
+
+      A bachelorette-focused company says that if alcohol is on board, the whole group must be 21 or
+      older, and guests under 21 need a parent on the tour.
+      A third company allows bring your own drinks but bans liquor, glass and anything over 8% ABV,
+      and requires photo ID when alcohol is aboard. If anyone in the group is under 21, the cruise
+      must be alcohol free.
+
+      For a mixed-age group, the practical move is to give the operator every guest's age range in the
+      first message. That lets them match you to a policy that works before you pay anything.
+
+      Children have one extra rule. Tennessee requires anyone 12 and younger to wear a life jacket on
+      the open deck while the boat is underway. If you rent and drive a pontoon yourself instead, at
+      least one rental company requires the operator to be 21 with a driver's license.
+    sources:
+      - label: Rowdy Boats, drink and ID rules
+        url: https://rowdyboats.net/party-boat-fleet-3/
+        accessed: "2026-10-19"
+      - label: Nashville Toons, age and alcohol policy
+        url: https://nashvilletoons.com/bach-parties
+        accessed: "2026-10-19"
+      - label: Wild Rides NASH, drink and age rules
+        url: https://wildridesnash.com/
+        accessed: "2026-10-19"
+      - label: Tennessee Wildlife Resources Agency, boating regulations
+        url: https://www.tn.gov/twra/boating/regulations-and-safety-concerns.html
+        accessed: "2026-10-19"
+      - label: Nashville Boat Rentals, renter age
+        url: https://nashvilleshores.com/?p=783
+        accessed: "2026-10-19"
+
+  - slug: how-far-ahead-book-nashville-party-boat-summer
+    question: "How far ahead should we book a Nashville party boat for a summer weekend?"
+    answer: >-
+      Ask for a Nashville party boat four to eight weeks ahead for a summer weekend. One Percy Priest
+      operator gives that window for Memorial Day through Labor Day. For weekdays and the shoulder
+      months of April, May, late September and October, the same operator says one to two weeks is
+      usually enough.
+    detail: >-
+      Peak dates need the most notice, and the earlier your date is set, the more choice of boat you have. A
+      bachelorette-focused lake company says groups fill its season and advises booking early. A
+      marina that rents self-drive pontoons on Percy Priest names May through September as its peak
+      and suggests booking one to two weeks out, especially for weekends.
+
+      Holiday weekends deserve extra lead time. The Fourth of July is also when Tennessee wildlife
+      officers run heightened boating under the influence enforcement, so expect closer
+      enforcement on the water.
+
+      If your dates are flexible, the edges of the season can work in your favor. A downtown pedal
+      boat runs from about March to about November, and one rental company on Percy Priest offers fall
+      discounts after Labor Day.
+
+      To move fast once you have a date, send the day, a backup day, the head count, lake or river,
+      and whether anyone is under 21. Those are the details an operator needs to quote a boat. Read
+      the cancellation terms before you pay a deposit, since at least two local companies refund in full
+      only three weeks or more ahead.
+    sources:
+      - label: Rowdy Boats, Nashville party boat roundup, June 2026
+        url: https://rowdyboats.net/best-party-boats-pontoon-rentals-in-nashville-june-2026/
+        accessed: "2026-10-19"
+      - label: Sun Life Elm Hill Marina, season and booking
+        url: https://sunlifeelmhill.com/boat-rentals/
+        accessed: "2026-10-19"
+      - label: Nashville Toons, book early
+        url: https://nashvilletoons.com/bach-parties
+        accessed: "2026-10-19"
+      - label: River Queen Voyages, season
+        url: https://riverqueenvoyages.com/
+        accessed: "2026-10-19"
+      - label: Nashville Boat Rentals, fall discount
+        url: https://nashvilleshores.com/?p=783
+        accessed: "2026-10-19"
+
+  - slug: nashville-party-boat-cancellation-policy
+    question: "What are the cancellation and weather refund rules for Nashville party boats?"
+    answer: >-
+      Nashville party boat cancellation terms are strict as of October 2026. Two captained companies
+      refund in full only at 21 or more days out, offer a new date or gift card at 8 to 20
+      days, and keep the payment inside 7 days. A captain's weather call often brings a gift card or
+      a new date instead of cash.
+    detail: >-
+      Here is how the published terms compare, as read on October 19, 2026.
+      A captained lake company gives a 100% refund at 21 days or more, a reschedule or gift card from
+      8 to 20 days, and no refund inside 7 days. A weather cancellation gets a gift card for the full
+      amount. Its own FAQ also says bookings within three weeks are non-refundable, which conflicts
+      with those tiers, so get the terms that apply to your trip in writing.
+
+      A tiki boat company uses the same 21, 8 and 7 day tiers. Its boats run rain or shine, and if
+      the captain cancels for severe weather, the group gets a refund or a gift card.
+
+      Self-drive rentals work differently. One marina on Percy Priest refunds the full deposit when
+      you cancel 48 hours or more ahead. Another rental company gives no refunds for weather at all
+      and offers a credit toward a future date instead.
+
+      Two habits protect you. Ask who decides that weather is bad enough to cancel, and when that call
+      gets made. And if your group is traveling in for the weekend, choose a date with a backup day
+      that still works for most people.
+    sources:
+      - label: Wild Rides NASH, cancellation and weather policy
+        url: https://wildridesnash.com/
+        accessed: "2026-10-19"
+      - label: Cruisin' Tikis Nashville, cancellation and weather policy
+        url: https://cruisintikis.com/nashville/
+        accessed: "2026-10-19"
+      - label: Sun Life Elm Hill Marina, deposit refund
+        url: https://sunlifeelmhill.com/boat-rentals/
+        accessed: "2026-10-19"
+      - label: Nashville Boat Rentals, weather policy
+        url: https://nashvilleshores.com/?p=783
+        accessed: "2026-10-19"
