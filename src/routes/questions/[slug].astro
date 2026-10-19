@@ -57,7 +57,7 @@ const others = site.questions.filter((other) => other.slug !== q.slug);
       <Button href="/#request">Request a party boat on {site.marketName}</Button>
     </div>
 
-    <section class="more">
+    <nav class="more" aria-label={`More answers about ${site.marketName}`}>
       <h2>More answers about {site.marketName}</h2>
       <ul>
         {others.map((o) => (
@@ -66,7 +66,7 @@ const others = site.questions.filter((other) => other.slug !== q.slug);
           </li>
         ))}
       </ul>
-    </section>
+    </nav>
   </div>
 </Base>
 

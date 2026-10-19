@@ -369,7 +369,7 @@ factsChecked: "2026-10-19"
 
 glance:
   - label: "Which lake"
-    value: "Captained lake party trips run mainly on J. Percy Priest Lake, east of the city. Old Hickory Lake, to the northeast, is the second lake option."
+    value: "Captained lake party trips run mainly on J. Percy Priest Lake. Old Hickory Lake is a second lake option, and the Cumberland River carries short downtown cruises."
     source:
       label: Wild Rides NASH, lakes served
       url: https://wildridesnash.com/

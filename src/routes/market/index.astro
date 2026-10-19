@@ -137,6 +137,7 @@ const site = currentSite();
   <section class="section section--tint">
     <div class="page">
       <h2>Answers for planning a {site.marketName} party boat</h2>
+      <nav aria-label={`Answers about ${site.marketName}`}>
       <ul class="answers">
         {
           site.questions.map((q) => (
@@ -146,6 +147,7 @@ const site = currentSite();
           ))
         }
       </ul>
+      </nav>
     </div>
   </section>
 

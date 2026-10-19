@@ -397,3 +397,378 @@ watch:
   - label: KY3, local news
     url: https://ky3.com/
     kind: news
+
+factsChecked: "2026-10-19"
+
+glance:
+  - label: Season
+    value: >-
+      Heaviest boating is May through August. In 2024, 79.7 percent of Missouri boating crashes happened in
+      those four months, and July had the most.
+    source:
+      label: Missouri State Highway Patrol, Missouri Boating Statistics and Drownings, 2025 edition
+      url: https://www.mshp.dps.missouri.gov/MSHPWeb/SAC/pdf/2025BoatingAndDrowningStats.pdf
+      accessed: "2026-10-19"
+  - label: Typical price, self-drive
+    value: >-
+      $329 to $459 for 3 hours, $479 to $699 for 6 and $539 to $749 for 8, tritoon to premium slide
+      boat, at one Branson-side marina, published October 19, 2026. The page may be dated, so confirm.
+    source:
+      label: Chateau on the Lake Marina, rental rates
+      url: https://www.chateaumarina.com/rental.html
+      accessed: "2026-10-19"
+  - label: Typical price, captained
+    value: >-
+      From about $300 for 2 hours for up to 6 guests, plus $100 per extra hour, with boat, fuel and
+      taxes included, as of October 2026.
+    source:
+      label: Captain Jake's Lake Adventures, charter rates
+      url: https://tablerocklakecaptain.com/
+      accessed: "2026-10-19"
+  - label: Slide boat group size
+    value: >-
+      14 to 18 passengers on the state park marina's double-deck slide boats. The 30-foot model has
+      two decks and dual slides and holds 18.
+    source:
+      label: State Park Marina, boat rentals and Big Kahuna
+      url: https://www.stateparkmarina.com/boat-rentals
+      accessed: "2026-10-19"
+  - label: Boater card
+    value: >-
+      Needed in Missouri if you were born from January 2, 1984 through December 31, 2005. Starting
+      January 1, 2027, anyone born on or after January 1, 2006 needs one too.
+    source:
+      label: Missouri Revisor of Statutes, RSMo 306.127, boater identification card
+      url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+      accessed: "2026-10-19"
+  - label: Renter age, state park marina
+    value: >-
+      21 and older, and no first-time drivers.
+    source:
+      label: State Park Marina, rental rules
+      url: https://www.stateparkmarina.com/boat-rentals
+      accessed: "2026-10-19"
+  - label: Book ahead
+    value: >-
+      The state park marina reserves 6-hour, 8-hour and all-day rentals online. Its 3-hour rentals
+      are walk-in only.
+    source:
+      label: State Park Marina, reservations
+      url: https://www.stateparkmarina.com/boat-rentals
+      accessed: "2026-10-19"
+
+questions:
+  - slug: how-much-does-a-party-boat-rental-cost-on-table-rock-lake
+    question: How much does it cost to rent a party boat or slide boat on Table Rock Lake?
+    answer: >-
+      On Table Rock Lake, a self-drive tritoon or double-deck slide boat ran about $329 to $459 for
+      three hours and $479 to $699 for six hours at one Branson-side marina, as published on October
+      19, 2026. Eight hours ran about $539 to $749. Gas, tax and a deposit hold can add to that.
+    detail: >-
+      Those figures come from a single rate sheet that climbs from a basic tritoon at the low end to
+      a premium slide boat at the top. That page still carried wording from the pandemic years, so
+      check the number before you plan around it. Many marinas on the lake post no rates at all and
+      quote through a booking system or over the phone.
+
+      Other published rates land in a similar band. A west-end marina listed a 25-foot tritoon at
+      $549 for six hours and $649 for eight. A central-lake rental company listed 22-hour rates from
+      $565 to $765, running from 11 AM to 9 AM the next morning, with its slide tri-toon at the top
+      of that spread.
+
+      Longer trips cost less per day. The state park marina takes 10, 15 or 20 percent off its
+      all-day rate for two, three, or four or more days in a row. The west-end marina listed two
+      days at $1,249 and seven days at $3,849.
+
+      Expect fuel and sales tax on top of most posted rates, plus a card hold for the deposit. Before
+      you settle on a boat, ask the operator for one total that covers fuel, tax and any waiver.
+    sources:
+      - label: Chateau on the Lake Marina, rental rates
+        url: https://www.chateaumarina.com/rental.html
+        accessed: "2026-10-19"
+      - label: Campbell Point Marina, rates
+        url: https://www.campbellpointmarina.com/rentals/boat-rentals/
+        accessed: "2026-10-19"
+      - label: Table Rock Lake Pontoon Rentals, rates
+        url: https://pontoonrentals.com/boat-rentals/
+        accessed: "2026-10-19"
+      - label: State Park Marina, multi-day discounts and fuel
+        url: https://www.stateparkmarina.com/boat-rentals
+        accessed: "2026-10-19"
+
+  - slug: how-to-get-a-temporary-boater-card-at-table-rock-lake
+    question: Can I get a temporary boater card at a Table Rock Lake marina if I do not have one?
+    answer: >-
+      Yes, on the Missouri side of Table Rock Lake. State law lets a rental business issue a one-time
+      temporary boating safety card for $9, good for up to seven days. You need a valid driver's
+      license and must sign a statement that you reviewed the Highway Patrol boating handbook. You
+      can use this option only once in your life.
+    detail: >-
+      Missouri requires a boating safety identification card on board for drivers born after January
+      1, 1984 and before January 1, 2006 when they run a boat on the state's lakes. Starting January
+      1, 2027, the rule reaches anyone born on or after January 1, 2006, on all state waters. The
+      temporary card covers a renter who falls in one of those groups and has never taken the course.
+
+      Two resort marinas at Ridgedale, south of Branson, say they offer the $9 card for seven days,
+      once per lifetime, and ask for a driver's license and a credit card. The state park marina
+      points renters to a one-time temporary permit they can get online. Sort it out before the day
+      of the trip so the whole group is not waiting at the counter.
+
+      You may not need it. The law exempts nonresidents who carry a NASBLA-approved card from their
+      home state, holders of a Coast Guard master's license, and active military members and their
+      spouses. If you took a boating course back home, bring that card.
+
+      All of this is Missouri law. Part of Table Rock lies in Arkansas, so if your marina is on that
+      side, ask the staff which rule applies there.
+    sources:
+      - label: Missouri Revisor of Statutes, RSMo 306.127, boater identification card
+        url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+        accessed: "2026-10-19"
+      - label: Missouri State Highway Patrol, boater education law FAQs
+        url: https://apps.mshp.dps.mo.gov/MSHPWeb/WaterPatrol/BoatingLaws_Education/boaterEduLawFAQ.html
+        accessed: "2026-10-19"
+      - label: Big Cedar Lodge, Long Creek Marina, temporary card
+        url: https://bigcedar.com/long-creek-marina/
+        accessed: "2026-10-19"
+      - label: State Park Marina, temporary permit
+        url: https://www.stateparkmarina.com/boat-rentals
+        accessed: "2026-10-19"
+      - label: Wikipedia, Table Rock Lake
+        url: https://en.wikipedia.org/wiki/Table_Rock_Lake
+        accessed: "2026-10-19"
+
+  - slug: how-much-does-a-boat-captain-cost-on-table-rock-lake
+    question: How much does it cost to hire a boat captain on Table Rock Lake?
+    answer: >-
+      On Table Rock Lake, a private captained charter for up to six people started around $300 for
+      two hours, plus $100 for each extra hour, and that price covered the boat, fuel and taxes, as
+      of October 2026. Hiring a captain alone to drive a boat you rented ran about $60 to $100 an hour.
+    detail: >-
+      There are two ways to have someone else drive. In a charter, the captain brings the boat. With
+      a captain for hire, the captain drives a boat you rented from a marina. The first is simpler to
+      arrange. The second is how a group gets a slide boat without anyone in the group at the wheel.
+
+      Published on October 19, 2026, one charter captain listed $300 for two hours for up to six
+      guests and $100 an hour after that, covering the captain, boat, fuel, taxes, safety gear and
+      insurance. A resort marina south of Branson offered a captain package built on a $100 an hour
+      captain's fee, with a two-hour minimum and room for six.
+
+      Captain-for-hire rates ran $60 an hour at one company, or $80 on federal holidays, with a $50
+      non-refundable booking fee. Food, drinks, the boat and fuel were not part of that rate. Another
+      captain listed $100 an hour with a four-hour minimum.
+
+      Federal rules generally cap paying passengers at six on a boat that has not been through a
+      Coast Guard inspection. Ask to see the captain's license before anyone steps aboard, and if the
+      group is larger than six, ask exactly how the trip is set up.
+    sources:
+      - label: Captain Jake's Lake Adventures, charter and captain rates
+        url: https://tablerocklakecaptain.com/
+        accessed: "2026-10-19"
+      - label: Bearded Boat Captain, captain rates
+        url: https://beardedboatcaptain.com/
+        accessed: "2026-10-19"
+      - label: Big Cedar Lodge, Boat Captain Inquiry
+        url: https://bigcedar.com/activity/boat-captain-inquiry/
+        accessed: "2026-10-19"
+      - label: U.S. Coast Guard, Passenger for Hire and Charter Vessel Operations (pamphlet)
+        url: https://wow.uscgaux.info/Uploads_wowII/P-DEPT/PaxForHire_trifold_3.pdf
+        accessed: "2026-10-19"
+
+  - slug: what-fees-are-extra-on-a-table-rock-lake-boat-rental
+    question: What costs are not included in the price of a Table Rock Lake boat rental?
+    answer: >-
+      On Table Rock Lake, gas and sales tax are usually extra on a self-drive rental, and marinas
+      often hold a security deposit on a card. Some sell an optional damage waiver, and tubes, skis
+      or boards can cost more. At least one marina prices as advertised with no tax added.
+    detail: >-
+      Fuel is the main add-on. As of October 2026, the state park marina, a west-end marina and a
+      Kimberling City marina all said gas was not part of the posted rate, and the last two also
+      listed tax as additional. Plan on a fuel charge when the boat comes back.
+
+      Deposits come next. The state park marina holds $500 on a credit card you present in person,
+      and it takes a card when you reserve that it can charge if you never show. Other companies on
+      the lake ask for a deposit but do not post the amount.
+
+      Waivers and toys vary by marina. The Kimberling City marina sold an optional $44
+      non-refundable damage waiver. The west-end marina offered optional liability coverage, or
+      liability plus damage coverage with a $250 deductible. On the James River arm, one marina adds
+      $30 to a rental for tubes, skis or boards, and it says its prices include tax.
+
+      On a captained trip, one captain added 10 percent for cards or checks processed online and said
+      a tip is never required. Whichever route you take, ask for a figure that includes fuel, tax,
+      the deposit hold and every add-on before you commit.
+    sources:
+      - label: State Park Marina, deposit and fuel
+        url: https://www.stateparkmarina.com/boat-rentals
+        accessed: "2026-10-19"
+      - label: Port of Kimberling Marina, rentals and damage waiver
+        url: https://portofkimberlingmarina.com/rentals/
+        accessed: "2026-10-19"
+      - label: Campbell Point Marina, gas, tax and waiver options
+        url: https://www.campbellpointmarina.com/rentals/boat-rentals/
+        accessed: "2026-10-19"
+      - label: Cape Fair Marina, pricing and extras
+        url: https://capefairmarina.com/table-rock-lake-boat-rentals/
+        accessed: "2026-10-19"
+      - label: Captain Jake's Lake Adventures, payment and gratuity
+        url: https://tablerocklakecaptain.com/
+        accessed: "2026-10-19"
+
+  - slug: what-happens-to-a-table-rock-lake-boat-rental-in-bad-weather
+    question: What happens to my Table Rock Lake boat rental if the weather turns bad or I need to cancel?
+    answer: >-
+      On Table Rock Lake, marinas cancel rentals for unsafe weather and offer a new date or a refund,
+      while light rain usually does not stop a trip. If you cancel yourself, notice periods published
+      as of October 2026 ran from 24 to 72 hours, and one marina charges half the rental for a late
+      cancellation.
+    detail: >-
+      The marina or the captain makes the weather call. A Branson-side marina says unsafe weather
+      means a reschedule or a refund under its rental agreement, and that light rain typically does
+      not cancel. A west-end marina may cancel for bad weather and offers a new date or a full
+      refund. One charter captain decides on conditions and refunds 100 percent of a prepaid trip
+      when no other date works.
+
+      Your own cancellation window depends on the company. The state park marina wants 72 hours or
+      charges a no-show fee of half the rental rate. The west-end marina refunds in full with 48
+      hours notice on 6-hour, 8-hour and 24-hour rentals, and asks for 5 days on rentals of two days
+      or longer. The charter captain asks for 24 hours. That same west-end marina also charges $50
+      for every 30 minutes a boat comes back late.
+
+      Weather on this lake deserves respect. In July 2018 a tour boat sank on Table Rock during a
+      severe storm and 17 people died. If an operator calls off your day, take the new date and plan
+      something on land.
+    sources:
+      - label: Rock Lane Resort and Marina, weather policy
+        url: https://rocklane.com/marina/boat-rentals/
+        accessed: "2026-10-19"
+      - label: Campbell Point Marina, cancellation and late fees
+        url: https://www.campbellpointmarina.com/rentals/boat-rentals/
+        accessed: "2026-10-19"
+      - label: State Park Marina, cancellation
+        url: https://www.stateparkmarina.com/boat-rentals
+        accessed: "2026-10-19"
+      - label: Captain Jake's Lake Adventures, weather and cancellation
+        url: https://tablerocklakecaptain.com/
+        accessed: "2026-10-19"
+      - label: KSHB, Coast Guard document on the 2018 duck boat sinking
+        url: https://www.kshb.com/news/state/missouri/coast-guard-document-tourist-boat-violated-inspection-terms
+        accessed: "2026-10-19"
+
+  - slug: where-to-anchor-and-swim-on-table-rock-lake
+    question: Where are good coves to anchor a boat and swim on Table Rock Lake?
+    answer: >-
+      On Table Rock Lake, Cow Creek on Point 6, between Table Rock State Park and the Port of
+      Kimberling, is a deep, lightly developed cove that boaters use for swimming and as a meeting
+      spot. The bluffs near Old 86 Campground are another known stop. Most groups simply pick a
+      quiet cove, anchor and float.
+    detail: >-
+      Table Rock has no single big raft-up. The lake has roughly 745 miles of shoreline, and a usual
+      day on the water means choosing a cove, setting the anchor and getting in. An August 2018
+      roundup in 417 Magazine named a few spots that locals like.
+
+      Cow Creek, off Point 6, sits mid-lake between the state park and the Kimberling City side. The
+      water runs deep enough to swim, there is little building on shore, and boaters use it to meet
+      friends on other boats. It suits a group that wants to tie up near people they know.
+
+      The bluffs near Old 86 Campground are known for their cliffs. Some visitors jump from them,
+      but one local captain treats swimming and jumping as entirely at the guest's own risk, and this
+      guide does not suggest it. Swim off the boat instead, and keep anyone who has had a drink off
+      the rocks.
+
+      If you hire a captain or rent from a marina, ask where they like to anchor for your group and
+      the day's wind. Missouri requires children under seven to wear a life jacket on board, so pack
+      the right sizes.
+    sources:
+      - label: 417 Magazine, best coves in Southwest Missouri, August 2018
+        url: https://417mag.com/issues/august-2018/5-best-coves-southwest-mo
+        accessed: "2026-10-19"
+      - label: Wikipedia, Table Rock Lake
+        url: https://en.wikipedia.org/wiki/Table_Rock_Lake
+        accessed: "2026-10-19"
+      - label: Captain Jake's Lake Adventures, swimming and cliff jumping at own risk
+        url: https://tablerocklakecaptain.com/
+        accessed: "2026-10-19"
+      - label: Missouri State Highway Patrol, children under seven life jacket rule
+        url: https://notes.mshp.dps.mo.gov/si01/si01p001.nsf/035631d21d12b3ca8625729800536894/e82c47d60a4de9ea86257e38007370c1
+        accessed: "2026-10-19"
+
+  - slug: how-many-people-fit-on-a-party-boat-on-table-rock-lake
+    question: How many people can fit on a party boat or slide boat on Table Rock Lake?
+    answer: >-
+      On Table Rock Lake, a self-drive tritoon usually holds 10 to 15 people and a double-deck slide
+      boat 14 to 18, based on marina listings checked in October 2026. Paid captained trips on an
+      uninspected boat are generally capped at six guests. For a bigger group, a sailing
+      catamaran takes private charters for up to 49.
+    detail: >-
+      Tritoons are the everyday rental here. Listings on October 19, 2026 ran from 10 passengers on
+      a 25-foot tritoon at a west-end marina to 14 or 15 on the larger tritoons at a Branson-side
+      resort marina.
+
+      Slide boats carry more. The biggest one listed, a 30-foot boat with two decks and dual slides
+      at the state park marina, is rated for 18. Other double-deck slide boats on the lake, including
+      one at that same Branson-side resort, are rated for 14. No rental boat in the listings checked
+      carried more than 18, so a group past that size needs two boats or a different kind of trip.
+
+      For a large party, the sailing catamaran that leaves from the state park marina runs a
+      three-hour private swim and sail charter for up to 49 people.
+
+      With a captain, size depends on the boat and how the trip is arranged. Under Coast Guard rules,
+      an uninspected boat with paying guests is generally held to six of them, and carrying more
+      calls for an inspected passenger vessel. Ask the operator how many guests their boat and
+      license allow, and count every person, kids included, when you send your headcount.
+    sources:
+      - label: Campbell Point Marina, tritoon capacity
+        url: https://www.campbellpointmarina.com/rentals/boat-rentals/
+        accessed: "2026-10-19"
+      - label: Rock Lane Resort and Marina, boat rentals
+        url: https://rocklane.com/marina/boat-rentals/
+        accessed: "2026-10-19"
+      - label: State Park Marina, boat rentals and Big Kahuna
+        url: https://www.stateparkmarina.com/boat-rentals
+        accessed: "2026-10-19"
+      - label: State Park Marina, catamaran private charter
+        url: https://www.stateparkmarina.com/services/catamaran-cruise
+        accessed: "2026-10-19"
+      - label: U.S. Coast Guard, Passenger for Hire and Charter Vessel Operations (pamphlet)
+        url: https://wow.uscgaux.info/Uploads_wowII/P-DEPT/PaxForHire_trifold_3.pdf
+        accessed: "2026-10-19"
+
+  - slug: when-to-book-a-party-boat-on-table-rock-lake
+    question: When is boating season on Table Rock Lake, and how far ahead should I book a slide boat?
+    answer: >-
+      Table Rock Lake sees the most boating from May through August, with July the peak, judging by Missouri's
+      2024 boating crash records. No marina publishes a standard booking window, so reserve a slide
+      boat as early as you can for a summer weekend. Some marinas close or rent by appointment only
+      in winter.
+    detail: >-
+      The Missouri State Highway Patrol counted 79.7 percent of the state's 2024 boating crashes in
+      May, June, July and August, with July the highest month. Rental counts are not published, so
+      that record is the clearest public sign of when the water is crowded.
+
+      Reservations work differently from marina to marina. The state park marina sells three-hour
+      rentals to walk-up customers only and takes online reservations for six-hour, eight-hour and
+      all-day rentals. If your date is fixed, a longer rental is the way to hold a boat there before
+      you arrive.
+
+      Off-season hours vary. On October 19, 2026, a marina on the James River arm had closed for the
+      2026 to 2027 winter, an Arkansas-side marina was renting by appointment only from November
+      through March, and a Branson-side marina was open Wednesday through Sunday and closed Monday
+      and Tuesday. Call before you plan a fall or winter outing.
+
+      For a summer Saturday, settle your date and headcount first, then send the request. The sooner
+      an operator has both, the more boats they can still offer you.
+    sources:
+      - label: Missouri State Highway Patrol, Missouri Boating Statistics and Drownings, 2025 edition
+        url: https://www.mshp.dps.missouri.gov/MSHPWeb/SAC/pdf/2025BoatingAndDrowningStats.pdf
+        accessed: "2026-10-19"
+      - label: State Park Marina, reservations
+        url: https://www.stateparkmarina.com/boat-rentals
+        accessed: "2026-10-19"
+      - label: Hideaway Marina, winter closure
+        url: https://hideawaymarina1956.com/
+        accessed: "2026-10-19"
+      - label: Cricket Creek Marina, winter by appointment
+        url: https://www.cricketcreek.com/
+        accessed: "2026-10-19"
+      - label: Rock Lane Resort and Marina, hours
+        url: https://www.rocklane.com/
+        accessed: "2026-10-19"

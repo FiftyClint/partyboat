@@ -28,6 +28,10 @@ import { builtPages, visibleText } from './lib/html-text.mjs';
  *   - Subtrees marked data-boilerplate, which is the intake form. It is the
  *     same form on every site, so it has the same field labels on every site.
  *     That attribute is for interface only, never for prose.
+ *   - <nav> elements inside <main>: lists of links to other pages on the
+ *     site, such as the question lists. Navigation is not body copy, and a
+ *     list of question titles on every question page is how a reader moves
+ *     between them. Never wrap prose in <nav> to get it past this check.
  *   - Subtrees marked data-citations, which are source lists. Two articles
  *     about one state should cite the same sources, and a check that punished
  *     that would be pushing us toward worse citations to satisfy a script. The
@@ -69,6 +73,7 @@ const ALLOWLIST = [
   /^\/privacy(\/|$)/,
   /^\/terms(\/|$)/,
   /^\/about(\/|$)/,
+  /^\/how-we-research(\/|$)/,
   /^\/404\.html$/,
   /^\/thank-you(\/|$)/,
 ];
@@ -112,7 +117,7 @@ const seen = new Map(); // window hash -> { site, path, phrase }
 const collisions = [];
 
 for (const page of pages) {
-  const text = visibleText(page.html, { onlyMain: true, exclude: '[data-boilerplate], [data-citations]' });
+  const text = visibleText(page.html, { onlyMain: true, exclude: '[data-boilerplate], [data-citations], nav' });
   const list = words(text);
   if (list.length < WINDOW) continue;
 

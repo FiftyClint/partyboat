@@ -375,3 +375,373 @@ watch:
   - label: Travis County Parks, rules
     url: https://parks.traviscountytx.gov/about/rules
     kind: regulator
+
+factsChecked: "2026-10-19"
+
+glance:
+  - label: "Season"
+    value: "Peak season runs April through October, with May through September busiest, according to one major charter company."
+    source:
+      label: "Tide Up Boat Rentals, season"
+      url: https://tideupboatrentals.com/
+      accessed: "2026-10-19"
+  - label: "Typical price, 4 hours captained"
+    value: "$700 to $1,200 for a four-hour party barge, single or double deck, weekday or Saturday, plus tax and a 20 percent gratuity, as published on October 19, 2026."
+    source:
+      label: "Aquaholics, party barge rates"
+      url: https://www.aquaholic.org/party-barge
+      accessed: "2026-10-19"
+  - label: "Gratuity"
+    value: "Not in the hourly rate. One company that publishes prices adds a mandatory 20 percent gratuity, as of October 2026."
+    source:
+      label: "Big Tex Boat Rentals, gratuity"
+      url: https://bigtexboatrentals.com/
+      accessed: "2026-10-19"
+  - label: "Group size, party barge"
+    value: "Up to 50 guests per barge at VIP Marina in Volente, which lists seven barges of that size."
+    source:
+      label: "VIP Marina Lake Travis, barges"
+      url: https://viplaketravis.com/
+      accessed: "2026-10-19"
+  - label: "Where boats leave from"
+    value: "Paradise Cove Marina on Rocky Ridge Road is a common south shore base. Entry is $5 a person and parking is $20 a vehicle."
+    source:
+      label: "Big Tex Boat Rentals, Paradise Cove Marina fees"
+      url: https://bigtexboatrentals.com/
+      accessed: "2026-10-19"
+  - label: "Captain required?"
+    value: "Usually included. One Lake Travis charter company puts a captain on every rental it runs."
+    source:
+      label: "Tide Up Boat Rentals, captain included"
+      url: https://tideupboatrentals.com/
+      accessed: "2026-10-19"
+  - label: "Book ahead"
+    value: "Holiday dates such as Memorial Day, July 4 and Labor Day can be gone months ahead, per one south shore charter company."
+    source:
+      label: "Good Time Tours, holiday dates"
+      url: https://www.goodtimeaustin.com/
+      accessed: "2026-10-19"
+
+questions:
+  - slug: lake-travis-bachelorette-party-boat-cost
+    question: "How much does a party boat for a bachelorette weekend on Lake Travis cost?"
+    answer: >-
+      As of October 2026, a private captained party boat for four hours on Lake Travis was listed from
+      about $700 for a weekday trip up to $1,300 for a Saturday, and tax plus a tip near 20 percent
+      came on top. A smaller bachelorette group can buy seats on a shared weekend cruise, listed at
+      about $125 to $138 each.
+    detail: >-
+      Prices published on October 19, 2026 show how much the day and the boat matter. A Volente
+      company listed four-hour barge trips at $700 to $1,200, single deck against double deck and
+      weekday against Saturday, plus tax and a 20 percent gratuity. A south shore company listed $800
+      to $1,300 for four hours, with a 20 percent captain fee paid in cash at the dock. Lakeway Marina
+      priced its barge at $987.24 on a weekday and $1,620.90 on a weekend with tax included, plus a 20
+      percent captain's service fee.
+
+      Some companies charge by the hour. One listed captained boats at $175 to $350 an hour with fuel
+      included, a mandatory 20 percent gratuity, and a 6 percent fee for booking online that goes away
+      if you book by phone.
+
+      For a bride and a handful of friends, renting a whole boat may be more than you need. One
+      company sells tickets on a shared party cruise on Fridays and Saturdays from March to October,
+      at $125.26 to $138.44 a person with tax and tip already in. The same company sells private
+      charters at $857.03 to $1,911.83, also all in.
+
+      To compare quotes fairly, ask each company for the total after tax, gratuity and any booking
+      fee. Saturday is the priciest day of the week, so a Friday or Sunday trip can save money.
+    sources:
+      - label: Aquaholics, party barge rates
+        url: https://www.aquaholic.org/party-barge
+        accessed: "2026-10-19"
+      - label: Good Time Tours, rates and captain fee
+        url: https://www.goodtimeaustin.com/
+        accessed: "2026-10-19"
+      - label: Lakeway Marina, party barge rates
+        url: https://www.lakewaymarina.com/rentals/party-barge/
+        accessed: "2026-10-19"
+      - label: Big Tex Boat Rentals, hourly rates, gratuity and booking fee
+        url: https://bigtexboatrentals.com/
+        accessed: "2026-10-19"
+      - label: Premier Party Cruises, shared cruise and all-inclusive charters
+        url: https://premierpartycruises.com/
+        accessed: "2026-10-19"
+
+  - slug: what-is-devils-cove-lake-travis
+    question: "What is Devil's Cove on Lake Travis?"
+    answer: >-
+      Devil's Cove is a cove on Lake Travis where party boats anchor and tie up side by side, and
+      several charter companies name it as the main party stop. Go on a captained charter that lists it on the route, since
+      not every trip stops there.
+    detail: >-
+      On a busy weekend the cove fills with boats tied together and people in the water. One charter
+      company calls it a hotspot, and several others name it on their routes. A local boat rental guide warns that low water makes shallow coves harder to use, so check the lake level before you head in.
+
+      That advice matters because the level of Lake Travis swings. State reservoir data showed the
+      lake at 82.0 percent full in early June 2026 and 95.1 percent on September 3, 2026. When the
+      water drops, shallow spots and some ramps get harder to use, so ask the captain the week of your
+      trip whether the cove is a good plan.
+
+      Expect law enforcement. Texas game wardens and the Travis County Sheriff's Office run boats on
+      busy and holiday weekends, and local TV reports say wardens at the cove watch for swimmers near
+      running engines, heavy drinking, fights and speeding.
+
+      If your group wants something calmer, charters also run to Starnes Island, the cliffs at Pace
+      Bend, and The Oasis for sunset views. Tell the operator which kind of day you want when you
+      send the request.
+    sources:
+      - label: Lone Star Party Boats, Devil's Cove
+        url: https://www.lonestarpartyboats.com/
+        accessed: "2026-10-19"
+      - label: Things To Do In Austin, Lake Travis boat rental guide
+        url: https://www.thingstodoinaustin.com/guides/best-lake-travis-boat-rentals
+        accessed: "2026-10-19"
+      - label: Water Data for Texas, Lake Travis level
+        url: https://waterdatafortexas.org/reservoirs/individual/travis
+        accessed: "2026-10-19"
+      - label: FOX 7 Austin, sheriff's lake patrol on Memorial Day weekend
+        url: https://www.fox7austin.com/news/tsco-lake-patrol-out-in-full-force-memorial-day-weekend
+        accessed: "2026-10-19"
+      - label: Good Time Tours, routes and stops
+        url: https://www.goodtimeaustin.com/
+        accessed: "2026-10-19"
+
+  - slug: lake-travis-party-boat-for-large-groups
+    question: "What kind of party boat fits a group of 30 or more people on Lake Travis?"
+    answer: >-
+      For 30 or more guests on Lake Travis, skip the double-deckers and look at captained party
+      barges or event boats. Barges at Lakeway Marina and VIP Marina each carry up to 50 people, one
+      company spreads groups of up to 300 across several barges, and two event boats list room for 31
+      to 75 and 40 to 160.
+    detail: >-
+      The double-decker slide boats that most bachelorette parties book are built for smaller crowds
+      than this, so a big group either splits across boats or moves up a size.
+
+      A party barge is the usual next step. Lakeway Marina runs one for up to 50 people. In Volente,
+      VIP Marina lists seven barges that each hold 50. A barge company on the south shore will put a
+      large event across more than one barge, for up to 300 guests in all.
+
+      For one big deck instead of a flotilla, two companies run event boats. One, based at Anderson
+      Mill Marina on the north shore, lists a boat for 31 to 75 guests. Another lists a boat for 40 to
+      160.
+
+      Capacity is fixed boat by boat, so count everyone, including the friend who might join late.
+      With a group this size, also sort out the ride to the marina early, because it will not fit in
+      one or two cars.
+    sources:
+      - label: Lakeway Marina, party barge
+        url: https://www.lakewaymarina.com/rentals/party-barge/
+        accessed: "2026-10-19"
+      - label: VIP Marina Lake Travis, barges
+        url: https://viplaketravis.com/
+        accessed: "2026-10-19"
+      - label: Just For Fun Watercraft, multiple barges
+        url: https://www.jff.net/party-barges
+        accessed: "2026-10-19"
+      - label: Premier Party Cruises, event boat capacity
+        url: https://premierpartycruises.com/
+        accessed: "2026-10-19"
+      - label: Wave in Water, event boat capacity
+        url: https://www.waveinwater.com/
+        accessed: "2026-10-19"
+
+  - slug: lake-travis-party-boat-cancellation-weather-policy
+    question: "What happens to my Lake Travis party boat deposit if we cancel or the weather turns bad?"
+    answer: >-
+      It depends on the company, so read the terms before you pay. As of October 2026, Lake Travis
+      policies ran from a nonrefundable $250 deposit with the full price due inside two weeks, to no
+      cancellations at all on one marina barge, to a free reschedule when the captain calls off a
+      trip for weather.
+    detail: >-
+      Here is how the published policies compared on October 19, 2026. One Volente barge company
+      takes a $250 reservation deposit it keeps, plus a $500 incidental deposit you get back. Cancel
+      with less than two weeks of notice and you owe the full charge. Cancel earlier and the $250
+      becomes store credit. If it is raining at its office at your reservation time, you owe nothing
+      more.
+
+      A south shore company refunds the deposit, less a 6 percent fee, if you cancel 15 or more days
+      out. From eight to three days out it refunds half, and inside 72 hours it charges the whole
+      amount. It makes the weather call on the day, and only for unsafe conditions. Lakeway Marina
+      allows no cancellations on its party barge.
+
+      Other terms lean toward the customer. One north shore company reschedules for free when its
+      captain cancels for weather and refunds part of the price if weather cuts the cruise short.
+      Briarcliff Marina gives store credit only, with 48 hours of notice.
+
+      Before you pay, ask who decides that the weather is too bad, what you get back, and whether it
+      comes as cash or credit. Get the answer in writing.
+    sources:
+      - label: Aquaholics, deposit and cancellation
+        url: https://www.aquaholic.org/party-barge
+        accessed: "2026-10-19"
+      - label: Big Tex Boat Rentals, cancellation and weather
+        url: https://bigtexboatrentals.com/
+        accessed: "2026-10-19"
+      - label: Lakeway Marina, party barge cancellation
+        url: https://www.lakewaymarina.com/rentals/party-barge/
+        accessed: "2026-10-19"
+      - label: Premier Party Cruises, weather policy
+        url: https://premierpartycruises.com/
+        accessed: "2026-10-19"
+      - label: Briarcliff Marina, rental terms
+        url: https://briarcliffmarina.com/boat-rentals/
+        accessed: "2026-10-19"
+
+  - slug: lake-travis-boat-alcohol-laws
+    question: "Is it legal to drink alcohol on a party boat on Lake Travis?"
+    answer: >-
+      Yes. Texas does not ban alcohol on boats, so guests on a Lake Travis party boat may drink, but
+      whoever drives is held to the 0.08 limit. Each charter company adds its own rules on top, such
+      as cans only or ID for anyone drinking, and Travis County bans glass containers in its parks.
+    detail: >-
+      State law is simple. Drinking aboard is allowed, and the operator is held to the 0.08 limit,
+      according to local reporting. On a captained charter, that limit is the captain's concern, not
+      the guests'.
+
+      Enforcement is real on busy weekends. Texas game wardens and the Travis County Sheriff's Office
+      put several boats on the water over holidays, and TV coverage says wardens at Devil's Cove watch
+      for excessive drinking, fights and speeding.
+
+      Where you board matters too. Travis County park rules say no one may bring glass containers into
+      any area of a county park, ban alcohol sales in the parks, and prohibit intoxicated people.
+      Mansfield Dam Park, a pickup point for several companies, falls under those rules. No glass ban
+      on the open water from the county or the river authority was found, so the rule on board comes
+      from the boat company.
+
+      Company rules vary. One requires guests to be 21 with ID to drink and allows beer in cans only.
+      Another bans glass and plastic bottles but allows beer and wine in cans or boxes. Ask for the
+      full list before you shop for drinks.
+    sources:
+      - label: FOX 7 Austin, Lake Travis boater safety
+        url: https://fox7austin.com/news/lake-travis-boater-safety-labor-day-weekend
+        accessed: "2026-10-19"
+      - label: FOX 7 Austin, sheriff's lake patrol on Memorial Day weekend
+        url: https://www.fox7austin.com/news/tsco-lake-patrol-out-in-full-force-memorial-day-weekend
+        accessed: "2026-10-19"
+      - label: Travis County Parks, park rules
+        url: https://parks.traviscountytx.gov/about/rules
+        accessed: "2026-10-19"
+      - label: Premier Party Cruises, drinking age and can rules
+        url: https://premierpartycruises.com/
+        accessed: "2026-10-19"
+      - label: Good Time Tours, glass and bottle rules
+        url: https://www.goodtimeaustin.com/
+        accessed: "2026-10-19"
+
+  - slug: texas-party-boat-license-lake-travis
+    question: "Does a party boat captain on Lake Travis need a special license in Texas?"
+    answer: >-
+      Usually, yes. Texas Parks and Wildlife requires its Party Boat Operator License, plus a yearly
+      inspection, for a charter of 30 feet or longer with more than six passengers on inland waters.
+      A captain who holds a Coast Guard license is exempt from the state license. On Lake Travis, ask
+      to see the credential and the inspection before paying.
+    detail: >-
+      The state rule reaches many of the boats party groups rent here, such as long pontoons and barges carrying
+      more than six guests for pay. The operator needs either the state party boat license or a Coast
+      Guard captain's license, and the boat needs its yearly state inspection. This guide does not say
+      which agency covers a particular boat. Ask the company which credential its captain holds and
+      ask to see it.
+
+      The checks are not a formality. During saturation patrols in May and June 2025, state officers
+      on Lake Austin and Lake Travis turned up party boats lacking evidence of inspection or proof of
+      insurance, operators without licenses, and guests up on the top deck while the boat was moving. The Texas Parks and
+      Wildlife Commission adopted new party boat rules in January 2026.
+
+      The Coast Guard has also warned the public about illegal charters. Its advice includes asking to
+      see the captain's credential and treating a price far below the local market as a warning sign.
+
+      Renting a smaller boat to drive yourself brings a different rule. Anyone born on or after
+      September 1, 1993 needs a boater education course to run a boat over 15 horsepower in Texas,
+      unless a legal operator aged 18 or older is aboard.
+    sources:
+      - label: Texas Parks and Wildlife, party boat program
+        url: https://tpwd.texas.gov/fishboat/boat/laws/party_boat/
+        accessed: "2026-10-19"
+      - label: Texas Parks and Wildlife Commission, party boat rules, January 22, 2026 meeting
+        url: https://tpwd.texas.gov/business/feedback/meetings/2026/0122/agenda/item.phtml?item=8
+        accessed: "2026-10-19"
+      - label: U.S. Coast Guard, illegal charter warning to the public
+        url: https://www.news.uscg.mil/Press-Releases/Article/4286502/coast-guard-warns-public-of-risks-consequences-associated-with-illegal-charter/
+        accessed: "2026-10-19"
+      - label: Texas Parks and Wildlife, mandatory boater education
+        url: https://tpwd.texas.gov/regulations/outdoor-annual/boating/mandatory-boater-education-requirements
+        accessed: "2026-10-19"
+
+  - slug: lake-travis-party-boat-off-season-prices
+    question: "When is the cheapest time to rent a party boat on Lake Travis?"
+    answer: >-
+      The lowest published party boat rates on Lake Travis fall on weekdays and in the off-season,
+      roughly October through March. As of October 2026, one company charged $200 an hour for any boat
+      from October 1 to March 25, and another advertised an off-season special from $150 an hour.
+      Saturday costs the most all year.
+    detail: >-
+      Prices follow the season. One charter company puts peak season at April through October, calls
+      May through September its busiest months, and says September and October bring thinner crowds and lower
+      prices. It suggests two to four weeks of lead time for summer weekends and holidays.
+
+      Cold months are quiet but not shut. On October 19, 2026, one company listed a flat $200 an hour
+      for every boat from October 1 to March 25. Another listed an off-season special from $150 an
+      hour between October 1 and March 14. Some keep running private charters all year.
+
+      The day of the week moves the price as much as the month. One barge company charged $200 an
+      hour Monday through Thursday and $300 an hour on Saturdays and holidays, with a four-hour
+      minimum. Lakeway Marina's barge ran $1,620.90 for a weekend trip against $987.24 for a weekday
+      one, tax included.
+
+      If your dates are flexible, a weekday in September or October pairs the smaller crowds with the
+      lower prices. For a winter date, ask the operator how it handles cold or windy days.
+    sources:
+      - label: ATX Party Boats, off-season rate
+        url: https://atxpartyboats.com/
+        accessed: "2026-10-19"
+      - label: Austin's Boat Tours, off-season special
+        url: https://austinsboattours.com/
+        accessed: "2026-10-19"
+      - label: Tide Up Boat Rentals, season and notice
+        url: https://tideupboatrentals.com/
+        accessed: "2026-10-19"
+      - label: Just For Fun Watercraft, rates by day
+        url: https://www.jff.net/party-barges
+        accessed: "2026-10-19"
+      - label: Lakeway Marina, party barge rates
+        url: https://www.lakewaymarina.com/rentals/party-barge/
+        accessed: "2026-10-19"
+
+  - slug: lake-travis-party-boat-from-downtown-austin
+    question: "How far is Lake Travis from downtown Austin, and how do party boat groups get to the marina?"
+    answer: >-
+      Charter companies put Lake Travis about 20 to 25 minutes from downtown Austin, though those are
+      their own estimates, not traffic-tested times. Party boats leave from marinas and parks west of
+      the city, so plan one shared ride for the group and aim to reach the dock 15 to 30
+      minutes before departure.
+    detail: >-
+      One south shore company says the lake is about 20 minutes from downtown. A north shore company
+      says Anderson Mill Marina is about 25 minutes away. Weekend traffic can stretch both, so treat
+      them as a best case.
+
+      Check what the dock charges before you drive. On October 19, 2026, Paradise Cove Marina charged
+      $5 a person to enter and $20 a vehicle to park, and Mansfield Dam Park charged $5 a person, cash
+      only. One Volente company says there is no drop-off or entrance fee at Volente Beach. The
+      company at Anderson Mill lists free parking and a flat path to the boat.
+
+      A group ride solves parking and the question of who drives home. At least one charter company
+      recommends a group ride-share service for exactly this reason.
+
+      Arrive early. Companies ask for 15 to 20 minutes, or 20 to 30 minutes and more on busy weekends.
+      Flying in, Austin-Bergstrom International is the airport, so build the drive out to the lake
+      into your arrival day.
+    sources:
+      - label: Lone Star Party Boats, distance from Austin
+        url: https://www.lonestarpartyboats.com/
+        accessed: "2026-10-19"
+      - label: Premier Party Cruises, Anderson Mill Marina, parking and arrival
+        url: https://premierpartycruises.com/
+        accessed: "2026-10-19"
+      - label: Big Tex Boat Rentals, Paradise Cove and Mansfield Dam Park entry fees
+        url: https://bigtexboatrentals.com/
+        accessed: "2026-10-19"
+      - label: Keep Austin Wet Watercraft, Volente Beach fees and arrival time
+        url: https://keepaustinwetwatercraft.com/
+        accessed: "2026-10-19"
+      - label: Wave in Water, group ride-share
+        url: https://www.waveinwater.com/
+        accessed: "2026-10-19"
