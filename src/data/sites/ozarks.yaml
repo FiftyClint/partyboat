@@ -407,3 +407,390 @@ watch:
   - label: Lake Expo, local news
     url: https://www.lakeexpo.com/
     kind: news
+
+factsChecked: "2026-10-19"
+
+glance:
+  - label: "Season"
+    value: >-
+      One rental company opens daily from mid-March to mid-October and rents by appointment
+      through the winter.
+    source:
+      label: LOTO Boat Rental, season
+      url: https://lotoboatrental.com/
+      accessed: "2026-10-19"
+  - label: "Typical price, self-drive"
+    value: >-
+      $290 to $520 for four hours and $425 to $680 for a full day, plus fuel, at one Osage Beach
+      rental dock, published on October 19, 2026.
+    source:
+      label: Dirty Duck Boat Rental, tritoon rates
+      url: https://www.dirtyduckboatrental.com/pontoon_rentals
+      accessed: "2026-10-19"
+  - label: "Typical price, tritoon with a driver"
+    value: >-
+      $375 for two hours up to $1,075 for eight hours at one Osage Beach company, as of October
+      2026.
+    source:
+      label: Captain Bob's Boat Rentals and Charters, rates with captain
+      url: https://www.lakeozarkboatrental.com/rentals/boat-rates
+      accessed: "2026-10-19"
+  - label: "Typical price, private charter"
+    value: >-
+      $700 to $2,000 for a captained charter at one company, as of October 2026, with a four-hour
+      minimum Sunday to Thursday and six hours on Fridays, Saturdays and holidays.
+    source:
+      label: Captain Lake Ozark, charter FAQ
+      url: https://www.captainlakeozark.com/faq
+      accessed: "2026-10-19"
+  - label: "Who can drive"
+    value: >-
+      Anyone born after January 1, 1984 and before January 1, 2006 needs a Missouri boater card.
+      A rental business may issue a one-time temporary card, good for up to 7 days, for $9.
+    source:
+      label: Missouri Revisor of Statutes, RSMo 306.127
+      url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+      accessed: "2026-10-19"
+  - label: "Where boats leave from"
+    value: >-
+      Docks are located by mile marker. One rental company runs docks at the 3, 7, 12 and 18 mile
+      markers, between Eldon and Osage Beach.
+    source:
+      label: BomBay Boat Rental Company, rental locations
+      url: http://www.bombayboatrental.com/
+      accessed: "2026-10-19"
+  - label: "Groups over a dozen"
+    value: >-
+      One water taxi company runs catamarans inspected by the Coast Guard for 36, 43 or 49
+      passengers, from May 1 to October 1.
+    source:
+      label: Playin Hooky Water Taxi and Charters, vessels and season
+      url: https://playinhookyatthelake.com/party-boat-rental-lake-of-the-ozarks-private-charters-cruises/
+      accessed: "2026-10-19"
+
+questions:
+  - slug: how-much-does-a-party-boat-cost-lake-of-the-ozarks
+    question: How much does it cost to rent a party boat at Lake of the Ozarks?
+    answer: >-
+      Based on rates published on October 19, 2026, a self-drive tritoon at Lake of the Ozarks
+      rents for roughly $290 to $520 per four-hour block, or $425 to $750 a day, with fuel extra. A
+      tritoon with a driver runs about $375 to $1,075. Private captained charters run about $700
+      to $2,800.
+    detail: >-
+      These figures are ranges taken from operator websites, not quotes. Rates move with the
+      season and the day of the week, and at least one company runs a fall special that drops the
+      price for a short stretch. The number the operator gives you on the phone is the one to plan
+      around.
+
+      Self-drive rentals are priced in blocks. At one Osage Beach dock, a four-hour slot ran $290
+      to $520 depending on the boat and the time of day, and a full day ran $425 to $680. A
+      Camdenton resort listed $350 to $400 for four hours and $700 to $750 for its all-day rate.
+      Fuel is extra on nearly all of them.
+
+      A driver from the rental company costs more. One company charged $375 for two hours with its
+      own driver at the wheel and $1,075 for eight.
+
+      Private charters on larger cruisers cost the most, and weekends cost more than weekdays. One
+      charter company priced a five-hour trip at $1,250 Monday to Thursday, $1,625 on a Friday or
+      Sunday, $2,000 on a Saturday and $2,500 on a holiday, plus fuel and gratuity. Another quoted
+      $700 to $2,000 across its trips. If you already have a boat at your rental house, one
+      charter company sells a captain alone from $150 an hour with a three-hour minimum.
+    sources:
+      - label: Dirty Duck Boat Rental, tritoon rates
+        url: https://www.dirtyduckboatrental.com/pontoon_rentals
+        accessed: "2026-10-19"
+      - label: Lake Breeze Resort, tritoon rentals
+        url: https://www.lakebreezeresort.com/tritoon-boat-rentals-lake-of-the-ozarks/
+        accessed: "2026-10-19"
+      - label: Captain Bob's Boat Rentals and Charters, rates with and without captain
+        url: https://www.lakeozarkboatrental.com/rentals/boat-rates
+        accessed: "2026-10-19"
+      - label: Sandman Charters, charter and captain-only rates
+        url: https://www.sandman-charters.com/
+        accessed: "2026-10-19"
+      - label: Captain Lake Ozark, charter FAQ
+        url: https://www.captainlakeozark.com/faq
+        accessed: "2026-10-19"
+
+  - slug: captain-or-self-drive-party-boat-lake-of-the-ozarks
+    question: Should we hire a captain or drive the party boat ourselves on Lake of the Ozarks?
+    answer: >-
+      On Lake of the Ozarks, drive yourselves if one person will stay sober all day and holds or
+      can get a Missouri boater card. Hire a captain if everyone wants to drink, if nobody has
+      handled a tritoon before, or if you plan to anchor in a crowded cove on a summer weekend.
+    detail: >-
+      The deciding question is who drives. Missouri treats a boat driver with a blood alcohol
+      level of .08 percent as intoxicated, and the line drops to .02 percent for anyone under 21.
+      Running a boat counts as consent to a test. If a child under 17 is aboard, the charge is a
+      class A misdemeanor. A captain takes all of that off your group.
+
+      The license question matters too. Drivers born after January 1, 1984 and before 2006 need a
+      boater card on Missouri lakes, and a rental dock can sell a one-time temporary card for $9 if
+      you bring a driver's license. With a hired driver, nobody in the group needs one.
+
+      Cost is the main argument for self-drive. At one Osage Beach company, eight hours on a
+      tritoon cost $675 if you drive and $1,075 with their driver, a gap of $400 for the day.
+      Another company drops the damage deposit when you hire one of its drivers, which keeps the hold
+      off your card.
+
+      Self-drive works well on a quiet weekday with a careful driver. For a holiday weekend, a raft
+      up at Party Cove, or a bar crawl by water, the captain usually earns the fee.
+    sources:
+      - label: Missouri State Highway Patrol, boating while intoxicated brochure SHP-44
+        url: https://www.machs.mo.gov/MSHPWeb/Publications/Brochures/documents/SHP-44.pdf
+        accessed: "2026-10-19"
+      - label: Missouri Revisor of Statutes, RSMo 306.127, boater identification card
+        url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+        accessed: "2026-10-19"
+      - label: Captain Bob's Boat Rentals and Charters, rates with and without captain
+        url: https://www.lakeozarkboatrental.com/rentals/boat-rates
+        accessed: "2026-10-19"
+      - label: LOTO Boat Rental, driver services and deposit
+        url: https://lotoboatrental.com/
+        accessed: "2026-10-19"
+
+  - slug: where-is-party-cove-lake-of-the-ozarks
+    question: Where is Party Cove at Lake of the Ozarks and how do you get there?
+    answer: >-
+      Party Cove is Anderson Hollow Cove on the Grand Glaize arm of Lake of the Ozarks. It sits
+      roughly one mile south of the Grand Glaize Bridge, within the state park. You can only get
+      there by boat. Rental docks beside the bridge in Osage Beach say the cove is 5 to 10 minutes
+      away.
+    detail: >-
+      The cove sits near the 4 mile marker of the Grand Glaize arm, not on the main channel. It
+      runs about a mile long and about 200 yards wide. There is no road or beach access, so every
+      visitor arrives on a boat.
+
+      The quickest start is a dock in Osage Beach near the Grand Glaize Bridge, around the 19 mile
+      marker of the main channel. A dock farther down the lake means a longer ride each way, which
+      eats into a four-hour rental.
+
+      Before you book, check that the rental's operating area includes the Grand Glaize arm. One
+      company's terms allow its boats up that arm only as far as Public Beach 1, at its 11.5 mile
+      marker, and others set their own limits. Some companies sell cove packages, such as a
+      floating lily pad, float saddles and an iced cooler, or a free floating mat.
+
+      Once there, boats drop anchor and tie together in rows, which locals call rafting up. The
+      state has called the area around the cove the most dangerous on the lake, and it has a long
+      record of enforcement. A travel guide notes the cove is not as busy as it once was. Anchoring
+      in a tight row of boats takes practice, which is why many groups bring a captain.
+    sources:
+      - label: Wikipedia, Party Cove
+        url: https://en.wikipedia.org/wiki/Party_Cove
+        accessed: "2026-10-19"
+      - label: Wikivoyage, Lake of the Ozarks
+        url: https://en.wikivoyage.org/wiki/Lake_of_the_Ozarks
+        accessed: "2026-10-19"
+      - label: Dirty Duck Boat Rental, distance to Party Cove
+        url: https://www.dirtyduckboatrental.com/
+        accessed: "2026-10-19"
+      - label: WFO Watersports, rental operating area
+        url: https://www.wfowatersports.com/rental-terms
+        accessed: "2026-10-19"
+      - label: Adventure Boat Rentals, Party Cove package
+        url: https://adventureboatrentals.com/
+        accessed: "2026-10-19"
+
+  - slug: bachelorette-party-boat-lake-of-the-ozarks
+    question: What kind of boat is best for a bachelorette party on Lake of the Ozarks?
+    answer: >-
+      For a bachelorette party on Lake of the Ozarks, book a captained boat so the bride and every
+      guest can drink. A tritoon with a driver suits up to 12 people. A
+      private cruiser charter suits a group that wants a captain planning the route. Groups well
+      past a dozen fit best on an inspected passenger vessel.
+    detail: >-
+      Rental and charter companies on the lake market directly to bachelorette groups. Start with
+      the headcount, then decide who drives.
+
+      For up to a dozen, a tritoon with a hired driver is the simple choice. One Osage Beach
+      company lists two to eight hours with its driver. Private charters on bigger cruisers take a
+      similar number, 12 guests on one company's 42 foot boat, with a captain who plans the stops
+      around coves and bars.
+
+      For a big party, look at the passenger catamarans. One water taxi company runs boats inspected
+      by the Coast Guard for 36, 43 and 49 passengers and sells scheduled bar hop cruises as well as
+      private trips. That keeps everyone on one deck instead of splitting the party.
+
+      If you plan to self-drive instead, whoever drives must stay below a blood alcohol level of .08
+      percent, or .02 percent if under 21. That is a hard ask on a bachelorette day.
+
+      Before paying for any captained trip, ask the captain to show a Coast Guard license. The Coast
+      Guard has given that advice after shutting down unlawful charters on this lake.
+    sources:
+      - label: Missouri State Highway Patrol, boating while intoxicated brochure SHP-44
+        url: https://www.machs.mo.gov/MSHPWeb/Publications/Brochures/documents/SHP-44.pdf
+        accessed: "2026-10-19"
+      - label: Captain Bob's Boat Rentals and Charters, rates with captain
+        url: https://www.lakeozarkboatrental.com/rentals/boat-rates
+        accessed: "2026-10-19"
+      - label: Sandman Charters, charter boat and guest count
+        url: https://www.sandman-charters.com/
+        accessed: "2026-10-19"
+      - label: Playin Hooky Water Taxi and Charters, catamarans and bar hop cruises
+        url: https://playinhookyatthelake.com/party-boat-rental-lake-of-the-ozarks-private-charters-cruises/
+        accessed: "2026-10-19"
+      - label: Missourinet, Coast Guard terminates charter at Lake of the Ozarks, July 2023
+        url: https://www.missourinet.com/2023/07/17/u-s-coast-guard-busts-chartered-boat-at-lake-of-the-ozarks/
+        accessed: "2026-10-19"
+
+  - slug: when-to-book-a-party-boat-lake-of-the-ozarks
+    question: When is party boat season at Lake of the Ozarks, and how far ahead should I book?
+    answer: >-
+      Party boat season at Lake of the Ozarks runs from spring to mid-October, and the heaviest
+      boating is May through August. Saturdays, the Fourth of July, Labor Day and the Shootout
+      weekend go first. No operator publishes a standard lead time, so reserve as soon as your date
+      and headcount are settled.
+    detail: >-
+      Opening dates differ by company. One rental dock is open seven days a week from mid-March to
+      mid-October and takes appointments the rest of the year. One water taxi and cruise company
+      runs May 1 to October 1. Check the dates with the company before planning a spring or fall trip.
+
+      There is no official count of rentals, but Missouri State Highway Patrol crash figures show
+      when the water is busiest. In 2024, 79.7 percent of Missouri boating crashes fell between May
+      and August. July had the most, 38 of 128, and Saturday was the worst day of the week.
+
+      For a summer Saturday, call early. One Osage Beach company says tritoon reservations are
+      highly recommended and takes them by phone only. One company knocks $100 off a
+      party package when you reserve early.
+
+      If your dates are flexible, a weekday is cheaper as well as quieter. At least one charter
+      company publishes lower rates Monday to Thursday and add holiday pricing for the big event weekends.
+    sources:
+      - label: LOTO Boat Rental, season and early reservation discount
+        url: https://lotoboatrental.com/
+        accessed: "2026-10-19"
+      - label: Playin Hooky Water Taxi and Charters, operating season
+        url: https://playinhookyatthelake.com/party-boat-rental-lake-of-the-ozarks-private-charters-cruises/
+        accessed: "2026-10-19"
+      - label: Missouri State Highway Patrol, Missouri Boating Statistics and Drownings, 2025 edition
+        url: https://www.mshp.dps.missouri.gov/MSHPWeb/SAC/pdf/2025BoatingAndDrowningStats.pdf
+        accessed: "2026-10-19"
+      - label: Dirty Duck Boat Rental, reservations by phone
+        url: https://www.dirtyduckboatrental.com/pontoon_rentals
+        accessed: "2026-10-19"
+      - label: Sandman Charters, weekday, weekend and holiday rates
+        url: https://www.sandman-charters.com/
+        accessed: "2026-10-19"
+
+  - slug: how-old-to-rent-a-boat-lake-of-the-ozarks
+    question: How old do you have to be to rent and drive a boat at Lake of the Ozarks?
+    answer: >-
+      Missouri lets a person drive a boat at Lake of the Ozarks from age 14, or younger with an
+      adult aboard, but rental companies set higher minimums. Published rules on the lake include
+      18 for the primary renter at one company, 21 at another and 25 at a third. The driver may
+      also need a Missouri boater card.
+    detail: >-
+      State law and company policy are separate. The Highway Patrol says a boat operator must be 14
+      unless an adult is on board, and a child under 14 driving with an adult still needs a boater
+      card. That is the legal floor. A rental company can, and usually does, ask for more.
+
+      On the lake, one company requires the primary renter to be at least 18. One Osage Beach dock
+      sets the driver age at 21, and one Camdenton marina sets it at 25. Ask the company directly,
+      and name the person who will drive, before you pay a deposit.
+
+      The boater card rule depends on birth year. For 2026, it covers drivers on Missouri lakes whose
+      birthday falls after January 1, 1984 and before January 1, 2006. Younger drivers, born in
+      2006 or later, join the rule on January 1, 2027, and theirs applies on every state water. You qualify by passing an approved
+      course or an equivalency exam, or by holding a Coast Guard master's, mate's or operator's
+      license. Visitors who already hold an approved card from another state are exempt.
+
+      A rental business may sell a temporary card for $9 that lasts up to seven days. You need a
+      valid driver's license and must sign a statement that you reviewed the Patrol's boating
+      handbook. Each person gets one in a lifetime.
+    sources:
+      - label: Missouri State Highway Patrol, boater education law FAQs
+        url: https://apps.mshp.dps.mo.gov/MSHPWeb/WaterPatrol/BoatingLaws_Education/boaterEduLawFAQ.html
+        accessed: "2026-10-19"
+      - label: Missouri Revisor of Statutes, RSMo 306.127, boater identification card
+        url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+        accessed: "2026-10-19"
+      - label: WFO Watersports, primary renter age
+        url: https://www.wfowatersports.com/rental-terms
+        accessed: "2026-10-19"
+      - label: Dirty Duck Boat Rental, driver age
+        url: https://www.dirtyduckboatrental.com/
+        accessed: "2026-10-19"
+      - label: Montego Bay Marina and Resort, driver age
+        url: https://www.montegobaymarina.com
+        accessed: "2026-10-19"
+
+  - slug: is-a-party-boat-charter-legal-lake-of-the-ozarks
+    question: How can I tell if a captained party boat charter on Lake of the Ozarks is legal?
+    answer: >-
+      Before paying for a captained charter on Lake of the Ozarks, ask to see the captain's Coast
+      Guard credential. A boat carrying more than six paying guests with a crew generally needs a
+      Coast Guard Certificate of Inspection. The Coast Guard has stopped charters on this lake that
+      had neither, and it tells passengers not to board without proof.
+    detail: >-
+      Federal rules sort paid boat trips by how many guests are aboard. A boat under 100 gross tons
+      with up to six paying passengers can run uninspected, but its captain needs at least an
+      operator license, often called a six-pack license. Carry more than six for pay and the boat
+      must be an inspected small passenger vessel. A bareboat charter, where no crew comes with the
+      boat, may take up to 12 under a written contract that leaves the group free to pick and pay
+      its own captain.
+
+      Enforcement here is real. In June 2021 the Coast Guard ended voyages on four vessels on the
+      lake for carrying passengers for hire unlawfully. On July 1, 2023 it terminated a charter
+      carrying 12 passengers over a missing Certificate of Inspection, no credentialed mariner, and
+      problems with the boat's papers.
+
+      Three questions settle most of it. How many paying guests is the boat certified or allowed to
+      carry? Can the captain show a Merchant Mariner Credential? If the group is over six, where is
+      the Certificate of Inspection? A legitimate operator answers all three without fuss. For big
+      groups, some vessels on the lake are inspected for 36 to 49 passengers, which avoids the
+      question entirely.
+    sources:
+      - label: U.S. Coast Guard, Passenger for Hire and Charter Vessel Operations (pamphlet)
+        url: https://wow.uscgaux.info/Uploads_wowII/P-DEPT/PaxForHire_trifold_3.pdf
+        accessed: "2026-10-19"
+      - label: Missourinet, Coast Guard terminates charter at Lake of the Ozarks, July 2023
+        url: https://www.missourinet.com/2023/07/17/u-s-coast-guard-busts-chartered-boat-at-lake-of-the-ozarks/
+        accessed: "2026-10-19"
+      - label: Professional Mariner, Coast Guard halts four illegal charters, June 2021
+        url: https://professionalmariner.com/coast-guard-halts-four-illegal-charters-on-lake-of-the-ozarks/
+        accessed: "2026-10-19"
+      - label: Playin Hooky Water Taxi and Charters, inspected catamarans
+        url: https://playinhookyatthelake.com/party-boat-rental-lake-of-the-ozarks-private-charters-cruises/
+        accessed: "2026-10-19"
+
+  - slug: party-boat-deposit-and-extra-fees-lake-of-the-ozarks
+    question: What extra fees and deposits come with a party boat rental at Lake of the Ozarks?
+    answer: >-
+      Expect three add-ons beyond the posted rate at Lake of the Ozarks. Most self-drive rentals
+      charge you to refill the fuel, most hold $300 to $650 on a card against damage, and charters
+      often add a tip for the crew. One company also adds a processing fee that it keeps if you
+      cancel.
+    detail: >-
+      Fuel is the largest variable. Self-drive boats usually go out full, and the company tops them
+      off when you return and bills you for what you burned. Ask whether the rate you were quoted
+      says plus gas. On charters, one company prices trips plus fuel and gratuity, so ask what the
+      quote covers.
+
+      Card holds on tritoons ranged from $300 to $650 as published on October 19, 2026. One company
+      holds $300 to $500 depending on the boat, and two others hold $650.
+
+      Read the cancellation terms before you pay. One company charges an 8.5 percent processing
+      fee, and on a single-day rental that fee is all it keeps if you cancel 48 hours out. Multi-day
+      rentals there need five days' notice. Another refunds everything except 6 percent if you
+      cancel at least 24 hours before.
+
+      Time costs money too. One company charges $50 for every 15 minutes a boat comes back late.
+      At another, you may lose the boat if you arrive more than 30 minutes late. That company also
+      bans night boating and still sends boats out in overcast skies or light rain, since it judges
+      actual conditions rather than the forecast.
+    sources:
+      - label: Quicky's Boat Rentals, card hold, processing fee and cancellation
+        url: https://www.quickysboatrentals.com/boat-rentals
+        accessed: "2026-10-19"
+      - label: Adventure Boat Rentals, fuel, hold and late return fee
+        url: https://adventureboatrentals.com/south-location-tritoon-rentals/one-day-tritoon-rental-2/
+        accessed: "2026-10-19"
+      - label: WFO Watersports, rental terms
+        url: https://www.wfowatersports.com/rental-terms
+        accessed: "2026-10-19"
+      - label: LOTO Boat Rental, cancellation and fuel
+        url: https://lotoboatrental.com/
+        accessed: "2026-10-19"
+      - label: Sandman Charters, fuel and gratuity
+        url: https://www.sandman-charters.com/
+        accessed: "2026-10-19"
