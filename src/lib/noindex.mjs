@@ -9,14 +9,17 @@
  *
  * SUPERSEDED: the same text twice on one domain. The home page renders the
  * FAQ in full because it is the page each site exists to rank, so /faq/ stays
- * reachable for anyone who wants the questions alone without competing.
+ * reachable for anyone who wants the questions alone without competing. The
+ * /questions/ index repeats each question page's short answer, and the
+ * question pages are the ones that should rank, so the index is noindex too.
+ * Its links are still followed, which is its job.
  *
  * One list, because the layout, the sitemap filter and the duplicate checker
  * all need the same answer.
  */
 
-export const SYNDICATED_PATHS = ['/about', '/privacy', '/terms'];
-export const SUPERSEDED_PATHS = ['/faq'];
+export const SYNDICATED_PATHS = ['/about', '/privacy', '/terms', '/how-we-research'];
+export const SUPERSEDED_PATHS = ['/faq', '/questions'];
 export const NOINDEX_PATHS = [...SYNDICATED_PATHS, ...SUPERSEDED_PATHS];
 
 /* "/about", "/about/" and "/about/index.html" are the same page. */

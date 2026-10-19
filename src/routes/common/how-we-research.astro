@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import Prose from '../../components/Prose.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { PUBLISHER, INDEPENDENCE_STATEMENT } from '../../data/brand.mjs';
+import { longDate } from '../../lib/dates.mjs';
+
+/**
+ * Editorial standards and method. With no individual named as author (Clint's
+ * decision, 2026-10-19), this page is what stands behind every fact on the
+ * site, so it says exactly how facts are gathered, checked, dated, corrected
+ * and paid for. Every claim here must stay true of how the team actually
+ * works; change the page when the practice changes.
+ *
+ * The same on every site, so noindex everywhere (src/lib/noindex.mjs).
+ */
+const site = currentSite();
+const publisher = PUBLISHER.legalName ?? `the publisher of ${site.siteName}`;
+---
+
+<Base
+  title="How we research"
+  description={`How ${site.siteName} gathers, checks, dates and corrects the facts on this site.`}
+  path="/how-we-research"
+>
+  <div class="page section">
+    <Prose>
+      <h1>How we research</h1>
+      <p class="lede">
+        Everything on this site is meant to be checkable. Every price, season, rule and place comes
+        from a named source, and every source is listed under the section it supports with the date
+        we checked it.
+      </p>
+
+      <h2>Where facts come from</h2>
+      <ul>
+        <li>
+          <strong>Laws and rules</strong> come from the government body that makes or enforces them:
+          state statutes, state wildlife and boating agencies, the U.S. Coast Guard, the Army Corps of
+          Engineers, county and city codes.
+        </li>
+        <li>
+          <strong>Prices, seasons and policies</strong> come from the websites of the businesses that
+          set them, read on the date shown. We publish them as ranges, never as quotes.
+        </li>
+        <li>
+          <strong>Places and travel facts</strong> come from official tourism, park and transport
+          sources wherever they exist.
+        </li>
+      </ul>
+
+      <h2>What we leave out</h2>
+      <ul>
+        <li>Anything we could not confirm on the source itself, including facts seen only in a
+          search result snippet or a listing site.</li>
+        <li>Ratings, reviews and rankings. We have none of our own, and we do not borrow anyone
+          else's.</li>
+        <li>Photos of boats or people we do not have the rights to use, and invented ones.</li>
+        <li>Any claim that a particular boat or captain is licensed, inspected or insured. We tell
+          you what to ask for instead.</li>
+      </ul>
+
+      <h2>How facts are dated</h2>
+      <p>
+        Each site shows the date its facts were last checked against their sources. On this site
+        that date is <time datetime={site.factsChecked}>{longDate(site.factsChecked)}</time>. Each
+        source is also listed with its own check date. Prices and rules change, especially between
+        seasons, so the operator's quote and the law on the day are what count.
+      </p>
+
+      <h2>Corrections</h2>
+      <p>
+        If something here is wrong or out of date, tell us through the request form on the home page
+        and start the note with the word correction. Say what is wrong and, if you can, where the
+        right information is published. We check it against the source and fix the page.
+      </p>
+
+      <h2>How the site is paid for</h2>
+      <p>
+        {INDEPENDENCE_STATEMENT} The operator who receives a site's trip requests pays a flat fee for
+        them. That arrangement never changes the facts on the page: prices, rules and places are
+        reported the same way whether or not an operator is involved, and the operator never edits
+        them.
+      </p>
+
+      <h2>Who publishes this site</h2>
+      <p>{site.siteName} is published by {publisher}.</p>
+    </Prose>
+  </div>
+</Base>

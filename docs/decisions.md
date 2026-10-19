@@ -43,3 +43,19 @@ Dated, with who decided and why. Newest first.
   not be promoting that operator's competitors in its headings.
 - Facts marked "search summary only" or "not verified on the business's own site" in the
   research dossiers are left off the sites.
+
+## 2026-10-19 (Clint: make the sites answer-engine first, high trust)
+
+- Clint asked that the sites target AI answer engines and bots, with high trust and authority.
+  Built in response: an at-a-glance fact table on every home page with a source and date on
+  every row; eight question pages per market, each opening with a standalone answer of 60
+  words or fewer; sources shown openly under every fact section rather than folded away; a
+  "facts checked" date on every page; a How We Research page; llms.txt and llms-full.txt; a
+  robots.txt naming the major AI crawlers as allowed with a Content-Signal line; FAQPage,
+  breadcrumb and dated WebPage structured data; sitemap lastmod.
+- **No individual is named as author or editor** (Clint's choice). The publisher is named, and
+  the method page is what stands behind the facts.
+- Answer-engine traffic and human usability point the same way here: the table and short
+  answers that a model lifts are also what a planner on a phone reads first.
+- Limit stated plainly: on-page work cannot create authority a new domain does not have.
+  Mentions and links from elsewhere build that over time.

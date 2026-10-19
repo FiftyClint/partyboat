@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import FactsChecked from '../../components/FactsChecked.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { internalPath, questionPath } from '../../lib/nav.mjs';
+import { breadcrumbSchema } from '../../lib/schema.mjs';
+
+/**
+ * Every question page on the site, each with its short answer, so a reader
+ * or a crawler can see the whole set at once and go straight to one.
+ *
+ * Each short answer here is repeated word for word from its question page,
+ * and the question pages are the ones that should rank, so this index is
+ * listed as superseded in src/lib/noindex.mjs: noindex, links followed.
+ */
+const site = currentSite();
+---
+
+<Base
+  title={`${site.marketName} party boat answers`}
+  description={`Short, sourced answers to the questions people ask before booking a party boat on ${site.marketName}.`}
+  path="/questions"
+  schemas={[breadcrumbSchema(site, [{ label: site.siteName, path: '/' }, { label: 'Answers', path: internalPath('questions') }])]}
+>
+  <div class="page section">
+    <h1>Answers about party boats on {site.marketName}</h1>
+    <FactsChecked />
+    <div class="answer-list">
+      {
+        site.questions.map((q) => (
+          <article>
+            <h2>
+              <a href={questionPath(q)}>{q.question}</a>
+            </h2>
+            <p>{q.answer}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</Base>
+
+<style>
+  .answer-list {
+    display: grid;
+    gap: var(--s6);
+    max-width: 44rem;
+    margin-top: var(--s6);
+  }
+
+  .answer-list h2 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--s2);
+  }
+
+  .answer-list p {
+    margin: 0;
+    color: var(--ink-muted);
+  }
+</style>

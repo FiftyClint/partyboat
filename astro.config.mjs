@@ -29,6 +29,8 @@ export default defineConfig({
     siteRoutes(),
     /* A sitemap lists pages we want indexed, so noindex pages stay out of it. */
     sitemap({
+      /* Every page's facts were checked on the same date, so it is every page's lastmod. */
+      ...(site.factsChecked ? { lastmod: new Date(`${site.factsChecked}T00:00:00Z`) } : {}),
       filter: (page) => {
         const path = new URL(page).pathname.replace(/\/+$/, '');
         if (path === '/thank-you') return false;

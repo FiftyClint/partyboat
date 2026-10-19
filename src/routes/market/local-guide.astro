@@ -4,6 +4,7 @@ import Prose from '../../components/Prose.astro';
 import Sources from '../../components/Sources.astro';
 import Disclosure from '../../components/Disclosure.astro';
 import Button from '../../components/Button.astro';
+import FactsChecked from '../../components/FactsChecked.astro';
 import { currentSite } from '../../data/sites.mjs';
 
 /**
@@ -13,6 +14,8 @@ import { currentSite } from '../../data/sites.mjs';
  * on it.
  */
 const site = currentSite();
+/* Stable anchors so a contents list, or an answer engine, can point at one section. */
+const anchor = (title) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 ---
 
 <Base title={site.guide.title} description={site.guide.description} path="/local-guide">
@@ -20,11 +23,26 @@ const site = currentSite();
     <Prose>
       <h1>{site.guide.title}</h1>
       <p class="lede">{site.guide.intro}</p>
+      <FactsChecked />
+
+      <nav class="toc" aria-label="On this page">
+        <p class="toc__label">On this page</p>
+        <ol>
+          {site.guide.sections.map((s) => (
+            <li>
+              <a href={`#${anchor(s.title)}`}>{s.title}</a>
+            </li>
+          ))}
+          <li>
+            <a href="#the-rules-on-the-water">The rules on the water</a>
+          </li>
+        </ol>
+      </nav>
 
       {
         site.guide.sections.map((s) => (
           <section>
-            <h2>{s.title}</h2>
+            <h2 id={anchor(s.title)}>{s.title}</h2>
             {s.body.split(/\n+/).map((para) => (
               <p>{para}</p>
             ))}
@@ -34,7 +52,7 @@ const site = currentSite();
       <Sources sources={site.guide.sources} />
 
       <section>
-        <h2>The rules on the water</h2>
+        <h2 id="the-rules-on-the-water">The rules on the water</h2>
         {site.rules.summary.split(/\n+/).map((para) => <p>{para}</p>)}
         <Sources sources={site.rules.sources} />
       </section>
@@ -48,6 +66,23 @@ const site = currentSite();
 </Base>
 
 <style>
+  .toc {
+    margin: var(--s5) 0;
+    padding: var(--s4) var(--s5);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+  }
+
+  .toc__label {
+    font-weight: 700;
+    margin: 0 0 var(--s2);
+  }
+
+  .toc ol {
+    margin: 0;
+  }
+
   .guide-cta {
     max-width: 40rem;
     margin-top: var(--s7);

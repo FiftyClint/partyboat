@@ -20,10 +20,10 @@ import { walk } from './lib/html-text.mjs';
  */
 
 const ROOT = new URL('..', import.meta.url).pathname;
-const SOURCED = new Set(['departures', 'season', 'pricing', 'rules', 'guide']);
+const SOURCED = new Set(['departures', 'season', 'pricing', 'rules', 'guide', 'glance', 'questions']);
 
 /* Not linted: identity, configuration, and source lists, which quote third parties. */
-const SKIP = new Set(['key', 'domain', 'aliases', 'timezone', 'accent', 'status', 'phone', 'operator', 'images', 'watch', 'sources']);
+const SKIP = new Set(['factsChecked', 'key', 'domain', 'aliases', 'timezone', 'accent', 'status', 'phone', 'operator', 'images', 'watch', 'sources']);
 
 const PATTERNS = [
   { re: /\$\s?\d/, what: 'a dollar amount' },

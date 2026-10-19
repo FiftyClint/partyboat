@@ -6,17 +6,21 @@ import PhoneCta from '../../components/PhoneCta.astro';
 import Disclosure from '../../components/Disclosure.astro';
 import Sources from '../../components/Sources.astro';
 import Button from '../../components/Button.astro';
+import Glance from '../../components/Glance.astro';
+import FactsChecked from '../../components/FactsChecked.astro';
 import { currentSite } from '../../data/sites.mjs';
 import { STEP_LABELS } from '../../data/brand.mjs';
 import { faqPageSchema } from '../../lib/schema.mjs';
-import { internalPath } from '../../lib/nav.mjs';
+import { internalPath, questionPath } from '../../lib/nav.mjs';
 
 /**
  * The home page, and the page each site exists to rank.
  *
- * Order follows the questions a group organiser has: can I get a boat, how
- * does this work, what kind, where from, when, what it costs, then the
- * remaining questions. The request form sits right under the hero on a phone.
+ * Order follows the questions a group organiser has, and puts the answer
+ * first: the direct answer and the date the facts were checked open the page,
+ * the at-a-glance table follows, then how this works, what kind of boat,
+ * where from, when, what it costs, and the remaining questions. The request
+ * form sits beside the answer on a wide screen and right after it on a phone.
  */
 const site = currentSite();
 ---
@@ -32,7 +36,9 @@ const site = currentSite();
       <div class="hero__body">
         <h1>{site.hero.headline}</h1>
         <p class="hero__subhead">{site.hero.subhead}</p>
-        <Button href="#request">Tell us your date and group</Button>
+        <p class="hero__answer">{site.directAnswer}</p>
+        <FactsChecked />
+        <p class="hero__cta"><Button href="#request">Tell us your date and group</Button></p>
       </div>
       <div class="hero__aside" id="request">
         <h2 class="hero__form-title">Request a party boat</h2>
@@ -45,7 +51,7 @@ const site = currentSite();
 
   <section class="section">
     <div class="page measure-wide">
-      <p class="lede">{site.directAnswer}</p>
+      <Glance />
     </div>
   </section>
 
@@ -128,6 +134,21 @@ const site = currentSite();
     </div>
   </section>
 
+  <section class="section section--tint">
+    <div class="page">
+      <h2>Answers for planning a {site.marketName} party boat</h2>
+      <ul class="answers">
+        {
+          site.questions.map((q) => (
+            <li>
+              <a href={questionPath(q)}>{q.question}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
   <section class="section">
     <div class="page">
       <h2>Questions people ask</h2>
@@ -164,6 +185,22 @@ const site = currentSite();
     font-size: var(--text-lg);
     color: var(--ink-muted);
     margin-bottom: var(--s5);
+  }
+
+  .hero__answer {
+    margin-bottom: 0;
+  }
+
+  .hero__cta {
+    margin-top: var(--s5);
+  }
+
+  .answers {
+    display: grid;
+    gap: var(--s3);
+    padding-left: var(--s5);
+    max-width: 44rem;
+    font-size: var(--text-lg);
   }
 
   .hero__form-title {

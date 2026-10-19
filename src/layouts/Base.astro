@@ -59,6 +59,7 @@ const currentPath = Astro.url.pathname;
     <meta name="twitter:card" content={site.images?.og ? 'summary_large_image' : 'summary'} />
     <meta name="theme-color" content={site.palette.base} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="Plain text summary for language models" />
 
     {jsonLd.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
   </head>

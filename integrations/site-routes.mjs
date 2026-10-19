@@ -11,12 +11,17 @@ const ROUTES = [
   ['/', 'market/index.astro'],
   ['/local-guide', 'market/local-guide.astro'],
   ['/faq', 'market/faq.astro'],
+  ['/questions', 'questions/index.astro'],
+  ['/questions/[slug]', 'questions/[slug].astro'],
+  ['/how-we-research', 'common/how-we-research.astro'],
   ['/for-operators', 'market/for-operators.astro'],
   ['/about', 'common/about.astro'],
   ['/privacy', 'common/privacy.astro'],
   ['/terms', 'common/terms.astro'],
   ['/thank-you', 'common/thank-you.astro'],
   ['/robots.txt', 'files/robots.txt.mjs'],
+  ['/llms.txt', 'files/llms.txt.mjs'],
+  ['/llms-full.txt', 'files/llms-full.txt.mjs'],
 ];
 
 export default function siteRoutes() {

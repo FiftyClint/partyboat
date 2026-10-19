@@ -1,48 +1,54 @@
 ---
+import { longDate } from '../lib/dates.mjs';
+
 /**
- * A list of sources under a section that states facts.
+ * The sources under a section that states facts, shown openly rather than
+ * folded away. A reader checking a price, and an answer engine deciding
+ * whether to trust it, should both see where it came from and when.
  *
  * Marked data-citations so the duplicate-copy checker skips it: two markets
- * in one state should cite the same state boating law, and a check that
- * punished that would push us toward worse citations.
+ * in one state should cite the same state law.
  */
 const { sources = [], label = 'Sources' } = Astro.props;
 ---
 
 {
   sources.length > 0 && (
-    <details class="sources small" data-citations>
-      <summary>{label}</summary>
-      <ul>
+    <div class="sources small" data-citations>
+      <p class="sources__label">{label}</p>
+      <ol>
         {sources.map((s) => (
           <li>
             <a href={s.url} rel="nofollow noopener">
               {s.label}
             </a>
-            , checked {s.accessed}
+            , checked <time datetime={s.accessed}>{longDate(s.accessed)}</time>
           </li>
         ))}
-      </ul>
-    </details>
+      </ol>
+    </div>
   )
 }
 
 <style>
   .sources {
-    margin-top: var(--s4);
+    margin-top: var(--s5);
+    padding-top: var(--s3);
+    border-top: 1px solid var(--rule);
     color: var(--ink-muted);
   }
 
-  .sources summary {
-    cursor: pointer;
-    font-weight: 600;
-    min-height: 2.75rem;
-    display: flex;
-    align-items: center;
+  .sources__label {
+    font-weight: 700;
+    margin: 0 0 var(--s2);
   }
 
-  .sources ul {
-    margin: var(--s2) 0 0;
+  .sources ol {
+    margin: 0;
     padding-left: var(--s5);
+  }
+
+  .sources li {
+    margin-bottom: var(--s1);
   }
 </style>

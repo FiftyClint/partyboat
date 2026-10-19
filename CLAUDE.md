@@ -27,6 +27,10 @@ Every other market file in `src/data/sites/` is `status: pending` and is not bui
    credential. Every fact in a site file comes from `docs/research/` with a URL
    and an access date. Unknown stays out.
 7. Never name an operator on a site until `operator.agreementSigned` is a real date.
+8. The sites are written answer-first for AI answer engines and people at once. Each
+   question page opens with a standalone answer of 60 words or fewer that names the
+   market. Every glance row has its own source. Update `factsChecked` only after every
+   fact on that site has actually been rechecked.
 
 ## GHL
 

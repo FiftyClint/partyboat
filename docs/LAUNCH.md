@@ -101,3 +101,41 @@ at the real domains.
    the two names it gave you.
 6. It can take a few hours for Cloudflare to see the change. Run **Domains** with
    **apply** once more the next day.
+
+## Part 7. Let answer engines in (free, about 10 minutes per domain)
+
+The sites are built to be read and quoted by ChatGPT, Claude, Perplexity and Google's AI
+answers. Three settings outside the code decide whether those engines can actually reach them.
+
+### Cloudflare AI bot settings, for each pilot domain
+
+Cloudflare changed its defaults for new domains on September 15, 2026, and it can block some AI
+crawlers before they ever see the robots.txt we publish.
+
+1. Go to **dash.cloudflare.com** and click the domain, for example `partyboatozarks.com`.
+2. Click **Security**, then **Settings**.
+3. Find **Configure AI bot policies**.
+4. Set **Search**, **Agent** and **Training** all to **Allow (do not block)**.
+5. Click **AI Crawl Control** in the left menu. In the **Crawlers** tab, make sure nothing is
+   set to **Block**.
+6. Repeat for the other four pilot domains.
+
+If the screen names differ, tell Claude what you see.
+
+### Google Search Console
+
+1. Go to **search.google.com/search-console** and sign in.
+2. Click **Add property**, choose **Domain**, type `partyboatozarks.com`.
+3. It shows a TXT record. Claude can add it through Cloudflare, or you add it in Cloudflare
+   under **DNS**, **Add record**, type **TXT**.
+4. Click **Verify**.
+5. Click **Sitemaps**, enter `sitemap-index.xml`, click **Submit**.
+6. Repeat for each pilot domain.
+
+### Bing Webmaster Tools
+
+Bing's index feeds several AI assistants, so this matters as much as Google.
+
+1. Go to **bing.com/webmasters** and sign in.
+2. Choose **Import from Google Search Console**. It copies all the domains from step above.
+3. Submit `sitemap-index.xml` for each if it was not imported.

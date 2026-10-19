@@ -13,10 +13,13 @@ export const internalPath = (path) => {
   return clean === '/' ? '/' : `${clean}/`;
 };
 
+/** A question page, for example "/questions/how-much-does-it-cost/". */
+export const questionPath = (q) => internalPath(`questions/${q.slug}`);
+
 export function primaryNav() {
   return [
     { href: internalPath('local-guide'), label: 'Local Guide' },
-    { href: internalPath('faq'), label: 'Questions' },
+    { href: internalPath('questions'), label: 'Answers' },
     { href: `${internalPath('')}#request`, label: 'Request a Boat' },
   ];
 }
@@ -24,7 +27,9 @@ export function primaryNav() {
 export function footerNav() {
   return [
     { href: internalPath('local-guide'), label: 'Local Guide' },
+    { href: internalPath('questions'), label: 'Answers' },
     { href: internalPath('faq'), label: 'Questions' },
+    { href: internalPath('how-we-research'), label: 'How We Research' },
     { href: internalPath('for-operators'), label: 'For Boat Operators' },
     { href: internalPath('about'), label: 'About' },
     { href: internalPath('privacy'), label: 'Privacy' },

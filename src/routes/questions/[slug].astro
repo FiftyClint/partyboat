@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import Prose from '../../components/Prose.astro';
+import Sources from '../../components/Sources.astro';
+import Disclosure from '../../components/Disclosure.astro';
+import FactsChecked from '../../components/FactsChecked.astro';
+import Button from '../../components/Button.astro';
+import { currentSite } from '../../data/sites.mjs';
+import { questionPageSchema, breadcrumbSchema } from '../../lib/schema.mjs';
+import { internalPath, questionPath } from '../../lib/nav.mjs';
+
+/**
+ * One question, answered.
+ *
+ * Built for being quoted. The short answer comes straight after the question,
+ * stands on its own, and names the market, so an answer engine lifting one
+ * paragraph gets a correct and complete answer. The detail and its sources
+ * follow for anyone, person or crawler, who wants to check it.
+ */
+export function getStaticPaths() {
+  return currentSite().questions.map((q) => ({ params: { slug: q.slug }, props: { q } }));
+}
+
+const site = currentSite();
+const { q } = Astro.props;
+const path = questionPath(q);
+const others = site.questions.filter((other) => other.slug !== q.slug);
+---
+
+<Base
+  title={q.question}
+  description={q.answer.length > 158 ? `${q.answer.slice(0, 155).replace(/\s+\S*$/, '')}...` : q.answer}
+  path={path}
+  schemas={[
+    questionPageSchema({ site, q, path }),
+    breadcrumbSchema(site, [
+      { label: site.siteName, path: '/' },
+      { label: 'Answers', path: internalPath('questions') },
+      { label: q.question, path },
+    ]),
+  ]}
+>
+  <div class="page section">
+    <nav class="crumbs small" aria-label="Breadcrumb">
+      <a href="/">{site.siteName}</a> / <a href={internalPath('questions')}>Answers</a>
+    </nav>
+    <Prose>
+      <h1>{q.question}</h1>
+      <p class="short-answer">{q.answer}</p>
+      <FactsChecked />
+      {q.detail.split(/\n+/).map((para) => <p>{para}</p>)}
+      <Sources sources={q.sources} />
+    </Prose>
+
+    <div class="question-cta">
+      <Disclosure />
+      <Button href="/#request">Request a party boat on {site.marketName}</Button>
+    </div>
+
+    <section class="more">
+      <h2>More answers about {site.marketName}</h2>
+      <ul>
+        {others.map((o) => (
+          <li>
+            <a href={questionPath(o)}>{o.question}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .crumbs {
+    margin-bottom: var(--s4);
+    color: var(--ink-muted);
+  }
+
+  .short-answer {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    padding: var(--s4) var(--s5);
+    background: var(--accent-tint);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  .question-cta {
+    max-width: 40rem;
+    margin-top: var(--s7);
+  }
+
+  .more {
+    max-width: 40rem;
+    margin-top: var(--s7);
+  }
+
+  .more ul {
+    padding-left: var(--s5);
+    display: grid;
+    gap: var(--s2);
+  }
+</style>

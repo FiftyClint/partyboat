@@ -88,8 +88,45 @@ const operator = z.object({
   agreementSigned: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'agreementSigned must be YYYY-MM-DD'),
 });
 
+/**
+ * One row of the "at a glance" table at the top of the home page. A short
+ * label, a short value, and the source that value came from. This table is
+ * what an answer engine lifts first, so every row carries its own citation.
+ */
+const glanceRow = z.object({
+  label: nonEmpty('glance label', 40),
+  value: nonEmpty('glance value', 220),
+  source: sourceSchema,
+});
+
+/**
+ * A question page at /questions/<slug>/. The answer is the first thing on the
+ * page and has to stand on its own when quoted out of context, so it is short
+ * and names the market. The detail and sources follow.
+ */
+const question = z.object({
+  slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'slug must be lowercase words joined by hyphens').max(70),
+  question: nonEmpty('question', 140),
+  answer: nonEmpty('short answer', 420).refine(
+    (text) => text.split(/\s+/).length <= 60,
+    'short answer must be 60 words or fewer',
+  ),
+  detail: nonEmpty('question detail', 3200),
+  sources: sources('question'),
+});
+
 /** Everything a market needs before it can be served on its own domain. */
 const marketContent = z.object({
+  /** The date every fact on the site was last checked against its source. */
+  factsChecked: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'factsChecked must be YYYY-MM-DD'),
+
+  glance: z.array(glanceRow).min(4).max(8),
+
+  questions: z
+    .array(question)
+    .min(6, 'a market site needs at least six question pages')
+    .refine((qs) => new Set(qs.map((q) => q.slug)).size === qs.length, 'question slugs must be unique'),
+
   hero: z.object({
     headline: nonEmpty('hero headline', 120),
     subhead: nonEmpty('hero subhead', 400),
