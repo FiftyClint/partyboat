@@ -3,7 +3,383 @@ siteName: "Party Boat Lake Havasu"
 domain: partyboatlakehavasu.com
 aliases: []
 marketName: "Lake Havasu"
-regionName: "Arizona"
+regionName: "Arizona and California"
 timezone: America/Phoenix
-accent: lake
-status: pending
+accent: slate
+status: live
+
+meta:
+  title: "Lake Havasu Party Boats: Pontoons, Slide Boats, Captains"
+  description: >-
+    Party pontoons, slide boats and captained trips on Lake Havasu: the Channel rules, Copper
+    Canyon, what a day costs, and who can drive on which side.
+
+hero:
+  headline: "Party boats on Lake Havasu, year round"
+  subhead: >-
+    Pontoons, slide boats and captained trips from the Channel and the marinas around Lake Havasu
+    City. Tell us the date and the group, and we pass it to one local operator.
+
+directAnswer: >-
+  Most party boats on Lake Havasu are pontoons or tritoons you drive yourselves, with a few slide
+  boats and a small number of captained trips. That makes the first question who in the group
+  will drive and stay sober all day. If nobody will, book a captain. The season runs all year here:
+  spring and summer are busiest and most expensive, and the cooler months are quieter and cheaper.
+  Arizona and California share the lake, and the rules for who may drive differ between them, so
+  read the rules section before you rent.
+
+steps:
+  - >-
+    Send your dates, the size of the group, and whether you want to drive or have a captain. Mention
+    if anyone is under 21, since some rental companies set their minimum age there.
+  - >-
+    We pass the request to one operator on Lake Havasu, so you get one answer about what is free
+    rather than a dozen tabs of marketplace listings.
+  - >-
+    They confirm the boat, where you pick it up or launch, the deposit, fuel, and the return time.
+    The rental agreement and payment are with them.
+
+boatTypes:
+  intro: >-
+    Havasu is a self-drive lake more than most. The choice is between driving a rental yourselves,
+    renting a bigger slide boat, or paying for a captain.
+  types:
+    - title: Self-drive pontoon or tritoon
+      body: >-
+        The most common rental here, taking a group of roughly eight to fifteen depending on the
+        boat. You drive, you pay for the fuel you use, and a card deposit covers damage.
+    - title: Slide boat or double-decker
+      body: >-
+        A pontoon with an upper deck and a slide, for groups of up to about eighteen. Fewer of these
+        are available than standard pontoons, and some rent as self-drive.
+    - title: Captained trip
+      body: >-
+        A smaller number of companies sell trips with a captain, from small charters for six to
+        double-decker excursions and tiki boats. The easiest choice if the group wants to drink or
+        nobody has driven a boat before.
+    - title: Docked party barge
+      body: >-
+        A barge that stays tied up in the Channel all day as a floating base, with no captain and
+        no driving. A different way to be on the water during a busy weekend.
+
+departures:
+  intro: >-
+    Lake Havasu sits on the Colorado River, with Lake Havasu City and Arizona on the east shore and
+    California on the west. Rental companies cluster around the Island and the London Bridge, with
+    others at the state park, Site Six and the marinas to the south.
+  places:
+    - title: The Channel and the London Bridge
+      body: >-
+        The heart of the lake for visitors. Rental companies operate under and beside the London
+        Bridge and at the Nautical Beachfront Resort on the Island, and a docked party barge sits in
+        the Channel.
+    - title: Lake Havasu State Park
+      body: >-
+        On London Bridge Road, with a large launch ramp and a rental company on site. The ramp
+        charges a daily fee that is higher on weekends.
+    - title: Site Six
+      body: >-
+        A launch ramp south of the Island used as a pickup point by at least one rental company. Its
+        status has changed with construction, so confirm it is open.
+    - title: Havasu Riviera Marina
+      body: >-
+        South of town, with a launch ramp and a captained tiki boat company. Launch fees are higher
+        from April through September.
+    - title: Delivered or launched for you
+      body: >-
+        Some rental companies keep offices away from the water on Industrial Boulevard and deliver
+        or launch the boat at a ramp for you.
+  sources:
+    - label: Go Lake Havasu, launch ramps and marinas
+      url: https://www.golakehavasu.com/launch-ramps-marinas
+      accessed: "2026-10-19"
+    - label: At The Bridge Rentals
+      url: https://atthebridgerentals.com/
+      accessed: "2026-10-19"
+    - label: Nautical Watersports
+      url: https://nauticalwatersports.com/
+      accessed: "2026-10-19"
+    - label: Lake Havasu Party Boat, docked barge in the Channel
+      url: https://lakehavasupartyboat.com/
+      accessed: "2026-10-19"
+    - label: Wet Monkey Powersport Rentals, state park location
+      url: https://www.wetmonkeyrentals.com/water-rentals/pontoon/
+      accessed: "2026-10-19"
+    - label: Hook's Boat Rentals, Site Six pickup
+      url: https://hooksboats.com/
+      accessed: "2026-10-19"
+    - label: Tikitoons Boat Rental, Havasu Riviera
+      url: https://tikitoonsboatrental.com/
+      accessed: "2026-10-19"
+    - label: Lake Havasu RV and Boat Rentals, Industrial Boulevard
+      url: https://lakehavasurvrentals.com/
+      accessed: "2026-10-19"
+    - label: Go Lake Havasu, Arizona boating laws
+      url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/arizona-boating-laws/
+      accessed: "2026-10-19"
+
+season:
+  summary: >-
+    Havasu boats all year. One captained charter company calls March through September its peak
+    season and October through February its offseason, with lower prices in the cooler months. A
+    marina charges higher launch fees April through September, and one party barge company opens
+    seven days a week in season, sunrise to sunset, with reservations recommended.
+
+    Summer heat is a real planning factor. One charter company reserves the right to end trips
+    early for monsoon storms. No Havasu operator publishes a typical booking lead time, so for a
+    spring or holiday weekend, ask as soon as your dates are set.
+  sources:
+    - label: Lake Havasu Charters, peak and offseason, monsoon policy
+      url: https://lakehavasucharters.com/
+      accessed: "2026-10-19"
+    - label: Go Lake Havasu, launch fees by season
+      url: https://www.golakehavasu.com/launch-ramps-marinas
+      accessed: "2026-10-19"
+    - label: Lake Havasu Party Boat, season hours
+      url: https://lakehavasupartyboat.com/
+      accessed: "2026-10-19"
+
+pricing:
+  summary: >-
+    Prices published by Lake Havasu operators on October 19, 2026, as ranges, not quotes.
+
+    Self-drive pontoons ran from $125 an hour, or $375 for four hours and $475 for eight at one
+    company, and $600 to $1,350 a day at another depending on the boat, with a double-decker at the
+    top of that range. A captained charter for up to six ran $750 for four hours in peak season,
+    $175 for each extra hour, and $300 for two hours in the offseason, with fuel included. A docked
+    party barge in the Channel ran $950 for a ten-hour day.
+  components:
+    - title: Deposits
+      body: >-
+        Card deposits on self-drive boats ran $300 to $800, and $1,000 on one captained tiki boat.
+        One company also charges a $300 reservation fee.
+    - title: Fuel and tax
+      body: >-
+        Usually extra on self-drive rentals. One company includes the first tank, one fuels the boat
+        for you, and another charges a service fee plus a per-gallon price if it has to refuel. Fuel
+        was included on the captained charter.
+    - title: Captain's tip
+      body: >-
+        One captained company suggests a 20 percent tip for the captain. Budget for it.
+    - title: Cancellation and weather
+      body: >-
+        Terms range widely, from a full refund a week out to no refund inside a week, and one
+        company asks for 30 days for a full refund. One company gives a credit, not cash, when rain stops a trip.
+        Read the policy before paying.
+  sources:
+    - label: At The Bridge Rentals, hourly rate and cancellation
+      url: https://atthebridgerentals.com/
+      accessed: "2026-10-19"
+    - label: Wet Monkey Powersport Rentals, pontoon rates and deposit
+      url: https://www.wetmonkeyrentals.com/water-rentals/pontoon/
+      accessed: "2026-10-19"
+    - label: Lake Havasu RV and Boat Rentals, daily rates, fees and cancellation
+      url: https://lakehavasurvrentals.com/
+      accessed: "2026-10-19"
+    - label: Lake Havasu Charters, charter rates
+      url: https://lakehavasucharters.com/
+      accessed: "2026-10-19"
+    - label: Lake Havasu Party Boat, docked barge rate
+      url: https://lakehavasupartyboat.com/
+      accessed: "2026-10-19"
+    - label: Tikitoons Boat Rental, deposit, tip and weather
+      url: https://tikitoonsboatrental.com/
+      accessed: "2026-10-19"
+    - label: Hook's Boat Rentals, deposit and refuel charge
+      url: https://hooksboats.com/
+      accessed: "2026-10-19"
+    - label: Havasu Adventure Company, first tank included
+      url: https://havasuadventurecompany.com/
+      accessed: "2026-10-19"
+    - label: Nautical Watersports, fueling
+      url: https://nauticalwatersports.com/
+      accessed: "2026-10-19"
+
+rules:
+  summary: >-
+    Two states on one lake. The Arizona side and the California side have different boating laws,
+    and the line runs down the lake. Law enforcement from both counties patrols the whole lake.
+
+    Who may drive on the Arizona side. Arizona sets 12 as the minimum operator age, and rental
+    companies here say no boating license is needed to rent or drive in Arizona. That was true as of
+    October 2026, but bills to require boater education have been proposed, so check Arizona Game
+    and Fish before you go. Rental companies set their own minimum age, commonly 18 or 21, with a
+    driver's license.
+
+    California waters. California requires its residents to carry a California Boater Card, but
+    the state exempts people operating a rental boat. The minimum age to drive a motorboat on the
+    California side is 16.
+
+    The Bridgewater Channel. The channel under the London Bridge is a no-wake zone of 5 mph. City
+    code bans stopping or anchoring in a way that blocks traffic, bans boats 36 feet and longer and
+    houseboats, bans swimming in or across the channel, and makes water cannons illegal.
+
+    Copper Canyon. Federal rules keep a 60-foot lane open down the canyon. No anchoring, mooring or
+    loitering in it, and the Coast Guard can close the lane when it gets crowded.
+
+    Drinking and life jackets. Arizona's limit for the driver is .08 percent blood alcohol, and you
+    can be charged below that if impaired. Children 12 and younger must wear a life jacket while
+    the boat is moving. Arizona State Parks bans glass on designated beaches.
+
+    Paying passengers. In April 2024 the Coast Guard stopped an illegal charter near Thompson Bay
+    carrying nine paying passengers on a pontoon. More than six paying guests requires a Coast Guard
+    inspected boat. Ask a captained operator for the captain's license and, for larger groups, the
+    boat's Certificate of Inspection.
+  sources:
+    - label: Go Lake Havasu, Arizona boating laws
+      url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/arizona-boating-laws/
+      accessed: "2026-10-19"
+    - label: At The Bridge Rentals, FAQ on licenses
+      url: https://atthebridgerentals.com/
+      accessed: "2026-10-19"
+    - label: Hook's Boat Rentals, license and age
+      url: https://hooksboats.com/
+      accessed: "2026-10-19"
+    - label: Arizona Legislature, HB 2149 (2024), boater education
+      url: https://www.azleg.gov/legtext/56leg/2R/bills/HB2149H.htm
+      accessed: "2026-10-19"
+    - label: Arizona Game and Fish, boating education
+      url: https://www.azgfd.com/education/boating-education/
+      accessed: "2026-10-19"
+    - label: Yuma Sun, does California boating law apply to Arizona users of the Colorado River
+      url: https://www.yumasun.com/news/does-california-boating-law-apply-to-arizona-users-of-the-colorado-river/article_15d487e2-f253-46e0-8502-44afffa3f22e.html
+      accessed: "2026-10-19"
+    - label: Go Lake Havasu, Bridgewater Channel laws
+      url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/bridgewater-channel-laws/
+      accessed: "2026-10-19"
+    - label: Code of Federal Regulations, 33 CFR 165.1171, Copper Canyon
+      url: https://www.law.cornell.edu/cfr/text/33/165.1171
+      accessed: "2026-10-19"
+    - label: Arizona Game and Fish, boating
+      url: https://www.azgfd.com/boating/
+      accessed: "2026-10-19"
+    - label: Arizona Administrative Code R12-8-116, glass containers
+      url: https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R12-8-116
+      accessed: "2026-10-19"
+    - label: U.S. Coast Guard, illegal charter terminated at Lake Havasu, April 2024
+      url: https://www.news.uscg.mil/Press-Releases/Article/3765460/coast-guard-terminates-voyage-of-an-illegal-charter-vessel-in-lake-havasu-arizo/
+      accessed: "2026-10-19"
+
+guide:
+  title: "Planning a party boat day on Lake Havasu"
+  description: >-
+    The Channel, Copper Canyon, two-state rules, heat, getting to Lake Havasu City, and how to
+    choose between a rental and a captain on Lake Havasu.
+  intro: >-
+    Lake Havasu is a lake on the Colorado River between Arizona and California, with the London Bridge and its channel at the center of town. It is a party lake and a fishing lake, and the rules on the water reflect both. Here is what to know before you book a
+    boat.
+  sections:
+    - title: The Channel is for cruising, not anchoring
+      body: >-
+        The Bridgewater Channel under the London Bridge is where everyone wants to be seen, but it is
+        a narrow no-wake waterway. Keep right, keep moving, and do not stop or anchor where you block
+        traffic. Swimming in the channel is banned. If you want to stay put, a docked barge or a beach
+        is the way to do it.
+    - title: Copper Canyon
+      body: >-
+        A boat-only cove long known for its party crowds. The entrance is now marked with
+        no-wake buoys and a lane is kept open for safety, and the city's own guide says it is calmer
+        than in years past. Do not anchor or tie up in the marked lane, and treat any cliff jumping
+        as dangerous.
+    - title: Know which state you are in
+      body: >-
+        The lake is split between Arizona and California, and age and licensing rules for drivers
+        differ. Your rental company will tell you where its boats may go and who may drive. Officers
+        from both sides patrol the whole lake.
+    - title: Heat and wind
+      body: >-
+        Summers are very hot and the sun on the water is relentless. Bring more water than seems
+        reasonable, shade, and sunscreen. Summer monsoon storms can end a trip early, and captains
+        will make that call.
+    - title: Getting here
+      body: >-
+        Lake Havasu City's airport has no airline service. The city points visitors to Las Vegas and
+        Phoenix as the nearest full-service airports, each roughly a three-hour drive.
+    - title: Staying near the water
+      body: >-
+        Several resorts on the lake have their own launch ramps, free for guests, including the
+        Nautical Beachfront Resort on the Island. Staying near the Island or the Channel puts you close to several rental companies.
+    - title: Fishing is a separate trip
+      body: >-
+        Havasu hosts bass tournaments through the year and striper guides work the lake. If you want
+        to fish, say so on the request so it goes to the right kind of operator.
+  sources:
+    - label: Go Lake Havasu, Bridgewater Channel laws
+      url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/bridgewater-channel-laws/
+      accessed: "2026-10-19"
+    - label: Go Lake Havasu, Copper Canyon
+      url: https://www.golakehavasu.com/directory/copper-canyon/
+      accessed: "2026-10-19"
+    - label: Code of Federal Regulations, 33 CFR 165.1171, Copper Canyon
+      url: https://www.law.cornell.edu/cfr/text/33/165.1171
+      accessed: "2026-10-19"
+    - label: Go Lake Havasu, Arizona boating laws
+      url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/arizona-boating-laws/
+      accessed: "2026-10-19"
+    - label: Lake Havasu Charters, monsoon policy
+      url: https://lakehavasucharters.com/
+      accessed: "2026-10-19"
+    - label: Lake Havasu City, airport
+      url: https://www.lhcaz.gov/airport
+      accessed: "2026-10-19"
+    - label: Travel and Time, driving times from Lake Havasu City
+      url: https://travelandtime.com/driving-time-from-lake-havasu-city-to-las-vegas
+      accessed: "2026-10-19"
+    - label: Go Lake Havasu, launch ramps and resort ramps
+      url: https://www.golakehavasu.com/launch-ramps-marinas
+      accessed: "2026-10-19"
+    - label: Go Lake Havasu, fishing
+      url: https://www.golakehavasu.com/fishing
+      accessed: "2026-10-19"
+
+faq:
+  - question: Do we need a boating license to drive a rental?
+    answer: >-
+      On the Arizona side, rental companies say no license is needed to rent or drive, as of
+      October 2026. California exempts people driving a rental boat from its boater card. Rental
+      companies still set their own minimum ages. Check the rules section, because Arizona has
+      considered changing this.
+  - question: Can we anchor in the Channel?
+    answer: >-
+      No. The Bridgewater Channel is a no-wake waterway and you cannot stop or anchor where it
+      blocks traffic, or swim in it. Cruise through, then head out to a cove or a beach.
+  - question: Can we go to Copper Canyon?
+    answer: >-
+      Yes, by boat. Stay out of the marked lane that runs down the canyon, where anchoring and
+      tying up are not allowed.
+  - question: Should we get a captain?
+    answer: >-
+      If anyone driving would want to drink, yes. Most Havasu rentals are self-drive, and the
+      driver must stay sober all day on busy, patrolled water. A captain also knows where the boat
+      may go on each side of the lake.
+  - question: How big a group can go on one boat?
+    answer: >-
+      Self-drive pontoons usually take about eight to fifteen people, and slide boats a few more. A
+      captained boat carrying more than six paying guests needs to be a Coast Guard inspected
+      vessel, so ask about that for a big group.
+  - question: Is it too hot in summer?
+    answer: >-
+      It is very hot, and operators run right through it. Go early, bring shade and lots of water, and
+      keep an eye on the sky for summer storms.
+  - question: Are you a rental company?
+    answer: >-
+      No. We are an independent guide. We pass your request to one Lake Havasu operator, and they
+      rent or run the boat and take your booking.
+
+forOperators: >-
+  Groups planning a Havasu weekend face a sea of marketplace listings and very little guidance
+  about who can drive, where boats may anchor, or what happens on the California side. This site
+  answers those questions and hands each request to one operator. We are looking for an operator
+  who runs captained trips or slide boats for groups, works the spring season, and can show a
+  current Coast Guard license and insurance.
+
+watch:
+  - label: Go Lake Havasu, Arizona boating laws
+    url: https://www.golakehavasu.com/things-to-do/boating/boat-safety/arizona-boating-laws/
+    kind: tourism
+  - label: Arizona Game and Fish, boating
+    url: https://www.azgfd.com/boating/
+    kind: regulator
+  - label: Code of Federal Regulations, 33 CFR 165.1171
+    url: https://www.law.cornell.edu/cfr/text/33/165.1171
+    kind: regulator
