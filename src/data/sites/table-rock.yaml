@@ -5,5 +5,395 @@ aliases: []
 marketName: "Table Rock Lake"
 regionName: "Missouri and Arkansas"
 timezone: America/Chicago
-accent: lake
-status: pending
+accent: pine
+status: live
+
+meta:
+  title: "Party Boats and Slide Boats on Table Rock Lake"
+  description: >-
+    Double-deck slide boats, tritoons and captained trips on Table Rock Lake near Branson: which
+    marina, what it costs, and who is allowed to drive.
+
+hero:
+  headline: "A party boat day on Table Rock Lake"
+  subhead: >-
+    Slide boats, tritoons and boats with a captain, out of Branson, Kimberling City and the
+    marinas around the lake. Send us the date and the group and we pass it to one local operator.
+
+directAnswer: >-
+  Table Rock is a lake of bluffs and coves, and a party day here usually means finding a
+  quiet cove to swim, float and eat, rather than a crowded raft-up. The boat most groups want is a
+  double-deck pontoon with a slide off the top deck, which the bigger marinas around Branson rent
+  for groups in the mid-teens. Smaller groups rent a tritoon. If nobody wants to drive, or the
+  group is new to boats, a captain can take you out on a rented boat or their own. Weekends from
+  Memorial Day to Labor Day are the ones to ask about early.
+
+steps:
+  - >-
+    Tell us when you are coming, how many are in the group, and whether you want a slide boat, a
+    plain tritoon, or someone else at the wheel. A headcount range is fine.
+  - >-
+    We hand the request to one operator on Table Rock who handles groups, so you deal with one
+    company instead of calling marina after marina around the lake.
+  - >-
+    They confirm the boat, the marina you leave from, what the price includes, and the rules on age
+    and boater cards. Booking and payment are between you and them.
+
+boatTypes:
+  intro: >-
+    Rental boats on Table Rock are mostly pontoons and tritoons. What changes is the size, the
+    extras, and who drives.
+  types:
+    - title: Double-deck slide boat
+      body: >-
+        A long pontoon with a second deck and a slide into the water, sometimes two. This is the
+        party boat on Table Rock, and the big ones carry a bigger group than a standard
+        tritoon. Only a handful of marinas rent them, so ask early for a summer weekend.
+    - title: Tritoon or pontoon
+      body: >-
+        The everyday rental. Room for a family or a group of friends, and a swim ladder. Most marinas around the lake rent them.
+    - title: A boat with a captain
+      body: >-
+        Some resorts and independent captains offer a boat and captain together for small groups,
+        and some captains will drive a boat you have rented. Useful if nobody has a boater card or
+        anyone wants to drink.
+    - title: Cruises and sailing
+      body: >-
+        A sailing catamaran runs swim and sunset cruises from the dam end of the lake, sells seats
+        to the public, and takes private groups too. A small yacht cruise also operates. Good for a
+        big group that wants one boat and no driving at all.
+
+departures:
+  intro: >-
+    Table Rock spreads across southwest Missouri and into northwest Arkansas, and its marinas are
+    far apart by road. Most visitors stay around Branson, so the marinas near the dam and along the
+    Branson side get the most party bookings, but the west end is worth a look if you are staying
+    near Kimberling City or Shell Knob.
+  places:
+    - title: Branson and the dam end
+      body: >-
+        Table Rock State Park's marina, the Chateau on the Lake marina and Rock Lane Resort all rent
+        boats on the Branson side, including double-deck slide boats. The sailing catamaran leaves
+        from here too.
+    - title: Ridgedale and Big Cedar
+      body: >-
+        South of Branson, Big Cedar Lodge runs two marinas, Long Creek and Bent Hook, with rentals
+        and a captain package.
+    - title: Kimberling City
+      body: >-
+        Mid-lake on Highway 13, with the Port of Kimberling marina renting slide pontoons and a
+        houseboat company based nearby.
+    - title: Lampe and the central lake
+      body: >-
+        An independent pontoon rental company operates out of the Baxter Marina complex, with
+        tri-toons including one with a slide and grill.
+    - title: Cape Fair and Galena, on the James River arm
+      body: >-
+        Two marinas up the James River arm. Cape Fair sits inside a Corps of Engineers park; tell
+        the gate you are going to the marina store.
+    - title: Shell Knob and Cassville, the west end
+      body: >-
+        Campbell Point, Kings River and Big M marinas rent tritoons on the quieter western end of
+        the lake.
+  sources:
+    - label: Wikipedia, Table Rock Lake
+      url: https://en.wikipedia.org/wiki/Table_Rock_Lake
+      accessed: "2026-10-19"
+    - label: State Park Marina, boat rentals and Big Kahuna
+      url: https://www.stateparkmarina.com/boat-rentals
+      accessed: "2026-10-19"
+    - label: State Park Marina, catamaran cruise
+      url: https://www.stateparkmarina.com/services/catamaran-cruise
+      accessed: "2026-10-19"
+    - label: Chateau on the Lake Marina, boat rentals
+      url: https://www.chateaumarina.com/rental.html
+      accessed: "2026-10-19"
+    - label: Rock Lane Resort and Marina, boat rentals
+      url: https://rocklane.com/marina/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Big Cedar Lodge, Long Creek Marina
+      url: https://bigcedar.com/long-creek-marina/
+      accessed: "2026-10-19"
+    - label: Port of Kimberling Marina, rentals
+      url: https://portofkimberlingmarina.com/rentals/
+      accessed: "2026-10-19"
+    - label: Table Rock Lake Pontoon Rentals, boat rentals
+      url: https://pontoonrentals.com/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Cape Fair Marina, boat rentals and park gate
+      url: https://capefairmarina.com/table-rock-lake-boat-rentals/
+      accessed: "2026-10-19"
+    - label: Hideaway Marina, Galena
+      url: https://hideawaymarina1956.com/
+      accessed: "2026-10-19"
+    - label: Campbell Point Marina, boat rentals
+      url: https://www.campbellpointmarina.com/rentals/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Kings River Marina, boat rentals
+      url: https://kingsrivermarina.com/services/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Big M Marina, Cassville
+      url: https://bigmmarina.com/
+      accessed: "2026-10-19"
+
+season:
+  summary: >-
+    Marinas wind down in late fall. On October 19, 2026 one marina on the James River arm had
+    closed for the winter, another in Arkansas rents by appointment only from November through
+    March, and one on the Branson side was open five days a week. A Cape Fair marina rents in
+    winter with 24 hours notice.
+
+    The heavy months are May through August. Across Missouri, 79.7 percent of 2024 boating crashes
+    happened in those four months and July was the worst, which tracks where the traffic is.
+    Memorial Day weekend 2026 packed the state park marina.
+
+    No marina publishes a typical booking window. The largest slide boats are few, and the state park marina takes online reservations only for longer rentals and sells its three-hour rentals
+    walk-up only. For a summer weekend, ask early.
+  sources:
+    - label: Hideaway Marina, winter closure
+      url: https://hideawaymarina1956.com/
+      accessed: "2026-10-19"
+    - label: Cricket Creek Marina, winter by appointment
+      url: https://www.cricketcreek.com/
+      accessed: "2026-10-19"
+    - label: Rock Lane Resort and Marina, hours
+      url: https://www.rocklane.com/
+      accessed: "2026-10-19"
+    - label: Cape Fair Marina, winter rentals
+      url: https://capefairmarina.com/table-rock-lake-boat-rentals/
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, Missouri Boating Statistics and Drownings, 2025 edition
+      url: https://www.mshp.dps.missouri.gov/MSHPWeb/SAC/pdf/2025BoatingAndDrowningStats.pdf
+      accessed: "2026-10-19"
+    - label: KY3, Boaters pack Table Rock Lake for Memorial Day weekend, May 24, 2026
+      url: https://ky3.com/2026/05/24/boaters-pack-table-rock-lake-memorial-day-weekend/
+      accessed: "2026-10-19"
+    - label: State Park Marina, reservations
+      url: https://www.stateparkmarina.com/boat-rentals
+      accessed: "2026-10-19"
+
+pricing:
+  summary: >-
+    Table Rock marinas publish fewer prices than most lakes. Several quote only through a booking
+    engine or by phone. What was published on October 19, 2026 is below, as ranges. One rate page
+    still carried pandemic-era wording, so treat its numbers as possibly out of date and confirm.
+
+    Self-drive tritoons and slide boats ran about $329 to $459 for three hours, $479 to $699 for six,
+    and $539 to $749 for eight. Rentals of nearly a full day ran about $559 to $779. A boat and
+    captain together for a small group started around $300 for two hours plus $100 an hour after
+    that, and a captain alone for a boat you have rented ran $60 to $100 an hour. A private
+    three-hour charter of the sailing catamaran for up to 49 people was $1,400.
+  components:
+    - title: Gas and tax
+      body: >-
+        Most marinas add fuel and sales tax on top of the posted rate. At least one prices as
+        advertised with no tax added. Ask which you are looking at.
+    - title: Deposit
+      body: >-
+        The state park marina holds $500 on a card presented in person, plus a card at booking against
+        a no-show. Others require a deposit without publishing the amount.
+    - title: Damage waivers and extras
+      body: >-
+        Some marinas sell an optional damage waiver. Tubes, skis and boards are usually an extra
+        charge.
+    - title: Cancellation and weather
+      body: >-
+        Notice periods run from 24 to 72 hours depending on the company, and one charges half the
+        rental for a late cancellation. Marinas cancel for dangerous weather and offer a new date
+        or a refund. Light rain usually does not cancel a trip.
+  sources:
+    - label: Chateau on the Lake Marina, rental rates
+      url: https://www.chateaumarina.com/rental.html
+      accessed: "2026-10-19"
+    - label: Table Rock Lake Pontoon Rentals, rates and policies
+      url: https://pontoonrentals.com/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Campbell Point Marina, rates and cancellation
+      url: https://www.campbellpointmarina.com/rentals/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Captain Jake's Lake Adventures, charter and captain rates
+      url: https://tablerocklakecaptain.com/
+      accessed: "2026-10-19"
+    - label: Bearded Boat Captain, captain rates
+      url: https://beardedboatcaptain.com/
+      accessed: "2026-10-19"
+    - label: State Park Marina, catamaran private charter
+      url: https://www.stateparkmarina.com/services/catamaran-cruise
+      accessed: "2026-10-19"
+    - label: State Park Marina, deposit and cancellation
+      url: https://www.stateparkmarina.com/boat-rentals
+      accessed: "2026-10-19"
+    - label: Cape Fair Marina, pricing and extras
+      url: https://capefairmarina.com/table-rock-lake-boat-rentals/
+      accessed: "2026-10-19"
+    - label: Port of Kimberling Marina, rentals and damage waiver
+      url: https://portofkimberlingmarina.com/rentals/
+      accessed: "2026-10-19"
+    - label: Rock Lane Resort and Marina, weather policy
+      url: https://rocklane.com/marina/boat-rentals/
+      accessed: "2026-10-19"
+
+rules:
+  summary: >-
+    Boater cards on the Missouri side. A 2026 change to Missouri law means that on the state's lakes,
+    anyone born after January 1, 1984 and before January 1, 2006 has to carry a boating safety
+    identification card while driving, and starting January 1, 2027 so does anyone born on or after
+    January 1, 2006. Marinas here can sell a seven-day temporary card for $9, once in a lifetime,
+    with a driver's license. Big Cedar's marinas say they offer it.
+
+    Age and experience. The Highway Patrol sets 14 as the operator minimum unless an adult is
+    aboard. Rental companies here set their own floor much higher, commonly 21 or 25, and the state
+    park marina says it will not rent to first-time drivers. At least two rental companies require boats back at the dock by dark.
+
+    The Arkansas end. Part of the lake lies in Arkansas, which has its own boater education rule.
+    If you rent from a marina on the Arkansas side, ask them what applies.
+
+    Alcohol and life jackets. Missouri's limit for the person driving is .08 percent blood alcohol,
+    or .02 percent under age 21. Children under seven must wear a life jacket, and there must be a
+    wearable one aboard for everyone.
+
+    Paying passengers. A captain carrying paying guests on an uninspected boat is generally limited
+    to six, and larger passenger boats need a Coast Guard Certificate of Inspection. The Coast Guard
+    advises asking to see the captain's license before you board.
+  sources:
+    - label: Missouri Revisor of Statutes, RSMo 306.127, boater identification card
+      url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, boater education law FAQs
+      url: https://apps.mshp.dps.mo.gov/MSHPWeb/WaterPatrol/BoatingLaws_Education/boaterEduLawFAQ.html
+      accessed: "2026-10-19"
+    - label: Big Cedar Lodge, Long Creek Marina, temporary card
+      url: https://bigcedar.com/long-creek-marina/
+      accessed: "2026-10-19"
+    - label: State Park Marina, rental rules
+      url: https://www.stateparkmarina.com/boat-rentals
+      accessed: "2026-10-19"
+    - label: Campbell Point Marina, sunset return rule
+      url: https://www.campbellpointmarina.com/rentals/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, boating while intoxicated brochure SHP-44
+      url: https://www.machs.mo.gov/MSHPWeb/Publications/Brochures/documents/SHP-44.pdf
+      accessed: "2026-10-19"
+    - label: Missouri Revisor of Statutes, RSMo 306.100, life jackets
+      url: https://revisor.mo.gov/main/OneSection.aspx?section=306.100
+      accessed: "2026-10-19"
+    - label: U.S. Coast Guard, Passenger for Hire and Charter Vessel Operations (pamphlet)
+      url: https://wow.uscgaux.info/Uploads_wowII/P-DEPT/PaxForHire_trifold_3.pdf
+      accessed: "2026-10-19"
+
+guide:
+  title: "Planning a day on Table Rock Lake"
+  description: >-
+    Swim coves, weather, getting to Branson, where to stay, and how to choose between a slide
+    boat, a tritoon and a captain on Table Rock Lake.
+  intro: >-
+    Table Rock Lake was built by the Army Corps of Engineers in the 1950s on the White River, and
+    the Corps still runs it. It covers about 43,100 acres with roughly 745 miles of shoreline,
+    reaching from Branson west toward Cassville and south into Arkansas.
+  sections:
+    - title: Coves, not a party cove
+      body: >-
+        Table Rock has no single famous raft-up spot. Boaters pick a cove, anchor, swim and float.
+        Local magazine favorites include the bluffs near Old 86 Campground and Cow Creek on Point 6,
+        between the state park and Kimberling City, a deep, undeveloped cove that works as a meeting
+        spot. The captain or the marina will have their own favorites for your group.
+    - title: About cliff jumping
+      body: >-
+        People do jump from the bluffs. Operators treat it as entirely at the guest's own risk, and
+        so should you. Check depth, never jump where you cannot see the bottom clearly, and do not
+        let anyone who has been drinking climb.
+    - title: Weather is the one thing to respect
+      body: >-
+        In July 2018 a tour duck boat sank on this lake in a severe storm, with winds reported above 70 mph, and seventeen people died. Marinas and captains here cancel for unsafe weather, and you should not push them to go.
+    - title: Getting here
+      body: >-
+        Springfield-Branson National is the main airport, about 50 miles north of Branson. The small
+        Branson Airport is about eight miles out with limited seasonal flights, and Northwest
+        Arkansas Regional is about two hours away. By road, most visitors come down I-44 to
+        Springfield and then south on US 65.
+    - title: Where to stay
+      body: >-
+        Lakefront resorts and marinas cluster on the Branson side of the lake, and Big Cedar's
+        resorts sit south of town at Ridgedale. Kimberling City has a resort and campground at the
+        Port of Kimberling. If the group also wants Branson shows or Silver Dollar City, staying on
+        the Branson side keeps the drives short.
+    - title: Fishing or a party day
+      body: >-
+        Table Rock is a serious bass fishing lake, and many marinas rent fishing boats alongside
+        their pontoons. If your group wants to fish, say so on the request and it goes to an
+        operator set up for it. If you want a slide, music and a cove, say that instead.
+    - title: The safety record
+      body: >-
+        Table Rock had 24 boating crashes in 2024, two of them fatal, second only to Lake of the
+        Ozarks among Missouri waters. A sober driver and life jackets on the kids cover most of it.
+  sources:
+    - label: Wikipedia, Table Rock Lake
+      url: https://en.wikipedia.org/wiki/Table_Rock_Lake
+      accessed: "2026-10-19"
+    - label: 417 Magazine, best coves in Southwest Missouri, August 2018
+      url: https://417mag.com/issues/august-2018/5-best-coves-southwest-mo
+      accessed: "2026-10-19"
+    - label: Captain Jake's Lake Adventures, swimming and cliff jumping at own risk
+      url: https://tablerocklakecaptain.com/
+      accessed: "2026-10-19"
+    - label: KSHB, Coast Guard document on the 2018 duck boat sinking
+      url: https://www.kshb.com/news/state/missouri/coast-guard-document-tourist-boat-violated-inspection-terms
+      accessed: "2026-10-19"
+    - label: Wikivoyage, Branson
+      url: https://en.wikivoyage.org/wiki/Branson
+      accessed: "2026-10-19"
+    - label: Explore Branson, Table Rock Lake boat rentals
+      url: https://www.explorebranson.com/blog-explore/blog/post/table-rock-lake-boat-rentals-branson/
+      accessed: "2026-10-19"
+    - label: Table Rock Lake Pontoon Rentals, fishing barge
+      url: https://pontoonrentals.com/boat-rentals/
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, Missouri Boating Statistics and Drownings, 2025 edition
+      url: https://www.mshp.dps.missouri.gov/MSHPWeb/SAC/pdf/2025BoatingAndDrowningStats.pdf
+      accessed: "2026-10-19"
+
+faq:
+  - question: Where can we get a slide boat on Table Rock?
+    answer: >-
+      Double-deck slide boats are rented by a handful of the larger marinas, mostly on the Branson
+      side and at Kimberling City, plus one independent rental company mid-lake. There are not many
+      of them, so they are the first boats to go on summer weekends. Put "slide boat" on the
+      request and the operator will tell you what is open.
+  - question: Can a 21 year old rent a boat here?
+    answer: >-
+      Sometimes. Missouri law sets a much lower minimum, but most Table Rock rental companies set
+      their own at 21 or 25, and some will not rent to a first-time driver. If the group is young,
+      ask for a boat with a captain.
+  - question: Do we need a boater card?
+    answer: >-
+      On the Missouri side, most adults born after January 1, 1984 do, but marinas can sell a
+      one-time temporary card at the counter if you bring a driver's license. The local guide has
+      the details, including what changes in 2027.
+  - question: Can we stay out for sunset?
+    answer: >-
+      Often not on a self-drive rental. Some rental companies require boats back by dark, and one says its insurer will not cover night operation. Sunset cruises and captained trips are the way to see it from the
+      water.
+  - question: Is there a party cove like at Lake of the Ozarks?
+    answer: >-
+      Not really. Table Rock is quieter. Groups anchor in a cove of their choosing to swim and
+      float. If you want a big party crowd, Lake of the Ozarks is the Missouri lake known for that.
+  - question: Who do we actually book with?
+    answer: >-
+      With the operator. We are an independent guide and do not own boats. We pass your request to
+      one Table Rock operator, and they quote, book and run the trip.
+
+forOperators: >-
+  This site is written for visitors planning a boat day around a Branson trip, a show, a family reunion, Silver Dollar City, who want one company to tell them which boat fits their group. This site is built to answer that question and hand the request to one
+  operator on the lake. We are looking for a marina or captain who handles groups, rents slide
+  boats or captained trips, and can show current credentials and insurance.
+
+watch:
+  - label: Missouri State Highway Patrol, boater education law FAQs
+    url: https://apps.mshp.dps.mo.gov/MSHPWeb/WaterPatrol/BoatingLaws_Education/boaterEduLawFAQ.html
+    kind: regulator
+  - label: Table Rock Lake Chamber, marinas and boat rentals directory
+    url: https://business.visittablerocklake.com/list/category/marinas-boat-rentals-1355
+    kind: tourism
+  - label: KY3, local news
+    url: https://ky3.com/
+    kind: news

@@ -103,7 +103,7 @@ const site = currentSite();
   <section class="section">
     <div class="page measure-wide">
       <h2>When to go and when to ask</h2>
-      {site.season.summary.split('\n\n').map((para) => <p>{para}</p>)}
+      {site.season.summary.split(/\n+/).map((para) => <p>{para}</p>)}
       <Sources sources={site.season.sources} />
     </div>
   </section>
@@ -112,7 +112,7 @@ const site = currentSite();
     <div class="page">
       <h2>What it costs and what the price covers</h2>
       <div class="measure-wide">
-        {site.pricing.summary.split('\n\n').map((para) => <p>{para}</p>)}
+        {site.pricing.summary.split(/\n+/).map((para) => <p>{para}</p>)}
       </div>
       <div class="grid grid--2">
         {

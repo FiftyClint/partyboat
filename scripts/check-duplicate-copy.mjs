@@ -235,5 +235,5 @@ console.log(
   `Duplicate copy check passed. ${pages.length} page(s) across ${sitesSeen.size} sites, ` +
     `no shared ${WINDOW}-word passage across sites and none within a site. ` +
     'Every page that is identical network-wide, or superseded by another page ' +
-    'on its own site, carries noindex outside the hub.',
+    'on its own site, carries noindex.',
 );

@@ -25,7 +25,7 @@ const site = currentSite();
         site.guide.sections.map((s) => (
           <section>
             <h2>{s.title}</h2>
-            {s.body.split('\n\n').map((para) => (
+            {s.body.split(/\n+/).map((para) => (
               <p>{para}</p>
             ))}
           </section>
@@ -35,7 +35,7 @@ const site = currentSite();
 
       <section>
         <h2>The rules on the water</h2>
-        {site.rules.summary.split('\n\n').map((para) => <p>{para}</p>)}
+        {site.rules.summary.split(/\n+/).map((para) => <p>{para}</p>)}
         <Sources sources={site.rules.sources} />
       </section>
     </Prose>

@@ -7,4 +7,403 @@ marketName: "Lake of the Ozarks"
 regionName: "Missouri"
 timezone: America/Chicago
 accent: lake
-status: pending
+status: live
+
+meta:
+  title: "Party Boat Rentals and Charters, Lake of the Ozarks"
+  description: >-
+    Tritoons and captained party boats on Lake of the Ozarks: where they leave from, what the
+    price covers, and Missouri's rules for renters.
+
+hero:
+  headline: "Get a party boat on Lake of the Ozarks"
+  subhead: >-
+    Tell us the date, how many are coming, and whether you want a captain. We pass it to one
+    local operator, who calls you back with a boat and a price.
+
+directAnswer: >-
+  Most groups on Lake of the Ozarks do one of two things: rent a tritoon and drive it
+  themselves, or hire a captain so nobody in the group has to stay sober and sharp at the wheel.
+  Self-drive suits a group of up to about a dozen with a confident driver who holds a Missouri
+  boater card or can get a temporary one at the dock. A captain suits bachelorette parties, big
+  birthdays, and anyone heading to Party Cove or the waterfront bars, where the crowds
+  gather. Either way, summer Saturdays go first, so ask early if your date is
+  a weekend between Memorial Day and Labor Day.
+
+steps:
+  - >-
+    Use the form or call. A rough date and a rough headcount are enough to start. Say if anyone in
+    the group already holds a Missouri boater card, because it changes what you can rent.
+  - >-
+    We send it to one operator on the lake who runs party groups, not to a list of companies that
+    will all ring you at once.
+  - >-
+    The operator confirms which boat fits your group, which marina or dock it leaves from, the
+    price including fuel and deposit, and their weather rules. You book and pay them directly.
+
+boatTypes:
+  intro: >-
+    The lake is long and busy, and the right boat depends mostly on two things: how many people
+    are coming, and whether someone in the group should be driving.
+  types:
+    - title: Self-drive tritoon or pontoon
+      body: >-
+        The standard lake party boat. Flat, stable, with bench seating and a swim ladder. Most are
+        rated for ten to twelve people, a few for thirteen. You drive, you refuel at the end, and the
+        rental company holds a deposit on a card until the boat comes back clean.
+    - title: Tritoon with a driver
+      body: >-
+        The same boat with someone from the rental company at the wheel. Nobody in the group needs a
+        boater card, and the driver knows how to anchor in a crowded cove, which is harder than it
+        looks on a summer Saturday.
+    - title: Private captained charter
+      body: >-
+        A larger cruiser or yacht with a licensed captain, sometimes a first mate as well. More
+        comfort and shade, a cabin and a head on the bigger boats, and a captain who plans the route
+        around coves and bars for you.
+    - title: Party cruise or water taxi
+      body: >-
+        Bigger passenger vessels that sell seats or take private groups well past a dozen people.
+        These are the boats built and inspected to carry large paying groups, and the simplest answer
+        when your headcount runs into the thirties or forties.
+
+departures:
+  intro: >-
+    Lake of the Ozarks has no single harbor. Rental fleets and charter docks are spread along the
+    main channel and its arms, and locals give locations by mile marker counted up from Bagnell
+    Dam. Where you start decides how far you travel before the fun starts,
+    so pick a departure point close to where you plan to spend the day.
+  places:
+    - title: Lake Ozark and the dam end
+      body: >-
+        The low mile markers near Bagnell Dam, including Village Marina at the 3 MM, Camden on the
+        Lake at the 7 MM and the Lodge of Four Seasons at the 12 MM, all host rental docks. This is
+        the end for the Bagnell Dam strip and the bars around the 7 MM.
+    - title: Osage Beach and the Grand Glaize Bridge
+      body: >-
+        The busiest stretch for party groups, roughly the 17 to 19 MM. Rental docks here sit next to
+        well known waterfront bars, and the ones by the Grand Glaize Bridge describe themselves as
+        five to ten minutes by boat from Party Cove.
+    - title: The Margaritaville resort area
+      body: >-
+        Around the 26 MM, at the resort that used to be Tan-Tar-A. A charter cruise company leaves
+        from here, and one delivery service brings boats free as far as this point.
+    - title: Camdenton and the Niangua arm
+      body: >-
+        The southwest arm, with resort marinas and gas docks that rent tritoons, measured by its own
+        mile markers up the Niangua. A natural base if you are staying near Camdenton.
+    - title: Sunrise Beach and the west side
+      body: >-
+        Resort marinas and waterfront restaurants on the western side of the lake. Check the trip
+        time by water if Party Cove or the Osage Beach bars are the plan.
+    - title: Delivered to your dock
+      body: >-
+        If you are staying in a lake house, some companies will bring a tritoon to your dock, one free
+        within a set stretch of mile markers and another for a fee each way.
+  sources:
+    - label: BomBay Boat Rental Company, rental locations
+      url: http://www.bombayboatrental.com/
+      accessed: "2026-10-19"
+    - label: Sandman Charters, departure location
+      url: https://www.sandman-charters.com/
+      accessed: "2026-10-19"
+    - label: Dirty Duck Boat Rental, location near the Grand Glaize Bridge
+      url: https://www.dirtyduckboatrental.com/
+      accessed: "2026-10-19"
+    - label: Tropic Island Cruises, Margaritaville departure
+      url: https://tropicislandcruises.com
+      accessed: "2026-10-19"
+    - label: Lucky's Gas Dock and Boat Rental, Niangua arm
+      url: https://www.rainbowsendmarina.com
+      accessed: "2026-10-19"
+    - label: Pointe Oasis Resort and Marina, Sunrise Beach
+      url: https://www.pointeoasis.com
+      accessed: "2026-10-19"
+    - label: Breakaway Boat Rentals, dock delivery
+      url: https://www.breakawayboatrentals.com/
+      accessed: "2026-10-19"
+    - label: Montego Bay Marina and Resort, delivery fee
+      url: https://www.montegobaymarina.com
+      accessed: "2026-10-19"
+    - label: Wikipedia, Lake of the Ozarks
+      url: https://en.wikipedia.org/wiki/Lake_of_the_Ozarks
+      accessed: "2026-10-19"
+
+season:
+  summary: >-
+    The rental season runs roughly from mid-March or April to mid-October, with some companies
+    renting by appointment through the winter and others closed until May. One operator says it
+    reopens in May 2027, and another ends its regular season on October 31, 2026.
+
+    The busy months are May through August. The Missouri State Highway Patrol's own numbers show
+    where the boats are: in 2024, 79.7 percent of the state's boating crashes happened May through
+    August, July was the worst month, and Saturday was the worst day.
+
+    Holiday weekends and lake events cost more and fill first. Operators price the Fourth of July,
+    Labor Day and the Lake of the Ozarks Shootout as holidays. Rental companies recommend
+    reserving ahead, and at least one offers a discount for booking party packages early. Nobody
+    publishes a typical lead time, so if your date is a summer Saturday, the safe answer is now.
+  sources:
+    - label: LOTO Boat Rental, season and early reservation discount
+      url: https://lotoboatrental.com/
+      accessed: "2026-10-19"
+    - label: Lucky's Gas Dock and Boat Rental, reopening May 2027
+      url: https://www.rainbowsendmarina.com/pages/boat-rentals
+      accessed: "2026-10-19"
+    - label: Pointe Oasis Resort and Marina, season end
+      url: https://www.pointeoasis.com
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, Missouri Boating Statistics and Drownings, 2025 edition
+      url: https://www.mshp.dps.missouri.gov/MSHPWeb/SAC/pdf/2025BoatingAndDrowningStats.pdf
+      accessed: "2026-10-19"
+    - label: Sandman Charters, holiday and event pricing
+      url: https://www.sandman-charters.com/
+      accessed: "2026-10-19"
+    - label: Dirty Duck Boat Rental, reservations recommended
+      url: https://www.dirtyduckboatrental.com/pontoon_rentals
+      accessed: "2026-10-19"
+
+pricing:
+  summary: >-
+    These are ranges published by Lake of the Ozarks rental and charter companies on October 19,
+    2026, not quotes. Prices change by season and day of the week, and the operator's quote is the
+    one that counts.
+
+    A self-drive tritoon ran about $290 to $520 for four hours and about $425 to $750 for a full
+    day, plus fuel. A tritoon with a driver from the rental company ran from $375 for two hours to
+    $1,075 for eight. Private captained charters on larger boats ran from about $700 for four hours
+    on a weekday to $2,800 for a long Saturday, with holiday days higher still.
+  components:
+    - title: Fuel
+      body: >-
+        Most rentals leave full and charge you to refill when you return, so the posted rate is not
+        the whole cost. A few captained charters include fuel. Ask which applies.
+    - title: Deposit or card hold
+      body: >-
+        Self-drive rentals hold roughly $300 to $650 on a card against damage and cleaning. One
+        company waives it when you hire their driver.
+    - title: Captain and gratuity
+      body: >-
+        Charters often quote the boat plus fuel and gratuity. A captain added to a rental is usually
+        a separate hourly charge.
+    - title: Fees and cancellation
+      body: >-
+        One company adds an 8.5 percent processing fee and keeps it if you cancel 48 hours ahead.
+        Another refunds all but 6 percent up to 24 hours ahead. Weather calls are made on actual
+        conditions on the day, not the forecast.
+  sources:
+    - label: Dirty Duck Boat Rental, tritoon rates and deposit
+      url: https://www.dirtyduckboatrental.com/pontoon_rentals
+      accessed: "2026-10-19"
+    - label: Captain Bob's Boat Rentals and Charters, rates with and without captain
+      url: https://www.lakeozarkboatrental.com/rentals/boat-rates
+      accessed: "2026-10-19"
+    - label: Lake Breeze Resort, tritoon rentals
+      url: https://www.lakebreezeresort.com/tritoon-boat-rentals-lake-of-the-ozarks/
+      accessed: "2026-10-19"
+    - label: Adventure Boat Rentals, one day tritoon rental
+      url: https://adventureboatrentals.com/south-location-tritoon-rentals/one-day-tritoon-rental-2/
+      accessed: "2026-10-19"
+    - label: Quicky's Boat Rentals, rates, card hold, fees and cancellation
+      url: https://www.quickysboatrentals.com/boat-rentals
+      accessed: "2026-10-19"
+    - label: LOTO Boat Rental, rates, fuel and cancellation
+      url: https://lotoboatrental.com/
+      accessed: "2026-10-19"
+    - label: Captain Lake Ozark, charter rates and FAQ
+      url: https://www.captainlakeozark.com/faq
+      accessed: "2026-10-19"
+    - label: Sandman Charters, charter rates
+      url: https://www.sandman-charters.com/
+      accessed: "2026-10-19"
+    - label: WFO Watersports, rental terms
+      url: https://www.wfowatersports.com/rental-terms
+      accessed: "2026-10-19"
+
+rules:
+  summary: >-
+    Who may drive. Missouri changed its boater card law for 2026. Anyone born after January 1, 1984
+    and before January 1, 2006 must carry a boating safety identification card when driving on the
+    state's lakes, and from January 1, 2027 anyone born on or after January 1, 2006 needs one on all
+    state waters. A rental company may issue a once-in-a-lifetime temporary card good for up to
+    seven days, for a $9 fee, if you show a driver's license and sign that you have read the Highway
+    Patrol boating handbook. The Patrol says an operator must be 14 unless an adult is aboard, and
+    many rental companies set their own minimum age higher, some at 21 or 25.
+
+    Drinking. Boating while intoxicated in Missouri means a blood alcohol level of .08 percent or
+    higher, or .02 percent for anyone under 21. By driving a boat you agree to be tested. With a
+    child under 17 aboard, it is a class A misdemeanor.
+
+    Life jackets. Every person aboard needs a wearable life jacket of a type the Coast Guard has approved, and
+    children under seven must wear one.
+
+    Paying passengers. Federal rules limit how many paying guests an uninspected boat may carry
+    with a captain, generally six, and boats carrying more need a Coast Guard Certificate of
+    Inspection. The Coast Guard has shut down unlawful charters on this lake, four vessels in 2021
+    and one carrying 12 passengers in 2023, and it tells passengers to ask to see the captain's
+    license before boarding. If you book a captained boat, ask.
+  sources:
+    - label: Missouri Revisor of Statutes, RSMo 306.127, boater identification card
+      url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, boater education law FAQs
+      url: https://apps.mshp.dps.mo.gov/MSHPWeb/WaterPatrol/BoatingLaws_Education/boaterEduLawFAQ.html
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, boating while intoxicated brochure SHP-44
+      url: https://www.machs.mo.gov/MSHPWeb/Publications/Brochures/documents/SHP-44.pdf
+      accessed: "2026-10-19"
+    - label: Missouri Revisor of Statutes, RSMo 306.100, life jackets
+      url: https://revisor.mo.gov/main/OneSection.aspx?section=306.100
+      accessed: "2026-10-19"
+    - label: U.S. Coast Guard, Passenger for Hire and Charter Vessel Operations (pamphlet)
+      url: https://wow.uscgaux.info/Uploads_wowII/P-DEPT/PaxForHire_trifold_3.pdf
+      accessed: "2026-10-19"
+    - label: Missourinet, Coast Guard terminates charter at Lake of the Ozarks, July 2023
+      url: https://www.missourinet.com/2023/07/17/u-s-coast-guard-busts-chartered-boat-at-lake-of-the-ozarks/
+      accessed: "2026-10-19"
+    - label: Professional Mariner, Coast Guard halts four illegal charters, June 2021
+      url: https://professionalmariner.com/coast-guard-halts-four-illegal-charters-on-lake-of-the-ozarks/
+      accessed: "2026-10-19"
+
+guide:
+  title: "A planning guide to party boats on Lake of the Ozarks"
+  description: >-
+    Party Cove, the waterfront bars, how far everything is, where to stay, and the Missouri rules
+    that apply to anyone renting or chartering a boat on Lake of the Ozarks.
+  intro: >-
+    Lake of the Ozarks is a reservoir behind Bagnell Dam, about 54,000 acres of water with roughly
+    1,150 miles of shoreline. That size is the first thing to plan around. Distances on the water
+    are long, the main channel is busy on summer weekends, and where you start the day decides most
+    of what you can reach.
+  sections:
+    - title: Mile markers, and why everyone uses them
+      body: >-
+        Locations on the lake are given by mile marker, counted along the main channel from Bagnell
+        Dam. A bar at the 17 MM is seventeen miles up the lake from the dam. Rental companies also
+        set an operating area for their boats, for example between two named mile markers, so check
+        that the area on your rental covers where you want to go before you book.
+    - title: Party Cove
+      body: >-
+        Party Cove is Anderson Hollow Cove on the Grand Glaize arm, about a mile south of the Grand
+        Glaize Bridge, inside Lake of the Ozarks State Park. It is reachable only by boat. Boats
+        anchor and tie together in rows, called rafting up, and spend the afternoon there.
+        It has a long history of heavy drinking and enforcement, and the state has described the
+        area around it as the most dangerous on the lake. If Party Cove is the plan, a captain who
+        knows how to anchor in a crowd is worth the money.
+    - title: The waterfront bars
+      body: >-
+        Bar-hopping by boat is the other classic day. The busiest cluster is around the 17 to 19 MM
+        in Osage Beach, and there is another group near the 7 MM in Lake Ozark. One company runs
+        scheduled bar-hop cruises and a water taxi, which takes the driving question off the table
+        entirely.
+    - title: Getting here
+      body: >-
+        There is no commercial airport at the lake. Columbia Regional is about an hour away, the
+        Springfield-Branson airport a little under two hours, St. Louis Lambert about two and a half
+        hours and Kansas City International about three. By car, Kansas City is about three hours
+        and St. Louis about two and a half.
+    - title: Where to stay
+      body: >-
+        Osage Beach has the most lodging close to the party stretch, from large resorts to condo
+        towers near the Grand Glaize Bridge. Camdenton and the Niangua arm are quieter. Many groups
+        rent a lake house instead, and several rental companies will deliver a tritoon to a private
+        dock.
+    - title: The safety record, plainly
+      body: >-
+        Lake of the Ozarks had 66 boating crashes in 2024, more than any other water in Missouri, and
+        the Highway Patrol reported eight drownings on the lake by September 1, 2025. Most crashes
+        happen in summer and on Saturdays, and about half of the operators involved statewide had no
+        boater education. A sober driver, life jackets for anyone who is not a strong swimmer, and a
+        captain on the busiest days are cheap insurance.
+    - title: If you want to fish instead
+      body: >-
+        Party operators are set up for groups, coolers and floats, not fishing. Some marinas rent a
+        fishing barge alongside their party tritoons, and there are fishing guides on the lake. Say
+        so on the request form and it goes to the right kind of operator.
+  sources:
+    - label: Wikipedia, Lake of the Ozarks
+      url: https://en.wikipedia.org/wiki/Lake_of_the_Ozarks
+      accessed: "2026-10-19"
+    - label: Wikipedia, Party Cove
+      url: https://en.wikipedia.org/wiki/Party_Cove
+      accessed: "2026-10-19"
+    - label: Wikivoyage, Lake of the Ozarks, travel and lodging
+      url: https://en.wikivoyage.org/wiki/Lake_of_the_Ozarks
+      accessed: "2026-10-19"
+    - label: WFO Watersports, rental operating area
+      url: https://www.wfowatersports.com/rental-terms
+      accessed: "2026-10-19"
+    - label: Playin Hooky Water Taxi and Charters, bar hop cruises
+      url: https://playinhookyatthelake.com/party-boat-rental-lake-of-the-ozarks-private-charters-cruises/
+      accessed: "2026-10-19"
+    - label: Missouri State Highway Patrol, Missouri Boating Statistics and Drownings, 2025 edition
+      url: https://www.mshp.dps.missouri.gov/MSHPWeb/SAC/pdf/2025BoatingAndDrowningStats.pdf
+      accessed: "2026-10-19"
+    - label: ABC17 News, Highway Patrol on Mid-Missouri drownings, September 1, 2025
+      url: https://abc17news.com/news/2025/09/01/missouri-state-highway-patrol-urges-caution-after-10-drownings-in-mid-missouri-this-year/
+      accessed: "2026-10-19"
+    - label: Dirty Duck Boat Rental, nearby lodging
+      url: https://www.dirtyduckboatrental.com/
+      accessed: "2026-10-19"
+    - label: Lake Breeze Resort, fishing barge rental
+      url: https://www.lakebreezeresort.com/tritoon-boat-rentals-lake-of-the-ozarks/
+      accessed: "2026-10-19"
+
+faq:
+  - question: Do I need a boater card to drive a rental tritoon?
+    answer: >-
+      Probably, if you were born after January 1, 1984. Missouri requires a boating safety
+      identification card for most drivers on its lakes, and the rental company can usually issue a
+      one-time temporary card at the dock if you bring a driver's license. If nobody in the group
+      has one and you would rather not deal with it, ask for a boat with a driver. The local guide
+      has the exact rule.
+  - question: Can we take the boat to Party Cove?
+    answer: >-
+      Usually, but check. Each rental company sets an operating area, and not all of them cover the
+      Grand Glaize arm. Party Cove is also the most crowded and most patrolled water on the lake on a
+      summer weekend, which is why many groups hire a captain for it.
+  - question: How many people fit on a party boat here?
+    answer: >-
+      Most self-drive tritoons are rated for ten to twelve people. For bigger groups you need either
+      two boats or a larger passenger vessel built and inspected to carry that many paying guests.
+      Tell us the real headcount, including anyone who might join late, and the operator will match
+      the boat to it.
+  - question: Is fuel included?
+    answer: >-
+      Usually not on self-drive rentals. Most leave full and charge you to refill. Some captained
+      charters include fuel. The pricing section above lists what operators charge for, and the
+      operator's quote will say exactly.
+  - question: Can we bring alcohol?
+    answer: >-
+      Many groups do, but the person driving must stay under Missouri's legal limit, which is lower
+      for anyone under 21, and some operators set their own rules. On a captained boat the captain
+      drives, which is the main reason party groups book one.
+  - question: What happens if it storms?
+    answer: >-
+      The operator decides, based on conditions on the day rather than the forecast a week out.
+      Cancellation terms differ between companies, so ask before you pay a deposit, and get the
+      weather policy in writing.
+  - question: Who are you, and who actually takes us out?
+    answer: >-
+      We are an independent guide. We do not own or run boats. When you send a request, we pass it
+      to one local operator who runs party groups on this lake, and they confirm the boat, the price
+      and the booking with you. Your trip is with them.
+
+forOperators: >-
+  This site is written for people planning a party day on Lake of the Ozarks from somewhere else:
+  bachelorette and birthday groups, families sharing a lake house, and anyone who has never driven
+  a tritoon and wants someone local to tell them what to book. We are
+  looking for one operator on the lake to receive its trip requests, ideally one that runs both
+  self-drive tritoons and captained trips, answers the phone on summer weekends, and holds current
+  captain credentials and insurance.
+
+watch:
+  - label: Missouri State Highway Patrol, boater education law FAQs
+    url: https://apps.mshp.dps.mo.gov/MSHPWeb/WaterPatrol/BoatingLaws_Education/boaterEduLawFAQ.html
+    kind: regulator
+  - label: Missouri Revisor of Statutes, RSMo 306.127
+    url: https://revisor.mo.gov/main/OneSection.aspx?section=306.127
+    kind: regulator
+  - label: Lake Expo, local news
+    url: https://www.lakeexpo.com/
+    kind: news

@@ -34,3 +34,12 @@ Dated, with who decided and why. Newest first.
   on the line and a policy change first.
 - Deploys are manual only, and `check:launch` blocks them until the publisher entity is
   named.
+
+## 2026-10-19 (Claude, while writing the first two markets)
+
+- Market pages describe departure areas and price ranges without naming rental companies in
+  the body copy. The companies are cited in the source lists under each section, which is
+  where a reader checks a fact. A site whose job is to send requests to one operator should
+  not be promoting that operator's competitors in its headings.
+- Facts marked "search summary only" or "not verified on the business's own site" in the
+  research dossiers are left off the sites.
