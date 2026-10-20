@@ -47,11 +47,18 @@ correctly. Each refused automated fetches, so the facts came via a search index:
 
 - Texas Parks and Wildlife: party boat license (30 ft, over six passengers), boater education
   (born on or after Sept 1, 1993), children under 13 in life jackets. Used on lake-travis.
-- Tennessee Wildlife Resources Agency: boater education (born after Jan 1, 1989), children 12 and
-  under in life jackets, .08 limit. Used on nashville.
-- Arizona Game and Fish and Go Lake Havasu channel rules: life jackets 12 and under, channel code
-  sections, California rental exemption. Used on havasu.
-- Coast Guard press releases on illegal charters (Lake Havasu, April 2024).
+  tpwd.texas.gov still refused on 2026-10-20.
+- Arizona Game and Fish (azgfd.com, 403 on 2026-10-20): children 12 and under in life jackets
+  and the .08 limit. Used on havasu.
+- Coast Guard press releases on illegal charters (news.uscg.mil, 403 on 2026-10-20). Used on havasu.
+
+Checked against the official page on 2026-10-20:
+
+- Tennessee (tn.gov/twra): boater education for anyone born after Jan 1, 1989 over 8.5 hp, the
+  .08 limit, and children 12 and under in life jackets. The life jacket rule applies unless the
+  boat is anchored, moored or aground; the nashville site said "while moving" and was corrected.
+- Lake Havasu (golakehavasu.com): Bridgewater Channel rules (5 mph no wake, no boats 36 ft or
+  longer, no houseboats, no swimming, no water cannons) and operator ages (12 Arizona, 16 California).
 
 - The GHL API version header (`2021-07-28` vs `v3`). Confirm with one real test request
   as soon as the token exists. See `workers/site/ghl.mjs`.
