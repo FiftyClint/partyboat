@@ -49,11 +49,8 @@ export const CONTACT_CONSENT =
 export const SMS_CONSENT_LABEL =
   'You may also text me about this request. Message and data rates may apply. Reply STOP to stop.';
 
-/**
- * Jurisdiction for the governing law clause. Unset until Clint confirms the
- * state Aidren LLC is organized in; the terms page omits the clause while null.
- */
-export const LEGAL_JURISDICTION = null;
+/** Jurisdiction for the governing law clause. Clint confirmed Kansas on 2026-10-24. */
+export const LEGAL_JURISDICTION = 'the State of Kansas';
 
 /**
  * Phrases that must never appear in site copy, because each one claims

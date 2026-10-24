@@ -33,7 +33,6 @@ before the domains renew on 2027-08-27. Cash cap $500, excluding domains already
 | Who | What | Why it blocks |
 | --- | --- | --- |
 | Clint | Confirm the 60 domains are in his GoDaddy account | Nothing goes live on a domain we cannot prove is ours |
-| Clint | Confirm the state Aidren LLC is organized in, and that it is filed. He named Aidren LLC as publisher on 2026-10-24 and `PUBLISHER.legalName` is set; `LEGAL_JURISDICTION` stays null, so the terms page omits the governing law sentence until he confirms | Governing law sentence on the terms page |
 | Clint | Decide where research and operator lists live (repo is public) | They are only on this machine until then |
 | Clint | GHL steps 1, 2 and 2b in the GHL screen: private integration token, two pipelines. Clint took GHL over from Ryan on 2026-10-24. Claude's GHL connections can read the Party Boat sub-account but cannot create pipelines, buy numbers or build workflows | The form cannot save anything without the token |
 | Clint | Approve five local tracking numbers: $1.15 a month each, forwarded calls $0.02 a minute (HighLevel LC Phone pricing page, modified 2026-10-12) Calls ring Ryan's cell (Clint, 2026-10-24) | Phone numbers on the sites |
