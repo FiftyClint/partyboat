@@ -1,6 +1,6 @@
 # Status
 
-Last updated 2026-10-19.
+Last updated 2026-10-24.
 
 ## The test
 
@@ -33,24 +33,27 @@ before the domains renew on 2027-08-27. Cash cap $500, excluding domains already
 | Who | What | Why it blocks |
 | --- | --- | --- |
 | Clint | Confirm the 60 domains are in his GoDaddy account | Nothing goes live on a domain we cannot prove is ours |
-| Clint | Name the legal entity that publishes the sites, and its state | Footer, about, privacy and terms; `check:launch` refuses a deploy without it |
+| Clint | Name the legal entity that publishes the sites, and its state. On 2026-10-23 he raised forming Aidren Marketing LLC for all rank and rent sites; Kansas online filing is $85 and processes in minutes (sos.ks.gov form DL, rev. 2/27/26) | Footer, about, privacy and terms; `check:launch` refuses a deploy without it |
 | Clint | Decide where research and operator lists live (repo is public) | They are only on this machine until then |
-| Ryan | GHL steps 1, 2 and 2b: private integration token, two pipelines | The form cannot save anything without the token |
+| Ryan | GHL steps 1, 2 and 2b: private integration token, two pipelines (still not done on 2026-10-24: the sub-account has only the template pipeline) | The form cannot save anything without the token |
 | Ryan, then Clint | Price five tracking numbers; Clint approves; Ryan buys | Phone numbers on the sites |
 | Clint | Add four GitHub secrets (`docs/LAUNCH.md` Part 4) | Deploy and domain workflows |
 | Clint | At launch: Cloudflare AI bot policies to Allow, Search Console, Bing Webmaster Tools (`docs/LAUNCH.md` Part 7) | Answer engines cannot quote what they cannot crawl |
 
-## Not verified yet
+## Official facts
 
-Before launch, open these official pages in a normal browser and confirm the sites state them
-correctly. Each refused automated fetches, so the facts came via a search index:
+Every state and federal fact used on the five sites has now been checked against its official
+page. Checked on 2026-10-24:
 
-- Texas Parks and Wildlife: party boat license (30 ft, over six passengers), boater education
-  (born on or after Sept 1, 1993), children under 13 in life jackets. Used on lake-travis.
-  tpwd.texas.gov still refused on 2026-10-20.
-- Arizona Game and Fish (azgfd.com, 403 on 2026-10-20): children 12 and under in life jackets
-  and the .08 limit. Used on havasu.
-- Coast Guard press releases on illegal charters (news.uscg.mil, 403 on 2026-10-20). Used on havasu.
+- Texas (tpwd.texas.gov): party boat license for a charter of 30 feet or longer carrying more than
+  six passengers on inland waters; boater education for anyone born on or after Sept 1, 1993 over
+  15 hp. Both matched. The life jacket rule did not: Texas applies it to boats under 26 feet and
+  counts drifting as underway. lake-travis said "while the boat is moving" and was corrected.
+- Arizona (azleg.gov, A.R.S. 5-331 and 5-395, since azgfd.com does not state either rule): the
+  .08 limit and the "impaired to the slightest degree" charge matched. Children 12 and under wear
+  a life jacket whenever the boat is underway; havasu said "while moving" and was corrected.
+- Coast Guard (news.uscg.mil): the April 27, 2024 Thompson Bay stop, a 25-foot pontoon with nine
+  paying passengers, matched.
 
 Checked against the official page on 2026-10-20:
 
@@ -59,6 +62,8 @@ Checked against the official page on 2026-10-20:
   boat is anchored, moored or aground; the nashville site said "while moving" and was corrected.
 - Lake Havasu (golakehavasu.com): Bridgewater Channel rules (5 mph no wake, no boats 36 ft or
   longer, no houseboats, no swimming, no water cannons) and operator ages (12 Arizona, 16 California).
+
+## Not verified yet
 
 - The GHL API version header (`2021-07-28` vs `v3`). Confirm with one real test request
   as soon as the token exists. See `workers/site/ghl.mjs`.

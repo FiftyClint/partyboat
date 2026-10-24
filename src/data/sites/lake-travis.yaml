@@ -232,7 +232,8 @@ rules:
     Drinks. Texas does not ban alcohol on boats, but the driver is held to the same .08 limit as on
     the road, and game wardens and the sheriff's office patrol Devil's Cove on busy weekends. Many charter companies ban glass on board, and Travis County bans glass in its parks.
 
-    Life jackets. Children under 13 must wear one while the boat is moving.
+    Life jackets. On boats shorter than 26 feet, children under 13 must wear one whenever the boat is
+    underway, and Texas counts drifting as underway.
   sources:
     - label: Texas Parks and Wildlife, party boat program
       url: https://tpwd.texas.gov/fishboat/boat/laws/party_boat/
@@ -246,6 +247,9 @@ rules:
     - label: Texas Parks and Wildlife, Memorial Day 2026 boating safety release
       url: https://tpwd.texas.gov/newsmedia/releases/?req=20260522a
       accessed: "2026-10-19"
+    - label: Texas Parks and Wildlife, life jacket requirements
+      url: https://tpwd.texas.gov/education/boater-education/lifejacket
+      accessed: "2026-10-24"
     - label: FOX 7 Austin, sheriff's lake patrol on Memorial Day weekend
       url: https://www.fox7austin.com/news/tsco-lake-patrol-out-in-full-force-memorial-day-weekend
       accessed: "2026-10-19"

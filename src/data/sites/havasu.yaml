@@ -218,8 +218,8 @@ rules:
     loitering in it, and the Coast Guard can close the lane when it gets crowded.
 
     Drinking and life jackets. Arizona's limit for the driver is .08 percent blood alcohol, and you
-    can be charged below that if impaired. Children 12 and younger must wear a life jacket while
-    the boat is moving. Arizona State Parks bans glass on designated beaches.
+    can be charged below that if impaired. Children 12 and younger must wear a life jacket whenever
+    the boat is underway. Arizona State Parks bans glass on designated beaches.
 
     Paying passengers. In April 2024 the Coast Guard stopped an illegal charter near Thompson Bay
     carrying nine paying passengers on a pontoon. More than six paying guests requires a Coast Guard
@@ -253,6 +253,12 @@ rules:
     - label: Arizona Game and Fish, boating
       url: https://www.azgfd.com/boating/
       accessed: "2026-10-19"
+    - label: Arizona Revised Statutes 5-331, life jackets
+      url: https://www.azleg.gov/ars/5/00331.htm
+      accessed: "2026-10-24"
+    - label: Arizona Revised Statutes 5-395, operating under the influence
+      url: https://www.azleg.gov/ars/5/00395.htm
+      accessed: "2026-10-24"
     - label: Arizona Administrative Code R12-8-116, glass containers
       url: https://www.law.cornell.edu/regulations/arizona/Ariz-Admin-Code-SS-R12-8-116
       accessed: "2026-10-19"
