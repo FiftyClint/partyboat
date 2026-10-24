@@ -35,8 +35,8 @@ before the domains renew on 2027-08-27. Cash cap $500, excluding domains already
 | Clint | Confirm the 60 domains are in his GoDaddy account | Nothing goes live on a domain we cannot prove is ours |
 | Clint | Name the legal entity that publishes the sites, and its state. On 2026-10-23 he raised forming Aidren Marketing LLC for all rank and rent sites; Kansas online filing is $85 and processes in minutes (sos.ks.gov form DL, rev. 2/27/26) | Footer, about, privacy and terms; `check:launch` refuses a deploy without it |
 | Clint | Decide where research and operator lists live (repo is public) | They are only on this machine until then |
-| Ryan | GHL steps 1, 2 and 2b: private integration token, two pipelines (still not done on 2026-10-24: the sub-account has only the template pipeline) | The form cannot save anything without the token |
-| Ryan, then Clint | Price five tracking numbers; Clint approves; Ryan buys | Phone numbers on the sites |
+| Clint | GHL steps 1, 2 and 2b in the GHL screen: private integration token, two pipelines. Clint took GHL over from Ryan on 2026-10-24. Claude's GHL connections can read the Party Boat sub-account but cannot create pipelines, buy numbers or build workflows | The form cannot save anything without the token |
+| Clint | Approve five local tracking numbers: $1.15 a month each, forwarded calls $0.02 a minute (HighLevel LC Phone pricing page, modified 2026-10-12) | Phone numbers on the sites |
 | Clint | Add four GitHub secrets (`docs/LAUNCH.md` Part 4) | Deploy and domain workflows |
 | Clint | At launch: Cloudflare AI bot policies to Allow, Search Console, Bing Webmaster Tools (`docs/LAUNCH.md` Part 7) | Answer engines cannot quote what they cannot crawl |
 
