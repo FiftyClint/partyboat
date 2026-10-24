@@ -69,7 +69,7 @@ For each market below:
 4. Buy it.
 5. Open the number's settings and set:
    - **Name:** the left column, for example `PB Ozarks`.
-   - **Forward calls to:** your cell phone.
+   - **Forward calls to:** Ryan's cell phone (Clint's decision, 2026-10-24).
    - **Call whisper** (the message you hear before the caller is connected): the
      middle column. This tells you which site the caller came from.
    - **Call recording:** OFF. The privacy policy promises calls are not recorded.

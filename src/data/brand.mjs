@@ -9,12 +9,10 @@
 
 export const PUBLISHER = {
   /*
-   * The legal entity that publishes the sites. Unset until Clint names it,
-   * because naming the wrong company in a footer and a privacy policy is
-   * worse than naming none. scripts/check-launch.mjs refuses a deploy while
-   * this is null.
+   * The legal entity that publishes the sites. Clint named Aidren LLC on
+   * 2026-10-24. scripts/check-launch.mjs refuses a deploy while this is null.
    */
-  legalName: null,
+  legalName: 'Aidren LLC',
 
   location: { locality: 'Overland Park', region: 'KS', regionName: 'Kansas', country: 'US' },
 
@@ -51,7 +49,10 @@ export const CONTACT_CONSENT =
 export const SMS_CONSENT_LABEL =
   'You may also text me about this request. Message and data rates may apply. Reply STOP to stop.';
 
-/** Jurisdiction for the governing law clause. Unset until the entity is named. */
+/**
+ * Jurisdiction for the governing law clause. Unset until Clint confirms the
+ * state Aidren LLC is organized in; the terms page omits the clause while null.
+ */
 export const LEGAL_JURISDICTION = null;
 
 /**
