@@ -4,8 +4,9 @@ import { writeRequest } from './ghl.mjs';
 /**
  * The Worker that fronts every market site.
  *
- * Every request passes through here first (run_worker_first in the generated
- * wrangler config). For a page that costs one comparison: if the request came
+ * Every request except the hashed CSS and the fonts passes through here first
+ * (run_worker_first in the generated wrangler config; those two never redirect
+ * and each Worker run counts toward the account's free daily requests). For a page that costs one comparison: if the request came
  * in on www, plain http, a defensive alias domain, or a non-canonical path
  * spelling, it is sent to the one address the page is published at with a
  * 301. Otherwise it is handed straight to the built files. The only request

@@ -92,9 +92,12 @@ const configFor = (site) => ({
     binding: 'ASSETS',
     // Serve the designed 404 page instead of Cloudflare's bare one.
     not_found_handling: '404-page',
-    // Every request, so www and http can be redirected by hostname. The Worker
-    // hands anything that is already on the right address back to the assets.
-    run_worker_first: true,
+    // Pages and everything else run the Worker first, so www, http and stray
+    // path spellings get one 301 by hostname. The fingerprinted CSS and the
+    // fonts skip it: they never redirect, and on the Free plan every Worker
+    // run counts toward 100,000 requests a day for the whole account, while a
+    // file served straight from assets is free. public/_headers caches them.
+    run_worker_first: ['/*', '!/_astro/*', '!/fonts/*'],
   },
   // The address every page is canonical at, and what the receiver needs to
   // tag and route a request. See workers/site/index.mjs.
