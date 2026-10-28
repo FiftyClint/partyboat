@@ -18,17 +18,17 @@ jobs:
 
       - run: npm ci
 
-      # GHL_TOKEN here is a dummy. It only tells the build a receiver exists so
-      # the form renders and gets audited. It is never a real credential.
+      # NOTION_TOKEN here is a dummy. It only tells the build a receiver exists
+      # so the form renders and gets audited. It is never a real credential.
       - name: Build every live site
         run: npm run build:all
         env:
-          GHL_TOKEN: ci-dummy-not-a-credential
+          NOTION_TOKEN: ci-dummy-not-a-credential
 
       - name: Copy, claims, duplicate, canonical and link checks
         run: npm run check
 
-      - name: Request receiver against a stubbed GHL
+      - name: Request receiver against stubbed Notion and GHL
         run: npm run test:receiver
 
       - name: Install Chromium for the accessibility audit

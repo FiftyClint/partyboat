@@ -2,6 +2,18 @@
 
 Dated, with who decided and why. Newest first.
 
+## 2026-10-28 (Clint: trip requests go to Notion, GHL later)
+
+- **Requests go to Notion for now.** Clint: "move party boats to notion", the same way the
+  water systems sites send theirs. A new database, "Party Boat Leads", under Business
+  Operations Hub, separate from Water Leads and the REAP leads. This drops the GHL key,
+  pipelines and workflow from the launch path.
+- **GHL later, without a rewrite.** Clint: "We'll tie everything into GHL in the future".
+  The GHL writer and its tests stay; `LEAD_STORE=ghl` (a GitHub repository variable) plus
+  the `GHL_TOKEN` secret switches back.
+- **Trade-off accepted:** Notion sends no alert when a row arrives, unlike the GHL workflow
+  that would have texted Ryan.
+
 ## 2026-10-19 (Clint, in the planning session)
 
 - **Lean pilot, not the full plan.** The 31-section execution plan specified a custom

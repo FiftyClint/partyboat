@@ -3,17 +3,20 @@
  * ======================
  *
  * The form posts to /api/lead on the site's own domain. workers/site/index.mjs
- * answers there and writes the request into the "Party Boat" sub-account in
- * GoHighLevel, as a contact plus a note, tagged with the market.
+ * answers there and writes the request to the store LEAD_STORE names (see
+ * src/data/lead-store.mjs): the Notion database "Party Boat Leads" for now,
+ * the GHL Party Boat sub-account later.
  *
- * The GHL token is a Cloudflare Worker secret (GHL_TOKEN), pushed by
- * scripts/deploy.mjs from the repository secret of the same name. It is never
- * in a built file. The build only checks whether it is present, to decide
- * whether a form would work at all.
+ * The store's token is a Cloudflare Worker secret (NOTION_TOKEN or
+ * GHL_TOKEN), pushed by scripts/deploy.mjs from the repository secret of the
+ * same name. It is never in a built file. The build only checks whether it is
+ * present, to decide whether a form would work at all.
  *
  * PUBLIC_LEAD_WEBHOOK overrides the destination, for previews pointed at a
  * test endpoint.
  */
+
+import { LEAD_STORES, leadStore } from './lead-store.mjs';
 
 const fromEnv = (key) => {
   const value = import.meta.env?.[key] ?? process.env?.[key] ?? '';
@@ -24,7 +27,10 @@ const fromEnv = (key) => {
 export const LEAD_ENDPOINT = '/api/lead';
 
 /** Only the presence of the token is read here. Its value never reaches a page. */
-const receiverConfigured = () => (process.env?.GHL_TOKEN ?? '').trim().length > 0;
+const receiverConfigured = () => {
+  const { secret } = LEAD_STORES[leadStore(process.env?.LEAD_STORE)];
+  return (process.env?.[secret] ?? '').trim().length > 0;
+};
 
 export const leadWebhook = () =>
   fromEnv('PUBLIC_LEAD_WEBHOOK') || (receiverConfigured() ? LEAD_ENDPOINT : '');

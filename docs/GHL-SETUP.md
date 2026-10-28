@@ -1,5 +1,9 @@
 # GHL setup for the Party Boat sub-account
 
+**Not in use yet.** Since 2026-10-28 trip requests go to the Notion database
+Party Boat Leads (`docs/NOTION-SETUP.md`). Do these steps when everything moves
+to GHL, then follow "Switching to GHL later" at the bottom of that page.
+
 For Ryan. One action per line. Do these in order. Nothing here sends a message to
 anyone outside the team.
 

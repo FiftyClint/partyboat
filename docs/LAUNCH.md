@@ -38,21 +38,20 @@ before buying. The test cap is $500 total.
 
 When he sends the five numbers, give them to Claude. They go into the site files.
 
-## Part 4. Put three secrets into GitHub (free, about 10 minutes)
+## Part 4. Put four secrets into GitHub (free, about 15 minutes)
 
-These let GitHub publish the sites and let the sites write requests into GHL. You
-already did this once for PoweredLandCo; this is the same, in the partyboat repository.
+These let GitHub publish the sites and let the sites write requests into the
+Notion database Party Boat Leads. You already did this once for PoweredLandCo;
+this is the same, in the partyboat repository.
 
-### The GHL key
+### The Notion key
 
-1. Get the token Ryan created in `docs/GHL-SETUP.md` step 1.
-2. Go to **github.com/FiftyClint/partyboat**
-3. Click **Settings** along the top.
-4. In the left menu click **Secrets and variables**, then **Actions**.
-5. Click the green **New repository secret** button.
-6. Name: `GHL_TOKEN`
-7. Secret: paste the token.
-8. Click **Add secret**.
+Follow `docs/NOTION-SETUP.md`. It makes the key, lets it into Party Boat Leads,
+and saves it in GitHub as `NOTION_TOKEN`.
+
+GHL_TOKEN is not needed while requests go to Notion (decided 2026-10-28). It
+comes back when everything moves to GHL; see the bottom of
+`docs/NOTION-SETUP.md`.
 
 ### The Cloudflare keys
 
@@ -66,16 +65,17 @@ values, so make new tokens.
 5. Scroll down, click **Continue to summary**, then **Create Token**.
 6. Copy the token.
 7. Back in GitHub, add a secret named `CLOUDFLARE_API_TOKEN` with that value.
-8. In Cloudflare click **Workers & Pages** in the left menu and copy the **Account ID**
-   on the right.
-9. In GitHub add a secret named `CLOUDFLARE_ACCOUNT_ID` with that value.
+8. In GitHub add a secret named `CLOUDFLARE_ACCOUNT_ID` with the value
+   `bfadb7676138707bbdb9de0028d7cd58` (the account the water systems sites use;
+   it is not a secret, only a label).
 
 For pointing domains (Part 6) you also need a zone token. In Cloudflare, Create Token,
 Create Custom Token, permissions **Zone: Zone: Edit**, **Zone: DNS: Edit** and
 **Zone: Workers Routes: Edit**, zone resources **All zones**. Add it to GitHub as
 `CLOUDFLARE_ZONE_TOKEN`.
 
-You should now see four secrets listed. You cannot read them back, which is correct.
+You should now see four secrets listed: NOTION_TOKEN, CLOUDFLARE_API_TOKEN,
+CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_ZONE_TOKEN. You cannot read them back, which is correct.
 
 ## Part 5. Publish (free)
 

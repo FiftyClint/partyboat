@@ -15,8 +15,9 @@ deploys, `pending` is a domain we hold with no site yet.
 
 Each live site deploys to its own Cloudflare Worker, which serves the files, 301s
 www, http, slashless paths and the market's defensive alias domains to the one
-canonical address, and answers the request form at `/api/lead` by writing into the
-GHL "Party Boat" sub-account (`workers/site/`).
+canonical address, and answers the request form at `/api/lead` by writing a row into the Notion
+database "Party Boat Leads" (`workers/site/`). The GHL writer is kept for later and
+turned on with `LEAD_STORE=ghl`.
 
 Pages per market: home (with the form), local guide, questions, for operators, about,
 privacy, terms, thank you, 404.
@@ -33,7 +34,7 @@ Run by `npm run check`, and they fail the build:
 | `check-canonicals.mjs` | A page's canonical, sitemap entry and noindex disagree. |
 | `check-internal-links.mjs` | An internal link points at an address that is not a page's canonical. |
 
-Also: `npm run test:receiver` (the request receiver against a stubbed GHL),
+Also: `npm run test:receiver` (the request receiver against stubbed Notion and GHL),
 `npm run audit:a11y` (axe-core and contrast in Chromium), and before any deploy
 `npm run check:launch`, `check:leads` and `check:secrets`.
 

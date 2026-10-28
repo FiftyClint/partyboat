@@ -32,9 +32,17 @@ Every other market file in `src/data/sites/` is `status: pending` and is not bui
    market. Every glance row has its own source. Update `factsChecked` only after every
    fact on that site has actually been rechecked.
 
+## Where requests go
+
+- Requests go to the Notion database "Party Boat Leads" (id `b3b648994c9f4dcd882ec537a855470a`,
+  under Business Operations Hub) since 2026-10-28. Keep it separate from Water Leads and
+  the REAP leads. `docs/NOTION-SETUP.md`.
+- GHL comes back later for everything (Clint, 2026-10-28). Keep `workers/site/ghl.mjs` and its
+  tests working; the switch is `LEAD_STORE=ghl` (`src/data/lead-store.mjs`), not a rewrite.
+
 ## GHL
 
-- Requests go to the GHL sub-account "Party Boat", location `gbL1HD7CxijC004LwYEV`.
+- The GHL sub-account is "Party Boat", location `gbL1HD7CxijC004LwYEV`.
 - Through Composio, use connection `highlevel_mcp_marok-plew` for Party Boat.
   The Composio default (`highlevel_mcp_shape-prest`) is **Your Card Buyer**.
   Never write party boat data without naming the Party Boat connection.
@@ -52,7 +60,7 @@ setting `status: live` on a new market. Agents draft; people send and sign.
 ```
 npm run build:all       build every live site into dist/<key>/
 npm run check           copy, claims, duplicates, canonicals, links
-npm run test:receiver   request receiver against a stubbed GHL
+npm run test:receiver   request receiver against stubbed Notion and GHL
 npm run audit:a11y      axe-core and contrast, in Chromium
 npm run verify          all of the above
 SITE=ozarks npm run dev one site locally

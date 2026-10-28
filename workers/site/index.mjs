@@ -1,5 +1,7 @@
 import { spamScore } from './spam.mjs';
-import { writeRequest } from './ghl.mjs';
+import { writeRequest as writeToGhl } from './ghl.mjs';
+import { writeRequest as writeToNotion } from './notion.mjs';
+import { leadStore } from '../../src/data/lead-store.mjs';
 
 /**
  * The Worker that fronts every market site.
@@ -14,15 +16,18 @@ import { writeRequest } from './ghl.mjs';
  *
  * The receiver lives on each site's own domain so the form posts to a
  * relative path, the same built HTML is correct everywhere, and there is no
- * CORS to configure. The GHL token is a Worker secret and never reaches a
+ * CORS to configure. The store's token is a Worker secret and never reaches a
  * browser.
  *
  * Environment, set by scripts/deploy.mjs:
- *   SITE_DOMAIN      the primary domain (var)
- *   SITE_ALIASES     comma-separated defensive domains (var)
- *   MARKET           the market key, for tags (var)
- *   GHL_LOCATION_ID  the Party Boat sub-account (var)
- *   GHL_TOKEN        private integration token (secret)
+ *   SITE_DOMAIN         the primary domain (var)
+ *   SITE_ALIASES        comma-separated defensive domains (var)
+ *   MARKET              the market key, for tags (var)
+ *   LEAD_STORE          notion or ghl; see src/data/lead-store.mjs (var)
+ *   NOTION_DATABASE_ID  the Party Boat Leads database (var)
+ *   NOTION_TOKEN        internal integration secret (secret, when notion)
+ *   GHL_LOCATION_ID     the Party Boat sub-account (var)
+ *   GHL_TOKEN           private integration token (secret, when ghl)
  */
 
 const json = (status, body) =>
@@ -63,6 +68,18 @@ export const canonicalLocation = (request, env) => {
   return `https://${domain}${path}${url.search}`;
 };
 
+/** Each store: whether this Worker has what it needs, and how to write to it. */
+const WRITERS = {
+  notion: {
+    ready: (env) => Boolean(env.NOTION_TOKEN && env.NOTION_DATABASE_ID),
+    write: (args, env) => writeToNotion({ ...args, token: env.NOTION_TOKEN, databaseId: env.NOTION_DATABASE_ID }),
+  },
+  ghl: {
+    ready: (env) => Boolean(env.GHL_TOKEN && env.GHL_LOCATION_ID),
+    write: (args, env) => writeToGhl({ ...args, token: env.GHL_TOKEN, locationId: env.GHL_LOCATION_ID }),
+  },
+};
+
 const hostsFor = (env) =>
   [env.SITE_DOMAIN, ...String(env.SITE_ALIASES ?? '').split(',')]
     .map((h) => (h ?? '').trim().toLowerCase())
@@ -81,8 +98,16 @@ export async function receiveLead(request, env, { fetchImpl = fetch } = {}) {
    * the form shows "that did not go through" rather than thanking somebody
    * whose request went nowhere.
    */
-  if (!env.GHL_TOKEN || !env.GHL_LOCATION_ID) {
-    console.error('lead: GHL_TOKEN or GHL_LOCATION_ID is not set on this Worker');
+  let store;
+  try {
+    store = leadStore(env.LEAD_STORE);
+  } catch (error) {
+    console.error(`lead: ${error.message}`);
+    return json(503, { error: 'Request capture is not configured' });
+  }
+  const writer = WRITERS[store];
+  if (!writer.ready(env)) {
+    console.error(`lead: the ${store} token or its destination id is not set on this Worker`);
     return json(503, { error: 'Request capture is not configured' });
   }
 
@@ -108,23 +133,15 @@ export async function receiveLead(request, env, { fetchImpl = fetch } = {}) {
 
   let result;
   try {
-    result = await writeRequest({
-      fields,
-      market,
-      token: env.GHL_TOKEN,
-      locationId: env.GHL_LOCATION_ID,
-      sourceSite: env.SITE_DOMAIN,
-      verdict,
-      fetchImpl,
-    });
+    result = await writer.write({ fields, market, sourceSite: env.SITE_DOMAIN, verdict, fetchImpl }, env);
   } catch (error) {
-    console.error('lead: could not reach GHL', error);
+    console.error(`lead: could not reach ${store}`, error);
     return json(502, { error: 'Could not save the request' });
   }
 
   if (!result.ok) {
     /* Logged in full for `wrangler tail`; never returned to the browser. */
-    console.error(`lead: GHL ${result.step} failed (${result.status})`, result.detail);
+    console.error(`lead: ${store} ${result.step} failed (${result.status})`, result.detail);
     return json(502, { error: 'Could not save the request' });
   }
 

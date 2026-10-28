@@ -5,7 +5,8 @@ import { join } from 'node:path';
 /**
  * Refuses to deploy if a credential ended up in a file a visitor can download.
  *
- * The build reads GHL_TOKEN to decide whether to render the form at all, so
+ * The build reads the lead store's token (NOTION_TOKEN, or GHL_TOKEN when
+ * LEAD_STORE is ghl) to decide whether to render the form at all, so
  * the token is present on the build machine while pages are being generated.
  * It is only ever tested for length and never returned from
  * src/data/lead-capture.mjs, but "never" is a claim about code that can be
@@ -19,14 +20,18 @@ import { join } from 'node:path';
 const ROOT = new URL('../dist', import.meta.url).pathname;
 
 /** Secrets whose value must never appear in a built file. */
-const WATCHED = ['GHL_TOKEN', 'CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID'];
+const WATCHED = ['NOTION_TOKEN', 'GHL_TOKEN', 'CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID'];
 
 /*
  * HighLevel private integration tokens start with pit- or pit_ (both seen), checked as well as the
  * exact value. This catches a token pasted into a source file by hand, which
  * the value check would miss because it is not the one in the environment.
  */
-const PATTERNS = [{ label: 'a HighLevel private integration token', re: /\bpit[-_][0-9a-z-]{20,}/i }];
+const PATTERNS = [
+  { label: 'a HighLevel private integration token', re: /\bpit[-_][0-9a-z-]{20,}/i },
+  // Notion internal integration secrets: ntn_ now, secret_ on older integrations.
+  { label: 'a Notion integration secret', re: /\b(?:ntn_|secret_)[0-9a-z]{40,}/i },
+];
 
 const files = [];
 const walk = (dir) => {

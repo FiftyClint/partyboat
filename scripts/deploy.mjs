@@ -3,6 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { existsSync, writeFileSync, rmSync } from 'node:fs';
 import { liveSites, allSites } from '../src/data/sites.node.mjs';
 import { workerName } from './lib/worker-name.mjs';
+import { LEAD_STORES, leadStore } from '../src/data/lead-store.mjs';
 
 /**
  * Deploys every live market site to its own Cloudflare Worker.
@@ -19,9 +20,11 @@ import { workerName } from './lib/worker-name.mjs';
  *   node scripts/deploy.mjs --only ozarks
  *   node scripts/deploy.mjs --dry-run  print what would happen
  *
- * Needs CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, and GHL_TOKEN for the
- * request receiver. GHL_TOKEN is pushed as a per-Worker secret, so it lives on
- * Cloudflare and never in a built file.
+ * Needs CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, and the token of the
+ * lead store for the request receiver: NOTION_TOKEN while LEAD_STORE is
+ * notion (the default), GHL_TOKEN when it is ghl. Only that one token is
+ * pushed, as a per-Worker secret, so it lives on Cloudflare and never in a
+ * built file.
  *
  * Domains are deliberately not touched here; scripts/setup-zones.mjs does that
  * with a separate zone-scoped token. Publishing a site and pointing a domain
@@ -30,6 +33,16 @@ import { workerName } from './lib/worker-name.mjs';
 
 /** The GHL "Party Boat" sub-account. Not a secret: it appears in GHL URLs. */
 const GHL_LOCATION_ID = 'gbL1HD7CxijC004LwYEV';
+
+/**
+ * The Notion database "Party Boat Leads" under Business Operations Hub, made
+ * 2026-10-28. Not a secret: it is in the database's own URL, and nothing can
+ * read or write it without the integration token.
+ */
+const NOTION_DATABASE_ID = 'b3b648994c9f4dcd882ec537a855470a';
+
+const LEAD_STORE = leadStore(process.env.LEAD_STORE);
+const STORE_SECRET = LEAD_STORES[LEAD_STORE].secret;
 
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
@@ -66,10 +79,13 @@ if (pending.length > 0) {
 }
 console.log('');
 
-const ghlToken = (process.env.GHL_TOKEN ?? '').trim();
+const storeToken = (process.env[STORE_SECRET] ?? '').trim();
 
-if (!dryRun && !ghlToken) {
-  console.log('GHL_TOKEN is not set, so no receiver secret will be pushed.');
+console.log(`Requests go to ${LEAD_STORES[LEAD_STORE].label} (LEAD_STORE=${LEAD_STORE}).`);
+console.log('');
+
+if (!dryRun && !storeToken) {
+  console.log(`${STORE_SECRET} is not set, so no receiver secret will be pushed.`);
   console.log('Only do this deliberately. The sites will serve, but /api/lead will');
   console.log('answer with an error rather than saving a request.');
   console.log('');
@@ -105,6 +121,8 @@ const configFor = (site) => ({
     SITE_DOMAIN: site.domain.toLowerCase(),
     SITE_ALIASES: site.aliases.join(','),
     MARKET: site.key,
+    LEAD_STORE,
+    NOTION_DATABASE_ID,
     GHL_LOCATION_ID,
   },
 });
@@ -128,7 +146,7 @@ for (const site of targets) {
     console.log('');
     console.log(`    ${JSON.stringify(config)}`);
     console.log(`    npx wrangler deploy -c ${CONFIG_PATH}`);
-    if (ghlToken) console.log(`    npx wrangler secret put GHL_TOKEN -c ${CONFIG_PATH}`);
+    if (storeToken) console.log(`    npx wrangler secret put ${STORE_SECRET} -c ${CONFIG_PATH}`);
     continue;
   }
 
@@ -144,7 +162,7 @@ for (const site of targets) {
     continue;
   }
 
-  if (!ghlToken) {
+  if (!storeToken) {
     console.log('deployed, no receiver secret');
     continue;
   }
@@ -155,9 +173,9 @@ for (const site of targets) {
    * /api/lead answers 503, which the form reports honestly as a failure.
    * The token goes in on stdin and never appears in the output.
    */
-  const secret = spawnSync('npx', ['wrangler', 'secret', 'put', 'GHL_TOKEN', '-c', CONFIG_PATH], {
+  const secret = spawnSync('npx', ['wrangler', 'secret', 'put', STORE_SECRET, '-c', CONFIG_PATH], {
     encoding: 'utf8',
-    input: ghlToken,
+    input: storeToken,
   });
 
   if (secret.status === 0) {

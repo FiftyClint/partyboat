@@ -13,8 +13,9 @@ before the domains renew on 2027-08-27. Cash cap $500, excluding domains already
   Owner hidden in the public record; Clint to confirm in his account. `docs/domain-register.csv`.
 - Site framework ported from PoweredLandCo, with build-time guards on copy, unsourced
   figures, duplicate passages, canonicals, links and accessibility.
-- Request receiver: form to GHL Party Boat sub-account (contact, note, tags). Tested against
-  a stub only. 14 tests pass.
+- Request receiver: form to the Notion database "Party Boat Leads", one row per request
+  (Clint, 2026-10-28). The GHL writer stays behind `LEAD_STORE=ghl` for when everything
+  moves to GHL. Tested against stubs only. 25 tests pass.
 - Market screen: Lake Travis, Nashville and Lake Havasu chosen to join the Ozarks and
   Table Rock. Destin is the alternate.
 - All five pilot sites written and passing every check (95 pages, 55 indexable, no
@@ -34,7 +35,7 @@ before the domains renew on 2027-08-27. Cash cap $500, excluding domains already
 | --- | --- | --- |
 | Clint | Confirm the 60 domains are in his GoDaddy account | Nothing goes live on a domain we cannot prove is ours |
 | Clint | Decide where research and operator lists live (repo is public) | They are only on this machine until then |
-| Clint | GHL steps 1, 2 and 2b in the GHL screen: private integration token, two pipelines. Clint took GHL over from Ryan on 2026-10-24. Claude's GHL connections can read the Party Boat sub-account but cannot create pipelines, buy numbers or build workflows | The form cannot save anything without the token |
+| Clint | Notion key for Party Boat Leads, saved as the GitHub secret `NOTION_TOKEN` (`docs/NOTION-SETUP.md`). GHL steps are not needed until requests move to GHL | The form cannot save anything without the key |
 | Clint | Approve five local tracking numbers: $1.15 a month each, forwarded calls $0.02 a minute (HighLevel LC Phone pricing page, modified 2026-10-12) Calls ring Ryan's cell (Clint, 2026-10-24) | Phone numbers on the sites |
 | Clint | Add four GitHub secrets (`docs/LAUNCH.md` Part 4) | Deploy and domain workflows |
 | Clint | At launch: Cloudflare AI bot policies to Allow, Search Console, Bing Webmaster Tools (`docs/LAUNCH.md` Part 7) | Answer engines cannot quote what they cannot crawl |
@@ -80,6 +81,6 @@ $0 beyond the domains. No numbers bought, no ads, no paid tools.
 
 ## Next
 
-1. When the GHL token exists: send one real test request, confirm it lands with note and
-   tags, then fix the version header if needed.
+1. When the Notion key exists and Deploy has run: send one real test request, confirm it
+   lands as a row in Party Boat Leads, then delete the row.
 2. Ryan starts operator calls from the prospect lists. That is the real test.
